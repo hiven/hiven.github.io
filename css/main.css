@@ -120,7 +120,6 @@ line-height: 1.4;
 /* Inputs */
  #keyword {
     margin-right: 20px;
-    background-image: url("https://cdn3.iconfinder.com/data/icons/eightyshades/512/11_Search-128.png");
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: left center;
@@ -319,6 +318,7 @@ text-rendering: optimizelegibility;
     }
        .place {
         display: inline-block;
+        color: rgba(115, 122, 122, 1);
     }
     .place:before {
         content:"at";
