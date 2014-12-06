@@ -63,14 +63,10 @@ body {
     min-width: 240px;
     margin: 15px 0px;
     color: #333;
-    font-family: "Helvetica Neue",Helvetica, Arial, sans-serif;
     text-rendering: optimizelegibility;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-@font-face {
-  font-family: "UniversLTStd-Light";
-src: url("http://hivenbeta.github.io/font/brill.woff") format("woff");
-}
 
 
 
@@ -263,6 +259,7 @@ label {
     line-height:30px;
     margin-bottom: 45px;
     display: block;
+    -webkit-font-smoothing: antialiased;
 }
 .title a {
     color:#397cac;
