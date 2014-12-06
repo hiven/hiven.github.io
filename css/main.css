@@ -287,7 +287,6 @@ text-rendering: optimizelegibility;
     display: block;
 }
 .posted {
-    display: block;
     display: none;
     color:#8d9aa5;
 }
@@ -342,9 +341,6 @@ margin-left: 1em;
     #location {
         float: left;
     }
-    .posted {
-        display: block;
-    }
     .title {
         display: inline-block;
     }
@@ -353,10 +349,6 @@ margin-left: 1em;
 @media (min-width: 1200px) {
     #main {
         padding: 0px 200px;
-    }
-    .posted {
-        display: inline-block;
-        float:right;
     }
 }
 .left {
