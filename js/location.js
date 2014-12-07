@@ -3,11 +3,13 @@ var componentForm = {
     route: 'long_name',
     locality: 'long_name',
     administrative_area_level_1: 'long_name',
-    administrative_area_level_2: 'long_name',
     country: 'long_name',
     postal_code: 'short_name'
 };
-
+function clear(){
+    console.log("clr");
+    $("input.hidden").val("");
+}
 function initialize() {
     autocomplete = new google.maps.places.Autocomplete(
     (document.getElementById('autocomplete')), {
@@ -19,7 +21,7 @@ function initialize() {
 }
 
 function fillInAddress() {
-    var place = autocomplete.getPlace();
+    var place = autocomplete.getPlace();   
 
     for (var component in componentForm) {
         document.getElementById(component).value = '';
@@ -34,3 +36,9 @@ function fillInAddress() {
         }
     }
 }
+
+$(document).ready(function(){
+    $( "#autocomplete" ).on('keyup',function() { 
+        $("input.hidden").val('');
+    });
+});
