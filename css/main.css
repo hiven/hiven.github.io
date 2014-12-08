@@ -61,7 +61,7 @@ html {
 body {
     background-color: #FDFDFD;
     min-width: 240px;
-    margin: 15px 0px;
+    margin-top: 30px;
     color: #333;
     text-rendering: optimizelegibility;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
