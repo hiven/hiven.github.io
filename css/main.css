@@ -115,6 +115,10 @@ h3 {
     height: 44px;
     font-size: 21px;
     background-color: transparent;
+    opacity: 0.5;
+}
+#keyword:focus{
+    opaicty: 1;
 }
 .input {
     color: rgba(0, 0, 0, 0.44);
