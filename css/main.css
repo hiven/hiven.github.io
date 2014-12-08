@@ -106,16 +106,14 @@ h3 {
 #post {
     right: 0;
 }
-#search {
-    display: block;
-    height: 46px;
-}
+
 /* Inputs */
  #keyword {
     height: 44px;
     font-size: 21px;
     background-color: transparent;
-    opacity: 0.5;
+    opacity: 0.3;
+    display: block;
 }
 #keyword:focus{
     opacity: 1;
@@ -290,12 +288,8 @@ text-rendering: optimizelegibility;
     .testinput {
         width: 47%
     }
-    #location {
-        float: right;
-    }
-    #keyword {
-        float: left;
-    }
+
+
     .place {
         display: inline-block;
         color: rgba(115, 122, 122, 1);
@@ -322,9 +316,6 @@ margin-left: 1em;
     }
     .testinput {
         width: 320px;
-    }
-    #location {
-        float: left;
     }
     .title {
         display: inline-block;
