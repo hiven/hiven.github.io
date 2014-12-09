@@ -164,7 +164,7 @@ textarea.form-control {
     width: 1170px;
 }
 label {
-    display: inline-block;
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
