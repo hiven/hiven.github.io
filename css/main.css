@@ -59,7 +59,7 @@ h3 {
 }
 
 .logo {height: 46px;}
-
+.path {fill: blue;}
 /* Inputs */
  #keyword {
     height: 44px;
