@@ -114,6 +114,8 @@ display: block;
     width: 100%;
 }
 
+.category {width: 25%; float: left;}
+
 #post-button {
     color: rgba(0, 0, 0, 0.4);
 border: 1px solid rgba(0, 0, 0, 0.18);
