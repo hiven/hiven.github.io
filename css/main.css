@@ -116,6 +116,7 @@ display: block;
 #post-button {
     color: rgba(0, 0, 0, 0.4);
 border: 1px solid rgba(0, 0, 0, 0.18);
+display: block;
 }
 
 #post-button:hover {
