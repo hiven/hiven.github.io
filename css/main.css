@@ -173,6 +173,7 @@ label {
 }
 .form-group {
     margin-bottom: 15px;
+    float: left;
 }
 .payment {
     margin-bottom: 15px;
