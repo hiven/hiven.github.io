@@ -163,6 +163,9 @@ textarea.form-control {
 .col-6 {
     width: 48%;
 }
+
+.col-9 {width: 75%;}
+.col-3 {width:25%;}
 .container {
     width: 1170px;
 }
