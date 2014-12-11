@@ -60,7 +60,6 @@ h3 {
 }
 
 .logo {height: 46px;}
-.path {fill: blue;}
 /* Inputs */
  #keyword {
     height: 44px;
@@ -105,20 +104,7 @@ display: block;
 }
 #premium {padding: 10px; background-color: blue;}
 
-.col-tenth {
-    width: 10%;
-}
-.col-quater {
-    width: 25%;
-}
-.col-half {
-    width: 50%;
-}
-.col-full {
-    width: 100%;
-}
 
-.category {width: 25%; float: left;}
 
 #post-button {
     color: rgba(0, 0, 0, 0.4);
@@ -225,17 +211,14 @@ footer { font-size: 12px; color: rgba(122, 122, 122, 1);}
 .title a {
     color:#397cac;
     text-decoration: none;
-
-    
-
 font-weight: normal;
 line-height: 25.2px;
 margin-bottom: 14px;
 margin-top: 0px;
 text-rendering: optimizelegibility;
-    
-    
-    
+}
+.title a:hover {
+    color:#205f82
 }
 .new.title:after {
     content:"new";
