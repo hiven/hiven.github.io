@@ -139,6 +139,7 @@ input, button, select, textarea {
 textarea.form-control {
     height: auto;
 }
+.form-row {display: block;}
 .form-control {
     display: block;
     width: 100%;
