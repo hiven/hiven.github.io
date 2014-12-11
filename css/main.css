@@ -139,7 +139,7 @@ input, button, select, textarea {
 textarea.form-control {
     height: auto;
 }
-.form-row {display: block;}
+.form-row {display: block; margin-bottom: 15px;}
 .form-control {
     display: block;
     width: 100%;
