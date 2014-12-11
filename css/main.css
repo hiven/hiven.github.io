@@ -139,7 +139,7 @@ input, button, select, textarea {
 textarea.form-control {
     height: auto;
 }
-.form-row {display: block; margin-bottom: 15px;}
+.form-row {display: block;}
 .form-control {
     display: block;
     width: 100%;
@@ -175,7 +175,7 @@ label {
     font-weight: bold;
 }
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     float: left;
 }
 .payment {
