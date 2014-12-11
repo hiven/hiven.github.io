@@ -306,6 +306,8 @@ margin-left: 1em;
 .right {
     float: right;
 }
+
+footer p {float:left;}
 .footer-links {
     display: inline;
 }
