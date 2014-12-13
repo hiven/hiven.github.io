@@ -28,13 +28,13 @@ DE&S personnel within a Project and Programme Management (PPM) role can expect t
 
 ## Typically the roles may include leading or supporting
 
-•	Production of procurement/support strategies and business cases 
-•	Production of Investment Appraisals and seeking financial approval 
-•	Production and maintenance of project schedules, risk registers and plans 
-•	Leading on the project technical aspects of tenders/contracts 
-•	Monitoring and controlling financial aspects of each project or contract 
-•	Preparation and delivery of technical briefs, status reports, chairing meetings and taking minutes/notes 
-•	Management of a diverse range of stakeholders 
+- Production of procurement/support strategies and business cases 
+- Production of Investment Appraisals and seeking financial approval 
+- Production and maintenance of project schedules, risk registers and plans 
+- Leading on the project technical aspects of tenders/contracts 
+- Monitoring and controlling financial aspects of each project or contract 
+- Preparation and delivery of technical briefs, status reports, chairing meetings and taking minutes/notes 
+- Management of a diverse range of stakeholders 
 
 These roles may require travel and meetings within the UK and may involve occasional overseas visits. 
 
