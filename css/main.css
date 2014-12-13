@@ -71,6 +71,9 @@ h3 {
 #keyword:focus{
     opacity: 1;
 }
+#keyword:hover{
+    opacity: 1;
+}
 .input {
     color: rgba(0, 0, 0, 0.44);
     outline: none;
