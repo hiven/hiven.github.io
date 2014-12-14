@@ -16,9 +16,10 @@ Maintain consistent performance  |  Give up quickly when things do not go smooth
 Participate in quality assurance of products or services  |  Miss the opportunity to suggest improvements through quality assurance
 
 **Level 2**
+
 Good behaviour  | Bad behaviour
 ------------- | -------------
-Create regular reviews of what and who is required to make a project/activity successful and make ongoing improvements | SFail to maintain pace and progress
+Create regular reviews of what and who is required to make a project/activity successful and make ongoing improvements | Fail to maintain pace and progress
 Be interested and positive about what they and the team are trying to achieve  | Display limited interest or positivity for their role or purpose
 Take ownership of problems in their own area of responsibility  | Avoid responsibility for dealing with problems
 Remain positive and focused on achieving outcomes despite setbacks | Fail to adjust or react negatively when things change or go wrong
