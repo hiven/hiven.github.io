@@ -1,4 +1,18 @@
-Are you, or will you soon be, leaving the 
+## Background information for these roles
+
+The Defence Equipment and Support (DE&S) organisation was launched on 1 April 2014 as a Bespoke Trading Entity (BTE), an arm’s length body of the Ministry of Defence. DE&S’ new status focuses on our customers, drives improvement in the effectiveness with which we deliver the Equipment Programme and underpins the efficiency with which we lead and manage the organisation. 
+
+## What we do
+
+DE&S works closely with the Military Commands (Army, Navy and Royal Air Force) and MOD Head Office to provide the required materiel to meet the needs of the Armed Forces. DE&S manages new equipment procurements, upgrades, updates and upkeep of equipment in service; and also undertakes disposals and decommissioning. DE&S provides costing advice, a range of technical expertise, and logistic support and personnel to current operations. DE&S has a lead role in contract negotiation and relationships with industrial suppliers. DE&S employs approximately 14,500 people around the UK and overseas and we are headquartered in Bristol, and operating from other locations in the UK and overseas. Day-to-day, most DE&S project managers are situated within the Operating Centre (OC) and Project/Delivery Teams that procure and support the equipment that MOD requires. Project Managers work alongside military colleagues, financiers, commercial officers, inventory managers, technical experts and risk managers to ensure that the equipment the MOD purchases is fit for purpose and achieves the best possible value for money. 
+
+## Priorities for the next three years
+
+Our priority is the delivery of the Equipment Programme ensuring that critical capability is provided for Defence. DE&S manages complex programmes spending approximately ￡164 Billion of taxpayers’ money over the next ten years to deliver equipment and support to the UK’s Armed Forces. 
+
+•	Successful Delivery – delivering the Equipment Programme to performance, cost and time 
+•	Successful Leadership – inspiring performance and managing outcomes efficiently and effectively 
+•	Successful Change – delivering increased capability and value Are you, or will you soon be, leaving the 
 military? We are particularly interested in 
 hearing from you if you have relevant programme 
 and project manager experience, and are in the 
