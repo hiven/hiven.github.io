@@ -47,12 +47,13 @@ h3 {
  #logo, #main, #post {
 
 }
-#logo, #post {
-    position: absolute;
+#logo,  {
+    width: 100%;
 }
 #main {
     width: 100%;
     margin-top: 60px;
+    position: absolute;
 }
 #post {
     right: 0;
