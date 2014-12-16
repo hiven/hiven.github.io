@@ -59,7 +59,7 @@ position: absolute;
     position: absolute;
     z-index: -1;
 }
-#logo a {opacity: 0.8;}
+#logo a {opacity: 0.8; display:inline-block;}
 #logo a:hover {opacity: 1;}
 .logo {height: 46px;}
 
