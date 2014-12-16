@@ -49,6 +49,11 @@ h3 {
     width: 100%;
 }
 
+#logo {
+    overflow: hidden;
+position: absolute;
+}
+
 #main {
     margin-top: 60px;
     position: absolute;
