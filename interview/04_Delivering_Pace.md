@@ -26,4 +26,9 @@ Remain positive and focused on achieving outcomes despite setbacks | Fail to adj
 Check own and team performance against outcomes, make improvement suggestions or take corrective action when problems are identified | Neglect performance reviews and so be unable to give timely and constructive feedback
 Set and achieve challenging goals and monitor quality | Blame others for poor quality work
 
+<hr>
+
+**Examples**
+
+
 
