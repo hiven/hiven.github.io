@@ -87,6 +87,8 @@ h3 {
     text-align: center;
     background-color: #fff;
     line-height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .btn:hover {
     background-color: rgba(87, 173, 104, 1);
