@@ -85,15 +85,20 @@ h3 {
     display: inline-block;
     transition: background-color 0.3s ease;
     text-align: center;
-    background-color: #fff;
     line-height: 34px;
     padding-left: 10px;
     padding-right: 10px;
 }
-.btn:hover {
+
+
+
+.btn-primary {
     background-color: rgba(87, 173, 104, 1);
+}
+
+.btn-primary:hover {
     border: 1px solid rgba(87, 173, 104, 1);
-    color: white;
+    color: white;  
 }
 
 .apply-button {
