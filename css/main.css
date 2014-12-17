@@ -46,7 +46,7 @@ h3 {
     position: absolute;
     width: 100%;
 }
-.logo  {opacity: 0.8; display:inline-block; margin-left: 30px; z-index:1;}
+.logo  {opacity: 0.8; display:inline-block; margin-left: 30px; z-index:1; position: relative;}
 .logo:hover {opacity: 1;}
 
 /* Inputs */
