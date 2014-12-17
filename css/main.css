@@ -218,6 +218,7 @@ footer {
     margin-bottom: 10px;
     margin-left: 30px;
     margin-right: 30px;
+    width: 100%;
 }
 
 
@@ -326,6 +327,7 @@ footer p {
 .footer-links {
     display: inline;
     right: 0;
+    position: absolute;
 }
 
 .footer-links li {
