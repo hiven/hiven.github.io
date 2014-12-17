@@ -220,22 +220,18 @@ footer {
 /* results */
 .results {
     padding-top: 40px;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .job {
     line-height: 30px;
     margin-bottom: 45px;
-    display: block;
 }
 
 .title a {
     color: #397cac;
-    text-decoration: none;
-    font-weight: normal;
     line-height: 25.2px;
     margin-bottom: 14px;
-    margin-top: 0px;
 }
 
 .title a:hover {
