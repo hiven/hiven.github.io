@@ -41,24 +41,16 @@ h3 {
     margin-bottom:1em;
 }
 
-/* Blocks */
-#logo, #main {
-    width: 100%;
-}
 
-#logo {
-    overflow: hidden;
-position: absolute;
-}
 
 #main {
+        width: 100%;
     margin-top: 60px;
     position: absolute;
-    z-index: -1;
+
 }
-.logo a  {opacity: 0.8; display:inline-block; position: relative;}
-.logo a:hover {opacity: 1;}
-.logo img {height: 46px;}
+.logo  {opacity: 0.8; display:inline-block; position: relative;}
+.logo:hover {opacity: 1;}
 
 /* Inputs */
  #keyword {
