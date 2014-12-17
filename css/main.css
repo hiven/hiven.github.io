@@ -18,9 +18,6 @@ body {
     font-size: 14px;
 }
 
-button {
- cursor: pointer;
-}
 
 
 
@@ -59,9 +56,9 @@ position: absolute;
     position: absolute;
     z-index: -1;
 }
-#logo a {opacity: 0.8; display:inline-block; position: relative;}
-#logo a:hover {opacity: 1;}
-.logo {height: 46px;}
+.logo a  {opacity: 0.8; display:inline-block; position: relative;}
+.logo a:hover {opacity: 1;}
+.logo img {height: 46px;}
 
 /* Inputs */
  #keyword {
@@ -98,6 +95,7 @@ position: absolute;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
+     cursor: pointer;
 }
 
 
