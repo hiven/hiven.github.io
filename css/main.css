@@ -227,7 +227,6 @@ footer {
     line-height: 30px;
     margin-bottom: 45px;
     display: block;
-    -webkit-font-smoothing: antialiased;
 }
 
 .title a {
@@ -237,7 +236,6 @@ footer {
     line-height: 25.2px;
     margin-bottom: 14px;
     margin-top: 0px;
-    text-rendering: optimizelegibility;
 }
 
 .title a:hover {
