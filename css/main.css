@@ -213,6 +213,9 @@ label {
 footer {
     font-size: 12px;
     color: rgba(122, 122, 122, 1);
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
 }
 
 
