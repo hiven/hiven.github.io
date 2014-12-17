@@ -43,7 +43,7 @@ h3 {
 #main {
     margin-top: 60px;
     position: absolute;
-
+    width: 100%;
 }
 .logo  {opacity: 0.8; display:inline-block; position: relative;}
 .logo:hover {opacity: 1;}
@@ -258,7 +258,7 @@ margin-left: 1em;
 }
     #main {
         margin-top:0;
-        margin: 0px 100px;
+        padding: 0px 100px;
     }
     .testinput {
         width: 320px;
@@ -273,7 +273,7 @@ margin-left: 1em;
     font-size:22px;
 }
     #main {
-        margin: 0px 200px;
+        padding: 0px 200px;
     }
 }
 .left {
