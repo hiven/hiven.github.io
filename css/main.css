@@ -75,6 +75,10 @@ h3 {
 
 }
 
+    .testinput {
+        width: 100%
+    }
+
 .btn {
     text-decoration: none;
     display: inline-block;
@@ -227,9 +231,7 @@ text-rendering: optimizelegibility;
     color:#8d9aa5;
 }
 @media (min-width: 600px) {
-    .testinput {
-        width: 47%
-    }
+
 
 
     .place {
@@ -258,9 +260,6 @@ margin-left: 1em;
     #main {
         margin-top:0;
         padding: 0px 100px;
-    }
-    .testinput {
-        width: 320px;
     }
     .title {
         display: inline-block;
