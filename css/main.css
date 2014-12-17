@@ -16,6 +16,7 @@ body {
     text-rendering: optimizelegibility;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
+    margin-top: 30px;
 }
 
 /* Typography */
@@ -45,7 +46,7 @@ h3 {
     position: absolute;
     width: 100%;
 }
-.logo  {opacity: 0.8; display:inline-block; position: relative;}
+.logo  {opacity: 0.8; display:inline-block; padding-left: 30px;}
 .logo:hover {opacity: 1;}
 
 /* Inputs */
