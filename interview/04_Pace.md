@@ -50,11 +50,14 @@ Take responsibility for delivering expected outcomes on time and to standard, gi
 ## Alfa Romeo
 
 **Situation**
-Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time
+
+Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time.
 
 **Action**
 
+
 **Result**
+
 
 
 ## Dunlop Goodwood
