@@ -43,35 +43,29 @@ Take responsibility for delivering expected outcomes on time and to standard, gi
 ### Examples
 
 
-**Dyson**
-Situation:
-Action:
-Result:
+## Dyson
 
-**Alfa Romeo**
+**Situation**
+
+**Action**
+
+**Result**
+
+## Alfa Romeo
 Situation: Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time
-Action:
-Result: 
+- Action: -
+- Result: 
 
-**Dunlop Goodwood**
-Sitation: Had to develop 
-Action:
-Result:
+## Dunlop Goodwood
+- Sitation: Breifed with developing
+- Action:
+- Result:
 
-**Dunlop BTCC**
-Situation:
-Action:
-Result:
+## Dunlop BTCC
+- Situation: Develop a 
+- Action:
+- Result:
 
-**Employ**
-Situation:
-Action:
-Result:
 
-**Property matters**
-Situation:
-Action:
-Result:
 
-**Subway**
 
