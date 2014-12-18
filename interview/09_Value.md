@@ -20,30 +20,15 @@ Manage information and financial data so that it is accurate, easily located and
 Can account for expenditure and create well supported argument for extra expenditure e.g. overtime | Misunderstand basic financial concepts
 Take opportunities to challenge misuse of resources in order to achieve value for money and sustainable ways of  working | Favour the easiest method even if it is not the most cost effective – struggle to identify value for money opportunities
 Understand that all actions have a cost and choose the most effective way to do something in a resource efficient way | Avoid using recommended tools and allow their team to do likewise
-Ensure that recognised control procedures and practices 
-are maintained 
-Use control and governance procedures and practices 
-inappropriately or irregularly and allow their teams to do the 
-same
-Monitor resources against plans and budget, identify and 
-flag up variances 
-Not manage resources against plan
-Level 1 (AA & AO or equiv)
-Challenge others appropriately where they see wastage Be careless or wasteful with resources or see where 
-resources are being wasted but not raise this with team or 
-manager
-Be careful with all types of resource (e.g. money, time, 
-materials, fuel, energy) that they use
-Frequently choose convenience over cost effectiveness
-Keep track of spend and make sure work is approved and 
-signed off as necessary
-Not follow appropriate control or authorisation processes 
-for work, services or resource use
-Handle numbers confidently, collate information ensuring 
-accuracy of financial and performance data
-Produce inaccurate financial and performance data with 
-errors or omissions
-Maintain recognised financial procedures and practices Cut corners and not keep accurate financial records 
+Ensure that recognised control procedures and practices are maintained | Use control and governance procedures and practices inappropriately or irregularly and allow their teams to do the same
+Monitor resources against plans and budget, identify and flag up variances | Not manage resources against plan
+
+**Level 1**
+Challenge others appropriately where they see wastage | Be careless or wasteful with resources or see where resources are being wasted but not raise this with team or manager
+Be careful with all types of resource (e.g. money, time, materials, fuel, energy) that they use | Frequently choose convenience over cost effectiveness
+Keep track of spend and make sure work is approved and signed off as necessary | Not follow appropriate control or authorisation processes for work, services or resource use
+Handle numbers confidently, collate information ensuring accuracy of financial and performance data | Produce inaccurate financial and performance data with errors or omissions
+Maintain recognised financial procedures and practices | Cut corners and not keep accurate financial records 
 
 <hr>
 
