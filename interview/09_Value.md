@@ -35,26 +35,63 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 
 <hr>
 
+### Dyson
 
-### Examples
+**Situation**
 
-**Dyson**
+**Action**
 
+**Result**
 
-**Alfa Romeo**
-- ISO Frame
+### Alfa Romeo
 
-**Dunlop Goodwood**
+**Situation**
 
+Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time.
 
-**Dunlop BTCC**
-
-
-**Employ**
-- Designed system to startup servers in the cloud so computers were only on when required
-
-**Property matters**
+**Action**
 
 
-**Subway**
+**Result**
 
+### Dunlop Goodwood
+
+**Sitation**
+
+Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011 stand.
+
+**Action**
+
+**Results**
+
+### Dunlop BTCC
+
+**Situation**
+
+**Action**
+
+**Result**
+
+### Employ
+
+**Situation**
+
+**Action**
+
+**Result**
+
+### Property Matters
+
+**Situation**
+
+**Action**
+
+**Result**
+
+### Subway
+
+**Situation**
+
+**Action**
+
+**Result**
