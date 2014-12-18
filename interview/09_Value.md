@@ -35,13 +35,14 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 
 <hr>
 
+
 ### Examples
 
 **Dyson**
 
 
 **Alfa Romeo**
-
+- ISO Frame
 
 **Dunlop Goodwood**
 
@@ -50,7 +51,7 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 
 
 **Employ**
-
+Designed system to startup servers in the cloud so computers were only on when required
 
 **Property matters**
 
