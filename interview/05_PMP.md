@@ -1,19 +1,6 @@
 # Project Management Plan 	
 The project management plan (PMP) brings together all the plans for a project. The purpose of the PMP is to document the outcomes of the planning process and to provide the reference document for managing the project. The PMP is owned by the project manager. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 | Criteria |
 |---|
 |  Defines the structure and format of the Project Management Plan (PMP), recognising that it could comprise one or more documents depending on the size, need and complexity of the project. |
@@ -32,23 +19,57 @@ The project management plan (PMP) brings together all the plans for a project. T
 ### Examples
 
 
-**Dyson**
+### Dyson
+
+**Situation**
+
+**Action**
+
+**Result**
+
+### Alfa Romeo
+
+**Situation**
+
+Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time.
+
+**Action**
 
 
-**Alfa Romeo**
+**Result**
 
 
-**Dunlop Goodwood**
 
+### Dunlop Goodwood
 
-**Dunlop BTCC**
+**Sitation**
 
+Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011 stand.
 
-**Employ**
+**Action**
 
+**Results**
 
-**Property matters**
+### Dunlop BTCC
 
+**Situation**
 
-**Subway**
+**Action**
 
+**Result**
+
+### Employ
+
+**Situation**
+
+**Action**
+
+**Result**
+
+### Subway
+
+**Situation**
+
+**Action**
+
+**Result**
