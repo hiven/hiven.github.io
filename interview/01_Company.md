@@ -26,40 +26,18 @@ There are excellent training opportunities for your continued personal and profe
 move internally between projects and roles. 
 
 ## Rewarding work. 
-Our teams work on complex, interesting and often sensitive projects of great significance and consequence. You will be encouraged to take on responsibilities appropriate to your grade and may contribute to key stages and key moments of projects. Some projects 
-involve secondments, international travel and 
-the opportunity to visit sites and operations in 
-the field.
-If you are interested in any of the above, and would 
-like to join the ‘force behind the Forces’, please do 
-get in touch now.
-Contact
-For the latest information on job opportunities 
-available in DE&S please visit:
-https://www.gov.uk/government/organisations/
-defence-equipment-and-support/about/
-recruitment
+Our teams work on complex, interesting and often sensitive projects of great significance and consequence. You will be encouraged to take on responsibilities appropriate to your grade and may contribute to key stages and key moments of projects. Some projects involve secondments, international travel and the opportunity to visit sites and operations in the field.
 
+For the latest information on job opportunities available in DE&S please visit:
+https://www.gov.uk/government/organisations/defence-equipment-and-support/about/recruitment
 
+## About Us
+Defence, Equipment & Support, DE&S, acquire and support a wide range of equipment and services for the armed forces. We are a major UK employer and play a vital role in maintaining military operational capability.
 
-About Us
-Defence, Equipment & Support, DE&S, acquire and 
-support a wide range of equipment and services for 
-the armed forces. We are a major UK employer and 
-play a vital role in maintaining military operational 
-capability.
-Our programmes and projects
-We are involved in scoping, designing, 
-implementing and evaluating a huge variety of 
-programmes and projects, which includes support 
-to ships, submarines, aircrafts, vehicles, weapons 
-and information services. Our activities vary widely, 
-with some of our projects being high profile and 
-costing significant sums of public money over 
-many years, while other projects need to respond 
-to immediate short-term needs, such as delivering 
-urgent changes to equipment being used in 
-the battlefield.
+## Our programmes and projects
+We are involved in scoping, designing, implementing and evaluating a huge variety of programmes and projects, which includes support to ships, submarines, aircrafts, vehicles, weapons and information services. Our activities vary widely, with some of our projects being high profile and costing significant sums of public money over 
+many years, while other projects need to respond to immediate short-term needs, such as delivering urgent changes to equipment being used in the battlefield.
+
 Our programme and project managers work in 
 complex and changing environments to deliver 
 activities within time, cost, specification and quality 
