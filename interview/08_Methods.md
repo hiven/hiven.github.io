@@ -11,26 +11,63 @@ Methods and procedures detail the standard practices to be used for managing pro
 
 <hr>
 
-### Examples
+### Dyson
+
+**Situation**
+
+**Action**
+
+**Result**
+
+### Alfa Romeo
+
+**Situation**
+
+Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time.
+
+**Action**
 
 
-**Dyson**
+**Result**
 
+### Dunlop Goodwood
 
-**Alfa Romeo**
+**Sitation**
 
+Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011 stand.
 
-**Dunlop Goodwood**
+**Action**
 
+**Results**
 
-**Dunlop BTCC**
+### Dunlop BTCC
 
+**Situation**
 
-**Employ**
+**Action**
 
+**Result**
 
-**Property matters**
+### Employ
 
+**Situation**
 
-**Subway**
+**Action**
 
+**Result**
+
+### Property Matters
+
+**Situation**
+
+**Action**
+
+**Result**
+
+### Subway
+
+**Situation**
+
+**Action**
+
+**Result**
