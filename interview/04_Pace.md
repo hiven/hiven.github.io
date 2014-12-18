@@ -44,24 +44,34 @@ Take responsibility for delivering expected outcomes on time and to standard, gi
 
 
 **Dyson**
-
+Situation:
+Action:
+Result:
 
 **Alfa Romeo**
-Situation: Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta
+Situation: Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time
 Action:
 Result: 
 
 **Dunlop Goodwood**
-
+Sitation: Had to develop 
+Action:
+Result:
 
 **Dunlop BTCC**
-
+Situation:
+Action:
+Result:
 
 **Employ**
-
+Situation:
+Action:
+Result:
 
 **Property matters**
-
+Situation:
+Action:
+Result:
 
 **Subway**
 
