@@ -18,9 +18,7 @@ DE&S personnel within a Project and Programme Management (PPM) role can expect t
 - Leading on the project technical aspects of tenders/contracts 
 - Monitoring and controlling financial aspects of each project or contract 
 - Preparation and delivery of technical briefs, status reports, chairing meetings and taking minutes/notes 
-- Management of a diverse range of stakeholders 
-
-These roles may require travel and meetings within the UK and may involve occasional overseas visits. 
+- Management of a diverse range of stakeholders
 
 ## Experience/knowledge/competence qualifications
 
