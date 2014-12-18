@@ -10,7 +10,7 @@ Recommend actions to achieve value for money and efficiency | Ignore financial e
 Cultivate and encourage an awareness of cost, using clear simple examples of benefits and how to measure outcomes | Reserve resources for own team without considering wider business priorities or the organisation‟s financial environment
 Work confidently with performance management and financial data to prepare forecasts and manage and monitor budget against agreed plans | Misinterpret or over-estimate performance and financial data used to forecast and monitor budgets and plans 
 Follow appropriate financial procedures to monitor contracts to ensure deliverables are achieved | Ignore the organisation‟s financial procedures or break rules for the sake of expediency
-Monitor the use of resources in line with organisational procedures and plans and hold team to account | Be unable to justify own and their teams‟ use of resources
+Monitor the use of resources in line with organisational procedures and plans and hold team to account | Be unable to justify own and their teams use of resources
 
 **Level 2**
 
@@ -48,7 +48,7 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 
 **Action**
 -
--
+- Kept financial data
 
 **Result**
 
