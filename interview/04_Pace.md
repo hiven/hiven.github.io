@@ -47,7 +47,9 @@ Take responsibility for delivering expected outcomes on time and to standard, gi
 
 
 **Alfa Romeo**
-
+Situation: Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta
+Action:
+Result: 
 
 **Dunlop Goodwood**
 
