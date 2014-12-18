@@ -16,9 +16,6 @@ The project management plan (PMP) brings together all the plans for a project. T
 
 <hr>
 
-### Examples
-
-
 ### Dyson
 
 **Situation**
@@ -37,8 +34,6 @@ Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta wit
 
 
 **Result**
-
-
 
 ### Dunlop Goodwood
 
@@ -59,6 +54,14 @@ Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011
 **Result**
 
 ### Employ
+
+**Situation**
+
+**Action**
+
+**Result**
+
+### Property Matters
 
 **Situation**
 
