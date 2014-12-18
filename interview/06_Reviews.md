@@ -6,7 +6,7 @@ Project reviews take place throughout the project life cycle to check the likely
 | Establishes an effective project review system to be used during and after the project is complete (post-project review).  |
 |  Schedules project evaluation reviews at key stages during the project. |
 | During each evaluation:
-• Evaluates the project management processes used
+<ul><li>Evaluates the project management processes used</li></ul>
 • Reviews the likely technical success of the project
 • Reviews the likely commercial success of the project (e.g. does it still meet the business case)
 • Validates overall progress to Time, Cost and Quality
