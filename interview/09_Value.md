@@ -40,11 +40,12 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 ### Dyson
 
 **Situation**
-- Confidential. We do a lot of work to reduce the cost of parts.
 - I managed a small project which looked at a cost down version of an existing motor with the same performance.
+- 
 
 **Action**
-
+-
+-
 
 **Result**
 
@@ -52,7 +53,9 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 
 **Situation**
 
-We were breifed to create an exhibition on a small budget of XYZ.
+- We were breifed to create an exhibition on a small budget of XYZ.
+- Stand design using ISO frame
+- 
 
 **Action**
 
@@ -63,7 +66,8 @@ We were breifed to create an exhibition on a small budget of XYZ.
 
 **Sitation**
 
-Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011 stand.
+- Breifed with creating the famous Dunlop bridge at the Goodwood stand
+- We needed a durable surface but we also 
 
 **Action**
 
@@ -72,6 +76,7 @@ Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011
 ### Dunlop BTCC
 
 **Situation**
+
 
 
 **Action**
