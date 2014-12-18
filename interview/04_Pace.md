@@ -37,11 +37,7 @@ Regularly monitor own and team‟s work against milestones or targets and act pr
 Coach and support others to set and achieve challenging goals for themselves | Allow organisational and other obstacles, including a lack of support, to stand in the way of own and others‟ aspirations 
 Take responsibility for delivering expected outcomes on time and to standard, giving credit to teams and individuals as appropriate | Give little or no support to others in managing poor performance, allow others problems and obstacles to hamper progress
 
-
 <hr>
-
-### Examples
-
 
 ## Dyson
 
@@ -52,19 +48,29 @@ Take responsibility for delivering expected outcomes on time and to standard, gi
 **Result**
 
 ## Alfa Romeo
-Situation: Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time
-- Action: -
-- Result: 
+
+**Situation**
+Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time
+
+**Action**
+
+**Result**
+
 
 ## Dunlop Goodwood
-- Sitation: Breifed with developing
-- Action:
-- Result:
+**Sitation**
+Breifed with developing
+
+**Action**
+
+**Results**
 
 ## Dunlop BTCC
-- Situation: Develop a 
-- Action:
-- Result:
+**Situation**
+
+**Action**
+
+**Result**
 
 
 
