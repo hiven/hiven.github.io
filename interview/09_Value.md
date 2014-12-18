@@ -109,3 +109,11 @@ The processing power to anaylse the jobs was expensive, dynamically scale our ap
 http://www.projectsmart.co.uk/earned-value-management-explained.php
 http://www.projectsmart.co.uk/what-is-earned-value.php
 
+## Estimating
+
+NPV
+
+Internal Rate of Return
+
+Payback period
+
