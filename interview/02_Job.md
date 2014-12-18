@@ -24,7 +24,7 @@ These roles may require travel and meetings within the UK and may involve occasi
 
 ## Experience/knowledge/competence qualifications
 
-Desirable: Project Management qualifications such as APMP/APM PQ/Prince 2 or equivalent. 
+Project Management qualifications such as APMP/APM PQ/Prince 2 or equivalent. 
 
 You must demonstrate an understanding of Project Management and ideally have some experience of managing and delivering successful projects in a complex environment. 
 
