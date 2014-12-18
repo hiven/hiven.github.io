@@ -39,7 +39,7 @@ Take responsibility for delivering expected outcomes on time and to standard, gi
 
 <hr>
 
-## Dyson
+### Dyson
 
 **Situation**
 
@@ -47,7 +47,7 @@ Take responsibility for delivering expected outcomes on time and to standard, gi
 
 **Result**
 
-## Alfa Romeo
+### Alfa Romeo
 
 **Situation**
 
@@ -60,7 +60,7 @@ Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta wit
 
 
 
-## Dunlop Goodwood
+### Dunlop Goodwood
 **Sitation**
 Breifed with developing
 
@@ -68,7 +68,7 @@ Breifed with developing
 
 **Results**
 
-## Dunlop BTCC
+### Dunlop BTCC
 **Situation**
 
 **Action**
