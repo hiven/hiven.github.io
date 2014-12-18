@@ -1,6 +1,6 @@
 # Value for money
 
-Delivering value for money involves the efficient, effective and economic use of taxpayers‟ money in the delivery of public services. For all staff, it means seeking out and implementing solutions which achieve a good mix of quality and effectiveness for the least outlay. People who do this well base their decisions on evidenced information and follow agreed processes and policies, challenging these appropriately where they appear to prevent good value for money. At senior levels, effective people embed a culture of value for money within their area/function. They work collaboratively across boundaries to ensure that the Civil Service maximises its strategic outcomes within the resources available.
+Delivering value for money involves the efficient, effective and economic use of taxpayers money in the delivery of public services. For all staff, it means seeking out and implementing solutions which achieve a good mix of quality and effectiveness for the least outlay. People who do this well base their decisions on evidenced information and follow agreed processes and policies, challenging these appropriately where they appear to prevent good value for money. At senior levels, effective people embed a culture of value for money within their area/function. They work collaboratively across boundaries to ensure that the Civil Service maximises its strategic outcomes within the resources available.
 
 **Level 3**
 
@@ -35,11 +35,16 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 
 <hr>
 
+## Examples
+
 ### Dyson
 
 **Situation**
+- Confidential. We do a lot of work to reduce the cost of parts.
+- I managed a small project which looked at a cost down version of an existing motor with the same performance.
 
 **Action**
+
 
 **Result**
 
@@ -47,7 +52,7 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 
 **Situation**
 
-Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta within 1 month lead time.
+We were breifed to create an exhibition on a small budget of XYZ.
 
 **Action**
 
@@ -68,6 +73,7 @@ Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011
 
 **Situation**
 
+
 **Action**
 
 **Result**
@@ -75,6 +81,7 @@ Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011
 ### Employ
 
 **Situation**
+The processing power to anaylse the jobs was expensive, dynamically scale our application in real time.
 
 **Action**
 
@@ -95,3 +102,10 @@ Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011
 **Action**
 
 **Result**
+
+## Techniques
+
+### Earned Value Management
+http://www.projectsmart.co.uk/earned-value-management-explained.php
+http://www.projectsmart.co.uk/what-is-earned-value.php
+
