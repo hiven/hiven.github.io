@@ -63,7 +63,8 @@ Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta wit
 
 **Sitation**
 
-Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011 stand.
+- Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011 stand.
+- We only had access to the exhibition 3 days before the stand had to be opened.
 
 **Action**
 
@@ -91,6 +92,10 @@ Our arrangement with Job site was to have access to their job feed in real time 
 
 **Situation**
 
+
 **Action**
 
+
 **Result**
+
+
