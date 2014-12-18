@@ -32,10 +32,15 @@ Good behaviour  | Bad behaviour
 ------------- | -------------
 Successfully manage, support and stretch self and team to deliver agreed goals and objectives | Give people work to do without supporting them to develop the skills and knowledge they need for the job 
 Show a positive approach in keeping their own and the teams efforts focused on the goals that really matter | Allow work flow to lose momentum or drift away from priorities
+Plan ahead but reassess workloads and priorities if situations change or people are facing conflicting demands | Show no consideration for diversity-related needs of the team when organising the workload
+
+
 Take responsibility for delivering expected outcomes on time and to standard, giving credit to teams and individuals 
 as appropriate | Give little or no support to others in managing poor performance, allow others problems and obstacles to hamper progress
 
-Plan ahead but reassess workloads and priorities if situations change or people are facing conflicting demands | Show no consideration for diversity-related needs of the team when organising the workload
+
+
+
 Regularly monitor own and team‟s work against milestones or targets and act promptly to keep work on track and maintain performance | Allow poor performance to go unchallenged, causing workload issues for other team members 
 Coach and support others to set and achieve challenging goals for themselves | Allow organisational and other obstacles, including a lack of support, to stand in the way of own and others‟ aspirations 
 
