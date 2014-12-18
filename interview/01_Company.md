@@ -10,48 +10,23 @@ DE&S works closely with the Military Commands (Army, Navy and Royal Air Force) a
 
 Our priority is the delivery of the Equipment Programme ensuring that critical capability is provided for Defence. DE&S manages complex programmes spending approximately ￡164 Billion of taxpayers’ money over the next ten years to deliver equipment and support to the UK’s Armed Forces. 
 
-•	Successful Delivery – delivering the Equipment Programme to performance, cost and time 
-•	Successful Leadership – inspiring performance and managing outcomes efficiently and effectively 
-•	Successful Change – delivering increased capability and value Are you, or will you soon be, leaving the 
-military? We are particularly interested in 
-hearing from you if you have relevant programme 
-and project manager experience, and are in the 
-process of leaving the military or have previously 
-worked in one of our armed forces. Joining us 
-from these backgrounds often means that you 
-have a unique understanding of operational 
-requirements or a knowledge of where and how 
-our equipment and services will be deployed. 
-What we offer programme 
-and project managers
-Working for us as a programme or project 
-manager. DE&S has corporate accreditation 
-from the Association for Project Managers 
-(APM) for our approach to project management 
-development, which means that we have been 
-externally recognised as providing a solid 
-environment for our project managers to work 
-within and develop their careers in. 
-Career development. We are a large organisation, 
-and in terms of career development, our 
-programme and project management function 
-extends across many of the operating areas 
-of DE&S. We promote on merit and in a fair 
-and transparent way, so regardless of your 
-background, you will have the chance to achieve 
-your maximum potential.
-Training and development. There are excellent 
-training opportunities for your continued personal 
-and professional development, including the 
-chance to obtain further project management 
-qualifications and, once established, the chance to 
-move internally between projects and roles.
-Rewarding work. Our teams work on complex, 
-interesting and often sensitive projects of great 
-significance and consequence. You will be 
-encouraged to take on responsibilities appropriate 
-to your grade and may contribute to key stages 
-and key moments of projects. Some projects 
+- Successful Delivery – delivering the Equipment Programme to performance, cost and time 
+- Successful Leadership – inspiring performance and managing outcomes efficiently and effectively 
+- Successful Change – delivering increased capability and value 
+
+Are you, or will you soon be, leaving the military? We are particularly interested in hearing from you if you have relevant programme and project manager experience, and are in the process of leaving the military or have previously worked in one of our armed forces. Joining us from these backgrounds often means that you have a unique understanding of operational requirements or a knowledge of where and how our equipment and services will be deployed. 
+
+## What we offer programme and project managers.
+
+Working for us as a programme or project manager. DE&S has corporate accreditation from the Association for Project Managers (APM) for our approach to project management development, which means that we have been externally recognised as providing a solid environment for our project managers to work within and develop their careers in. Career development. We are a large organisation, and in terms of career development, our programme and project management function extends across many of the operating areas of DE&S. We promote on merit and in a fair and transparent way, so regardless of your background, you will have the chance to achieve your maximum potential.
+
+## Training and development. 
+
+There are excellent training opportunities for your continued personal and professional development, including the  chance to obtain further project management qualifications and, once established, the chance to 
+move internally between projects and roles. 
+
+## Rewarding work. 
+Our teams work on complex, interesting and often sensitive projects of great significance and consequence. You will be encouraged to take on responsibilities appropriate to your grade and may contribute to key stages and key moments of projects. Some projects 
 involve secondments, international travel and 
 the opportunity to visit sites and operations in 
 the field.
