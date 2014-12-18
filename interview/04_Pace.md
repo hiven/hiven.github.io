@@ -81,6 +81,8 @@ Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011
 
 **Situation**
 
+Our arrangement with Job site was to have access to their job feed in real time but in return we promised to give them access to our recruitment tool within one month of access.
+
 **Action**
 
 **Result**
