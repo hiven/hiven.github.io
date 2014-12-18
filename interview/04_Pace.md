@@ -59,7 +59,6 @@ Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta wit
 **Result**
 
 
-
 ### Dunlop Goodwood
 
 **Sitation**
