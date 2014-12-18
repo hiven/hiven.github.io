@@ -19,8 +19,7 @@ The project management plan (PMP) brings together all the plans for a project. T
 |  Defines the structure and format of the Project Management Plan (PMP), recognising that it could comprise one or more documents depending on the size, need and complexity of the project. |
 | Works with the project team and stakeholders to ensure that the PMP answers the Why, What, How, How Much, Who, When and Where questions for the project.  |
 | Documents and confirms the high-level background and rationale for the project, referencing any other relevant detailed documentation. (why). |
-| Documents and confirms the overall objectives, scope, high-level deliverables/products (including acceptance criteria), and success criteria (project KPI’s) for the project. |
-| Ensures constraints, assumptions and dependencies are documented and understood (what).|
+| Documents and confirms the overall objectives, scope, high-level deliverables/products (including acceptance criteria), and success criteria (project KPI’s) for the project. Ensures constraints, assumptions and dependencies are documented and understood (what).|
 | Documents and confirms the governance for the project including the life-cycle/approach, management controls (reporting and handover mechanisms), relevant tools and techniques (how).|
 |Documents and confirms the project estimates, overall budget and cost management processes (how much).|
 |Documents and confirms the project Organisational Breakdown Structure (OBS), defining key roles and responsibilities and confirms the resources to be used, including third-party responsibilities (who).|
