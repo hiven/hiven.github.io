@@ -51,7 +51,7 @@ Maintain recognised financial procedures and practices | Cut corners and not kee
 
 
 **Employ**
-Designed system to startup servers in the cloud so computers were only on when required
+- Designed system to startup servers in the cloud so computers were only on when required
 
 **Property matters**
 
