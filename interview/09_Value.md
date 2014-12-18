@@ -24,6 +24,9 @@ Ensure that recognised control procedures and practices are maintained | Use con
 Monitor resources against plans and budget, identify and flag up variances | Not manage resources against plan
 
 **Level 1**
+
+Good behaviour  | Bad behaviour
+------------- | -------------
 Challenge others appropriately where they see wastage | Be careless or wasteful with resources or see where resources are being wasted but not raise this with team or manager
 Be careful with all types of resource (e.g. money, time, materials, fuel, energy) that they use | Frequently choose convenience over cost effectiveness
 Keep track of spend and make sure work is approved and signed off as necessary | Not follow appropriate control or authorisation processes for work, services or resource use
