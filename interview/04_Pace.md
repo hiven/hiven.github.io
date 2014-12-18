@@ -61,20 +61,26 @@ Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta wit
 
 
 ### Dunlop Goodwood
+
 **Sitation**
-Breifed with developing
+
+Breifed with managing core aspects of the highly successful Dunlop Goodwood 2011 stand.
 
 **Action**
 
 **Results**
 
 ### Dunlop BTCC
+
 **Situation**
 
 **Action**
 
 **Result**
 
+### Employ
+
+### Subway
 
 
 
