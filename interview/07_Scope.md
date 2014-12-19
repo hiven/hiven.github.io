@@ -17,7 +17,7 @@ Scope management is the process by which the deliverables and work to produce th
 - Identified requirements and priorities
 - Utlised a work breakdown structure and allocated work packages to organisation breakdown structure.
 - Project scope became part of our businsess plan, which was then subject to change control process.
-- - Proposing a Change
+- - Proposing a Change (Change required form -> Change control log)
 - - Summary of Impact
 - - Decision
 - - Implementing a Change
