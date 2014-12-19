@@ -77,6 +77,9 @@ Breifed with creating the exhibition for Alfa Romeo to launch their Guiletta wit
 
 **Situation**
 
+- Briefed with assembling the stand in under 30 mins
+- 
+
 **Action**
 
 **Result**
@@ -91,14 +94,6 @@ Our arrangement with Job site was to have access to their job feed in real time 
 
 **Result**
 
-### Subway
 
-**Situation**
-
-
-**Action**
-
-
-**Result**
 
 
