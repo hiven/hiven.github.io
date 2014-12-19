@@ -13,6 +13,9 @@ Scope management is the process by which the deliverables and work to produce th
 ### Dyson
 
 **Situation**
+- Conducted stakeholder analysis, plotting power against interest
+- Identified requirements and priorities
+- Utlised a work breakdown structure and allocated work packages to organisation breakdown structure.
 
 **Action**
 
