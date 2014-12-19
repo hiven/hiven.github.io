@@ -336,6 +336,11 @@ footer p {
 
 .footer-links li {
     display: inline;
+        padding-left: 3px;
+    padding-right: 3px;
+}
+.footer-links li a {
+    color: rgba(122, 122, 122, 1);
 }
 
 .post-input {
