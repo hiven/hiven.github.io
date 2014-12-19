@@ -42,7 +42,9 @@ Take responsibility for delivering expected outcomes on time and to standard, gi
 ### Dyson
 
 **Situation**
-- We 
+- Briefed with the problem that testing new motor components was expensive.
+- I was put as the project manage to allow us to reduce the cost of testing motor components.
+- I managed a project which meant we could test new motor components 
 
 **Action**
 
