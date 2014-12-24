@@ -200,6 +200,11 @@ label {
 .form-group {
     margin-bottom: 20px;
     float: left;
+    padding-left: 20px;
+}
+
+.form-group:first-child {
+    padding-left: 0px;
 }
 
 .payment {
