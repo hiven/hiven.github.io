@@ -41,6 +41,10 @@ h2 {
     margin-bottom: 30px;
 }
 
+p {
+    line-height: 1.4em;
+}
+
 #main {
     position: relative;
     width: 100%;
