@@ -65,6 +65,11 @@ p {
     opacity: 1;
 }
 
+#info-button {
+    background-color: #34495e;
+    color: white;
+}
+
 #post-button {
     color: rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(0, 0, 0, 0.18);
