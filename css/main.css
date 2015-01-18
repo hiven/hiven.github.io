@@ -360,3 +360,5 @@ footer p {
 .post-input {
     display: block;
 }
+
+.features li { width: 20%; }
