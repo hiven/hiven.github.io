@@ -144,6 +144,7 @@ h2 {
 
 input, button, select, textarea {
     font-family: inherit;
+    font-size: inherit;
 }
 
 textarea.form-control {
