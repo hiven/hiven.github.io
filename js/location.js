@@ -36,3 +36,9 @@ function fillInAddress() {
         }
     }
 }
+
+$(document).ready(function(){
+    $( "#autocomplete" ).on('keyup',function() { 
+        $("input.hidden").val('');
+    });
+});
