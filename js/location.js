@@ -1,3 +1,5 @@
+$(document).ready(function(){ 
+						   
 var placeSearch, autocomplete;
 var componentForm = {
     route: 'long_name',
@@ -36,6 +38,12 @@ function fillInAddress() {
         }
     }
 }
+	
+});
+
+
+
+
 
 $(document).ready(function(){
     $( "#autocomplete" ).on('keyup',function() { 
