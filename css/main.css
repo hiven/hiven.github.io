@@ -31,16 +31,17 @@ p {
 }
 
 
-/* GENERIC */
+
+
+
+
+/* STRUCTURE */
 .left {
     float: left;
 }
 .right {
     float: right;
 }
-
-
-/* Structure */
 .container {
     width: 1170px;
 }
@@ -70,19 +71,12 @@ p {
     z-index: 1;
     position: absolute;
 }
-
 .logo:hover {
     opacity: 1;
 }
 
-/* Inputs */
-input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-}
-textarea.form-control {
-    height: auto;
-}
+/* INPUTS */
+
 .input {
     color: rgba(0, 0, 0, 0.44);
     outline: none;
