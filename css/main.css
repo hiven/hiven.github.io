@@ -41,6 +41,21 @@ p {
     line-height: 1.4em;
 }
 /* Structure */
+.container {
+    width: 1170px;
+}
+.col-3 {
+    width: 25%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-12 {
+    width: 100%;
+}
 #main {
     position: relative;
     width: 100%;
@@ -174,25 +189,13 @@ textarea.form-control {
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
-.col-12 {
-    width: 100%;
-}
 
-.col-6 {
-    width: 50%;
-}
 
-.col-9 {
-    width: 75%;
-}
 
-.col-3 {
-    width: 25%;
-}
 
-.container {
-    width: 1170px;
-}
+
+
+
 
 label {
     display: block;
