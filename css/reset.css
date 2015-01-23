@@ -53,3 +53,10 @@ textarea:focus,
 button:focus {
 outline: none;
 }
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+textarea.form-control {
+    height: auto;
+}
