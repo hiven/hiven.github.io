@@ -23,6 +23,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display: block;
 }
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+}
 body {
 line-height: 1;
 }
@@ -48,4 +52,7 @@ select:focus,
 textarea:focus,
 button:focus {
 outline: none;
+}
+ul {
+    list-style-type: none;
 }
