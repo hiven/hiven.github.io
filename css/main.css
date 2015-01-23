@@ -318,7 +318,7 @@ footer p {
     #keyword {
         font-size: 20px;
     }
-    #main {
+    .main {
         margin-top: 0;
         padding: 0px 140px;
     }
@@ -334,7 +334,7 @@ footer p {
     .results {
         font-size: 22px;
     }
-    #main {
+    .main {
         padding: 0px 200px;
     }
 }
