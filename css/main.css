@@ -1,14 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-ul {
-    list-style-type: none;
-}
-html {
-    font-size: 100%;
-    overflow-y: scroll;
 }
 body {
     background-color: #FDFDFD;
@@ -20,18 +11,16 @@ body {
     margin-top: 30px;
     margin-bottom: 60px;
 }
-
-/* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     display: block;
     color: #397CAC;
 }
 h1 {
-font-size: 26px;
-margin-bottom: 0.5em;
-line-height: 46px;
-height: 46px;
+    font-size: 26px;
+    margin-bottom: 0.5em;
+    line-height: 46px;
+    height: 46px;
 }
 h2 {
     font-size: 1.5em;
@@ -40,6 +29,17 @@ h2 {
 p {
     line-height: 1.4em;
 }
+
+
+/* GENERIC */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
 /* Structure */
 .container {
     width: 1170px;
@@ -231,60 +231,43 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-
-    
     background-color: rgba(253, 253, 253, 0.8);
-padding-top: 10px;
-padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
-/* results */
+/* JOB RESULTS */
 .results {
     padding-top: 30px;
     font-size: 19px;
 }
-
 .job {
     line-height: 30px;
     margin-bottom: 40px;
 }
-
 .title a {
     color: #397cac;
     line-height: 25.2px;
     margin-bottom: 14px;
 }
-
 .title a:hover {
     color: #205f82;
 }
-
 .new.title:after {
     content: "new";
     font-size: 10px;
     color: orange;
     margin-left: 1em;
 }
-
 .place {
     color: rgba(161, 161, 161, 1);
     display: block;
 }
-
 .posted {
     display: none;
     color: #8d9aa5;
 }
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
 footer p {
     margin-left: 30px;
     float: left;
@@ -314,27 +297,21 @@ footer p {
 
 
 @media (min-width: 600px) {
-
-
-
     .place {
         display: inline-block;
         color: rgba(115, 122, 122, 1);
     }
-
     .place:before {
         content: "at";
         margin-left: 0.3em;
         margin-right: 0.3em;
     }
-
     .new.place:after {
         content: "new";
         font-size: 10px;
         color: orange;
         margin-left: 1em;
     }
-
     .new.title:after {
         content: none;
     }
@@ -343,30 +320,30 @@ footer p {
 @media (min-width: 860px) {
     .job {
     margin-bottom: 45px;
-}
-    
+    }
     .results {
         font-size: 20px;
         padding-top: 40px;
     }
-    #keyword {font-size: 20px}
-
+    #keyword {
+        font-size: 20px;
+    }
     #main {
         margin-top: 0;
         padding: 0px 140px;
     }
-
     .title {
         display: inline-block;
     }
 }
 
 @media (min-width: 1200px) {
-      #keyword {font-size: 22px}
+      #keyword {
+          font-size: 22px;
+      }
     .results {
         font-size: 22px;
     }
-
     #main {
         padding: 0px 200px;
     }
