@@ -215,7 +215,7 @@ label {
     display: none;
 }
 
-footer {
+.footer {
     font-size: 12px;
     color: rgba(122, 122, 122, 1);
     position: fixed;
@@ -258,7 +258,7 @@ footer {
     display: none;
     color: #8d9aa5;
 }
-footer p {
+.footer p {
     margin-left: 30px;
     float: left;
 }
