@@ -1,66 +1,22 @@
-* {
-    box-sizing: border-box;
-}
+/* Core */
+* { box-sizing: border-box; }
+body { background-color: #FDFDFD; min-width: 240px; color: #333; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; margin-top: 30px; margin-bottom: 60px; }
+h1, h2 { font-weight: 400; display: block; color: #397CAC; }
+h1 { font-size: 26px; margin-bottom: 0.5em; line-height: 46px; height: 46px; }
+h2 { font-size: 1.5em; margin-bottom: 30px; }
+p { line-height: 1.4em; }
 
-body {
-    background-color: #FDFDFD;
-    min-width: 240px;
-    color: #333;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
+/* Generic */
+.left { float: left; }
+.right { float: right; }
+.hidden { display: none; }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    display: block;
-    color: #397CAC;
-}
-
-h1 {
-    font-size: 26px;
-    margin-bottom: 0.5em;
-    line-height: 46px;
-    height: 46px;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-}
-
-p {
-    line-height: 1.4em;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.container {
-    width: 1170px;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-12 {
-    width: 100%;
-}
+/* Layout */
+.container { width: 1170px; }
+.col-3 { width: 25%; }
+.col-6 { width: 50%; }
+.col-9 { width: 75%; }
+.col-12 { width: 100%; }
 
 .main {
     position: relative;
@@ -72,7 +28,7 @@ p {
 }
 
 .logo {
-    opacity: 0.800000011920928955078125;
+    opacity: 0.8;
     margin-left: 30px;
     z-index: 1;
     position: absolute;
@@ -169,11 +125,6 @@ p {
     opacity: 1;
 }
 
-#premium {
-    padding: 10px;
-    background-color: blue;
-}
-
 .form-row {
     display: block;
 }
@@ -184,11 +135,10 @@ p {
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 1.4;
     color: #555;
     vertical-align: middle;
     background-color: #FFF;
-    background-image: none;
     border: #CCC solid 1px;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
@@ -211,6 +161,11 @@ label {
     padding-left: 0;
 }
 
+#premium {
+    padding: 10px;
+    background-color: blue;
+}
+
 .payment {
     margin-bottom: 15px;
     color: white;
@@ -219,9 +174,7 @@ label {
     background: rgb(30, 87, 153);
 }
 
-.hidden {
-    display: none;
-}
+
 
 .footer {
     font-size: 12px;
