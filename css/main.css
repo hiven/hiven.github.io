@@ -201,6 +201,7 @@ label {
     color: #397cac;
     line-height: 25.2px;
     margin-bottom: 14px;
+    text-transform: capitalize;
 }
 
 .title a:hover {
