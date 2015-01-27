@@ -307,13 +307,6 @@ label {
 }
 
 @media (min-width:1200px) {
-    #keyword {
-        font-size: 22px;
-    }
-
-    .results {
-        font-size: 22px;
-    }
 
     .main {
         padding: 0 200px;
