@@ -295,6 +295,7 @@ transition-property: border-color, box-shadow;
 transition-timing-function: ease-in-out, ease-in-out;
 width: 320px;
 margin-right: 20px;
+padding-left: 15px;
 }
 
 @media (min-width:600px) {
