@@ -293,7 +293,7 @@ transition-delay: 0s, 0s;
 transition-duration: 0.15s, 0.15s;
 transition-property: border-color, box-shadow;
 transition-timing-function: ease-in-out, ease-in-out;
-width: 400px;
+width: 360px;
 }
 
 @media (min-width:600px) {
