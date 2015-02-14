@@ -265,6 +265,7 @@ background-color: rgba(87, 173, 104, 1);
 border-radius: 4px;
 color: white;
 border: 0;
+cursor: pointer;
 }
 
 .input2 {
@@ -304,7 +305,7 @@ transition-timing-function: ease-in-out, ease-in-out;
 width: 300px;
 margin-right: 20px;
 padding-left: 15px;
-cursor: pointer;
+
 }
 
 .logo2 {display: block; margin: 0 auto; opacity: 0.8;}
