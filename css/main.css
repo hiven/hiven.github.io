@@ -258,6 +258,11 @@ label {
     height: 80px;
 }
 
+.button2 {
+  height: 34px;
+  display: inline-block;
+}
+
 .input2 {
 background-color: rgb(255, 255, 255);
 border-bottom-color: rgb(204, 204, 204);
@@ -289,11 +294,10 @@ left: auto;
 letter-spacing: normal;
 line-height: 20px;
 right: auto;
-transition-delay: 0s, 0s;
 transition-duration: 0.15s, 0.15s;
 transition-property: border-color, box-shadow;
 transition-timing-function: ease-in-out, ease-in-out;
-width: 320px;
+width: 300px;
 margin-right: 20px;
 padding-left: 15px;
 }
