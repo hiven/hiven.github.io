@@ -264,6 +264,7 @@ label {
 background-color: rgba(87, 173, 104, 1);
 border-radius: 4px;
 color: white;
+border: 0;
 }
 
 .input2 {
