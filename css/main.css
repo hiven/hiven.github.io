@@ -261,7 +261,8 @@ label {
 .button2 {
   height: 34px;
   display: inline-block;
-     color: rgba(0, 0, 0, 0.4);
+background-color: rgba(87, 173, 104, 1);
+border: 4px;
     border: rgba(0, 0, 0, 0.18) solid 1px;
 }
 
