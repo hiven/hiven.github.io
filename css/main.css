@@ -262,8 +262,8 @@ label {
   height: 34px;
   display: inline-block;
 background-color: rgba(87, 173, 104, 1);
-border: 4px;
-    border: rgba(0, 0, 0, 0.18) solid 1px;
+border-radius: 4px;
+color: white;
 }
 
 .input2 {
