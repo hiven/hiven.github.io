@@ -190,7 +190,10 @@ label {
 .results {
     padding-top: 30px;
     font-size: 19px;
+    width: 720px;
 }
+
+.description {font-size: 14px;}
 
 .job {
     line-height: 30px;
