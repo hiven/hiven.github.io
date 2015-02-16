@@ -261,7 +261,8 @@ label {
     height: 80px;
 }
 
-.secondline {display: block; color: rgba(87, 173, 104, 1);}
+.secondline {display: block; color: rgba(87, 173, 104, 1);  font-size: 14px;
+  line-height: 1em;}
 
 .button2 {
   height: 34px;
