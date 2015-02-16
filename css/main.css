@@ -48,6 +48,9 @@ p { line-height: 1.4em; }
     line-height: 18px;
 }
 
+.prem {
+    background-color: rgb(255, 254, 236);
+}
 .btn {
     text-decoration: none;
     display: inline-block;
@@ -197,7 +200,8 @@ label {
 
 .job {
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding: 10px;
 }
 
 .title a {
