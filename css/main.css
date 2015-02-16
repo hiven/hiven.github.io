@@ -49,7 +49,7 @@ p { line-height: 1.4em; }
 }
 
 .prem {
-    background-color: rgb(255, 254, 236);
+    background-color: rgb(255, 254, 236);     padding: 10px;
 }
 .btn {
     text-decoration: none;
@@ -201,7 +201,6 @@ label {
 .job {
     line-height: 30px;
     margin-bottom: 30px;
-    padding: 10px;
 }
 
 .title a {
