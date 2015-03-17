@@ -5,7 +5,7 @@ input, select, textarea, button {font-family:inherit; font-size: inherit;}
 
 .main, .footer, .header { padding-left: 20px; padding-right: 20px; }
 
-.wrapper { width: 100%; }
+.wrapper { width: 100%; margin: 0 auto; max-width: 760px; }
 .main { background-color: #F8F8F8; padding-top: 30px;}
 .footer {background-color: #E5E5E5; padding-top: 15px; padding-bottom: 15px; text-align: center;}
 .logo {height: 35px;}
@@ -13,10 +13,3 @@ input, select, textarea, button {font-family:inherit; font-size: inherit;}
 .description {padding-bottom: 30px;}
 .header {padding-top: 15px; padding-bottom: 15px;}
 .input {width: 100%; margin-bottom: 30; padding: 7px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
-
-@media (min-width:800px) {
-    .wrapper {
-        width: 760px; margin: 0 auto;
-    }
-    
-}
