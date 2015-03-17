@@ -2,7 +2,7 @@
 a {text-decoration: none;}
 body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: rgb(85, 85, 85);   background-color: #FDFDFD; }
 input, select, textarea, button {font-family:inherit; font-size: inherit;}
-.wrapper { width: 100%; padding-left: 20px; padding-right: 20px; }
+.wrapper { width: 100%; padding-left: 20px; padding-right: 20px; box-sizing: border-box;}
 .main { background-color: #F8F8F8; padding-top: 30px;}
 .footer {background-color: #E5E5E5; padding-top: 15px; padding-bottom: 15px; text-align: center;}
 .logo {height: 35px;}
