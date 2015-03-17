@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0;}
 a {text-decoration: none;}
-body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: rgb(85, 85, 85);   background-color: #FDFDFD;}
+body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: rgb(85, 85, 85);   background-color: #FDFDFD; margin-left: 20px; margin-right: 20px;}
 input, select, textarea, button {font-family:inherit; font-size: inherit;}
 .wrapper { width: 100%; }
 .main { background-color: #F8F8F8; padding-top: 30px;}
@@ -15,4 +15,5 @@ input, select, textarea, button {font-family:inherit; font-size: inherit;}
     .wrapper {
         width: 760px; margin: 0 auto;
     }
+    
 }
