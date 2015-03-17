@@ -9,7 +9,7 @@ input, select, textarea, button {font-family:inherit; font-size: inherit;}
 .main { background-color: #F8F8F8; padding-top: 30px;}
 .footer {background-color: #E5E5E5; padding-top: 15px; padding-bottom: 15px; text-align: center;}
 .logo {height: 35px;}
-.button { padding: 10px 30px; color: white; background-color: #E36B51; border: 0; border-radius: 4px; display: inline-block; margin-bottom: 30px;}
-.description {padding-bottom: 30px;}
+.button { padding: 10px 30px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; display: inline-block; margin-bottom: 30px;}
+description {padding-bottom: 30px;}
 .header {padding-top: 15px; padding-bottom: 15px;}
-.input {width: 100%; margin-bottom: 30; padding: 7px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
+.input {width: 100%; margin-bottom: 30px; padding: 7px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
