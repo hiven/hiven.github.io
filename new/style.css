@@ -13,3 +13,6 @@ input, select, textarea, button {font-family:inherit; font-size: inherit;}
 .description {padding-bottom: 30px;}
 .header {padding-top: 15px; padding-bottom: 15px;}
 .input {width: 100%; margin-bottom: 30px; padding: 7px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
+
+
+.required:after { color: #e32; content: ' *'; display:inline; }
