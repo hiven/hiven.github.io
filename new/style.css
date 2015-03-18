@@ -12,7 +12,7 @@ h1 {margin-bottom: 24px; font-size: 24px;}
 
 .footer { padding-top: 15px; padding-bottom: 15px; text-align: center; font-size: 13px; }
 .footer ul { list-style-type: none; }
-.footer ul li { display: inline; }
+.footer ul li { display: inline; padding-left: 10px; }
 .footer.docked { position: absolute; bottom: 0; left: 0; right: 0; }
 
 .wrapper { width: 100%; margin: 0 auto;}
