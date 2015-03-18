@@ -7,7 +7,7 @@ a {color: inherit; }
 
 .main, .header, .footer { padding-left: 20px; padding-right: 20px; }
 .main { padding-top: 30px; }
-.header {padding-top: 15px; padding-bottom: 15px;}
+.header {padding-top: 15px; padding-bottom: 15px; overflow: auto;}
 .footer { padding-top: 15px; padding-bottom: 15px; text-align: center; font-size: 13px; }
 .footer ul { list-style-type: none; }
 .footer ul li { display: inline; }
