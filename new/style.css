@@ -6,9 +6,9 @@ input, select, textarea, button { font-family:inherit; font-size: inherit; verti
 a {color: inherit; } 
 h1 {margin-bottom: 24px; font-size: 24px;}
 
-.main, .header, .footer { padding-left: 20px; padding-right: 20px; }
+.main, .header, .footer { padding-left: 30px; padding-right: 30px; }
 .main { padding-top: 30px; padding-bottom: 30px; }
-.header {padding-top: 15px; padding-bottom: 15px; overflow: auto;}
+.header {padding-top: 30px; padding-bottom: 30px; overflow: auto;}
 
 .footer { padding-top: 15px; padding-bottom: 15px; text-align: center; font-size: 13px; }
 .footer ul { list-style-type: none; }
