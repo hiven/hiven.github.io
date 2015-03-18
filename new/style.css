@@ -4,7 +4,7 @@ html, body { height: 100%; }
 body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #555555; background-color: #FDFDFD; }
 input, select, textarea, button { font-family:inherit; font-size: inherit; vertical-align: middle; }
 a {color: inherit; } 
-h1 {margin-bottom: 20px; font-size: 20px;}
+h1 {margin-bottom: 24px; font-size: 24px;}
 
 .main, .header, .footer { padding-left: 20px; padding-right: 20px; }
 .main { padding-top: 30px; }
