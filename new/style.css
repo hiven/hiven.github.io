@@ -24,7 +24,7 @@ a {color: inherit; }
 .search .input { width: 320px; margin-right: 15px; }
 .search .button { background-image: url("img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; }
 
-.form .input { padding-bottom: 30px; }
+.form .input { margin-bottom: 30px; }
 
 
 
