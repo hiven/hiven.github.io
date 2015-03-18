@@ -45,7 +45,11 @@ h1 {margin-bottom: 24px; font-size: 24px;}
 
 .description {padding-bottom: 30px;}
 
-
+.jobtitle {
+  font-size: 20px;
+    line-height: 25.2px;
+    text-transform: capitalize;
+}
 
 
 
