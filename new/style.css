@@ -24,7 +24,10 @@ h1 {margin-bottom: 24px; font-size: 24px;}
 .left {float: left; }
 .right {float: right; }
 
-.logo {height: 35px;}
+
+#indexlogo {  margin: 0 auto; display: block; margin-bottom: 60px; }
+
+
 .button { padding: 10px 20px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; -webkit-appearance: none; cursor: pointer;}
 .button:hover { background-color: #C85A42; }
 .input {width: 100%; padding: 7px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
