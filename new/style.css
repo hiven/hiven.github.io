@@ -10,6 +10,7 @@ input, select, textarea, button { font-family:inherit; font-size: inherit; }
 .footer { padding-top: 15px; padding-bottom: 15px; text-align: center; }
 .footer ul { list-style-type: none; }
 .footer ul li { display: inline; }
+.footer ul li a {color: inherit; } 
 .footer.docked { position: absolute; bottom: 0; left: 0; right: 0; }
 .wrapper { width: 100%; margin: 0 auto;}
 .wrapper.small { max-width: 400px; }
