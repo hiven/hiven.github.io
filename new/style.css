@@ -2,9 +2,8 @@
 a { text-decoration: none; }
 html, body { height: 100%; }
 body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #555555; background-color: #FDFDFD; }
-input, select, textarea, button { font-family:inherit; font-size: inherit; }
+input, select, textarea, button { font-family:inherit; font-size: inherit; vertical-align: middle; }
 a {color: inherit; } 
-form { vertical-align: middle; }
 
 .main, .header, .footer { padding-left: 20px; padding-right: 20px; }
 .main { padding-top: 30px; }
