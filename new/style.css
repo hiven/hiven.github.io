@@ -10,8 +10,8 @@ input, select, textarea, button { font-family:inherit; font-size: inherit; }
 .main, .footer, .header { padding-left: 20px; padding-right: 20px; }
 
 .wrapper { width: 100%; margin: 0 auto;}
-.wrapper .large { max-width: 760px; }
-.wrapper .small { max-width: 400px; }
+.wrapper.large { max-width: 760px; }
+.wrapper.small { max-width: 400px; }
 
 
 .main { padding-top: 30px;}
