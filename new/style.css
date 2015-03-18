@@ -3,14 +3,14 @@ a { text-decoration: none; }
 html, body { height: 100%; }
 body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #555555; background-color: #FDFDFD; }
 input, select, textarea, button { font-family:inherit; font-size: inherit; }
+a {color: inherit; } 
 
 .main, .header, .footer { padding-left: 20px; padding-right: 20px; }
 .main { padding-top: 30px; }
 .header {padding-top: 15px; padding-bottom: 15px;}
-.footer { padding-top: 15px; padding-bottom: 15px; text-align: center; }
+.footer { padding-top: 15px; padding-bottom: 15px; text-align: center; font-size: 13px; }
 .footer ul { list-style-type: none; }
 .footer ul li { display: inline; }
-.footer ul li a {color: inherit; } 
 .footer.docked { position: absolute; bottom: 0; left: 0; right: 0; }
 .wrapper { width: 100%; margin: 0 auto;}
 .wrapper.small { max-width: 400px; }
