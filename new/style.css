@@ -1,21 +1,21 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 a { text-decoration: none; }
 html, body { height: 100%; }
-body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: rgb(85, 85, 85); background-color: #FDFDFD; }
+body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #555555; background-color: #FDFDFD; }
 input, select, textarea, button { font-family:inherit; font-size: inherit; }
 
 .main, .header, .footer { padding-left: 20px; padding-right: 20px; }
-.main { padding-top: 30px;}
+.main { padding-top: 30px; }
 .header {padding-top: 15px; padding-bottom: 15px;}
-.footer { padding-top: 15px; padding-bottom: 15px; text-align: center;}
-.footer.docked { position: absolute; bottom: 0; }
+.footer { padding-top: 15px; padding-bottom: 15px; text-align: center; list-style-type: none;}
+.footer.docked { position: absolute; bottom: 0; left: 0; right: 0; }
 .wrapper { width: 100%; margin: 0 auto;}
 .wrapper.small { max-width: 400px; }
 .wrapper.large { max-width: 760px; }
 .lightgray { background-color: #F8F8F8; }
 .darkgray { background-color: #E5E5E5; }
-.left {float: left;}
-.right {float: right;}
+.left {float: left; }
+.right {float: right; }
 
 
 
