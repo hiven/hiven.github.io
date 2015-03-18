@@ -8,7 +8,7 @@ input, select, textarea, button { font-family:inherit; font-size: inherit; }
 .main { padding-top: 30px; }
 .header {padding-top: 15px; padding-bottom: 15px;}
 .footer { padding-top: 15px; padding-bottom: 15px; text-align: center; }
-.footer ul { list-style-type: none; }
+.footer ul { list-style-type: none; display: inline; }
 .footer.docked { position: absolute; bottom: 0; left: 0; right: 0; }
 .wrapper { width: 100%; margin: 0 auto;}
 .wrapper.small { max-width: 400px; }
