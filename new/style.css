@@ -25,14 +25,14 @@ h1 {margin-bottom: 24px; font-size: 24px;}
 .right {float: right; }
 
 .logo {height: 35px;}
-.button { padding: 10px 20px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; -webkit-appearance: none; min-height: 34px; min-width: 65px; cursor: pointer;}
+.button { padding: 10px 20px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; -webkit-appearance: none; cursor: pointer;}
 .button:hover { background-color: #C85A42; }
 .input {width: 100%; padding: 7px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
 
 
 .search {padding-top: 30px;}
 .search .input { width: 320px; margin-right: 15px; }
-.search .button { background-image: url("img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; display: inline-block; }
+.search .button { background-image: url("img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; display: inline-block; min-height: 32px; min-width: 65px; }
 
 .form .input { margin-bottom: 30px; }
 
