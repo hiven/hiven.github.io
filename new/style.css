@@ -24,13 +24,13 @@ a {color: inherit; }
 
 
 .logo {height: 35px;}
-.button { padding: 10px 30px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; display: inline-block; -webkit-appearance: none; min-height: 34px; min-width: 65px; cursor: pointer; }
+.button { padding: 10px 30px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; display: inline-block; -webkit-appearance: none; min-height: 34px; min-width: 65px; cursor: pointer;}
 .button:hover { background-color: #C85A42; }
-.button.search { background-image: url("/img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; }
+.button.search { background-image: url("img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; }
 .description {padding-bottom: 30px;}
 
 .input {width: 100%; margin-bottom: 30px; padding: 7px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
-
+.input.query { width: 320px; }
 
 .required:after { color: #e32; content: ' *'; display:inline; }
 
