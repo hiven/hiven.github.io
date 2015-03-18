@@ -5,13 +5,13 @@ body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 
 input, select, textarea, button { font-family:inherit; font-size: inherit; vertical-align: middle; }
 a {color: inherit; } 
 h1 {margin-bottom: 24px; font-size: 24px;}
+ul { list-style-type: none; }
 
 .main, .header, .footer { padding-left: 30px; padding-right: 30px; }
 .main { padding-top: 30px; padding-bottom: 30px; }
 .header {padding-top: 30px; padding-bottom: 30px; overflow: auto;}
 
 .footer { padding-top: 15px; padding-bottom: 15px; text-align: center; font-size: 13px; }
-.footer ul { list-style-type: none; }
 .footer ul li { display: inline; padding-left: 10px; }
 .footer.docked { position: absolute; bottom: 0; left: 0; right: 0; }
 
