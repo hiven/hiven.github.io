@@ -29,8 +29,12 @@ textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
 #indexlogo {  margin: 0 auto; display: block; margin-bottom: 60px; }
 
 
-.button { padding: 10px 20px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; cursor: pointer;}
-.button:hover { background-color: #C85A42; }
+.button { padding: 10px 20px; color: white; border: 0px; border-radius: 4px; cursor: pointer;}
+.btnpri { background-color: #E36B51; }
+.btnpri:hover { background-color: #C85A42; }
+.btnsec { background-color: #C0C0C0; }
+.btnsec:hover { background-color: gray; }
+
 .input { width: 100%; padding: 8px 15px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
 
 
