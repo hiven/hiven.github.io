@@ -31,7 +31,7 @@ textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
 
 .button { padding: 10px 20px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; cursor: pointer;}
 .button:hover { background-color: #C85A42; }
-.input {width: 100%; padding: 8px 15px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
+.input {-webkit-appearance: none; width: 100%; padding: 8px 15px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
 
 
 .search {}
