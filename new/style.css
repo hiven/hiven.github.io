@@ -6,6 +6,8 @@ a {color: inherit; }
 h1 {margin-bottom: 24px; font-size: 24px;}
 ul { list-style-type: none; }
 
+textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
+
 .main, .header, .footer { padding-left: 30px; padding-right: 30px; }
 .main { padding-top: 30px; padding-bottom: 30px; }
 .header {padding-top: 30px; padding-bottom: 30px; overflow: auto;}
@@ -27,7 +29,7 @@ ul { list-style-type: none; }
 #indexlogo {  margin: 0 auto; display: block; margin-bottom: 60px; }
 
 
-.button { padding: 10px 20px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; -webkit-appearance: none; cursor: pointer;}
+.button { padding: 10px 20px; color: white; background-color: #E36B51; border: 0px; border-radius: 4px; cursor: pointer;}
 .button:hover { background-color: #C85A42; }
 .input {width: 100%; padding: 7px; border: 1px solid rgb(204, 204, 204); border-radius: 3px;}
 
