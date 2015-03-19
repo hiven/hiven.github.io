@@ -36,7 +36,7 @@ textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
 
 .search {}
 .search .input { margin-right: 15px; margin-top: 5px; margin-bottom: 5px; }
-.search .button { background-image: url("img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; display: inline-block; min-height: 34px; min-width: 65px; margin-top: 5px; margin-bottom: 5px; }
+.search .button { background-image: url("img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; display: inline-block; height: 34px; width: 100%; margin-top: 5px; margin-bottom: 5px; }
 
 .form .input { margin-bottom: 30px; }
 
@@ -57,6 +57,9 @@ textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
 @media (min-width:800px) {
     .search .input {
         width: 320px;
+    }
+    .search .button {
+        width: 65px;
     }
 }
 
