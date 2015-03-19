@@ -5,11 +5,11 @@ input, select, textarea, button { font-family:inherit; font-size: inherit; verti
 a {color: inherit; } 
 h1 {margin-bottom: 24px; font-size: 24px;}
 ul { list-style-type: none; }
-
 textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
 
 .main, .header, .footer { padding-left: 30px; padding-right: 30px; }
 .main { padding-top: 30px; padding-bottom: 30px; }
+
 .header {padding-top: 30px; padding-bottom: 30px; overflow: auto;}
 
 .footer { padding-top: 15px; padding-bottom: 15px; text-align: center; font-size: 13px; }
@@ -29,7 +29,7 @@ textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
 #indexlogo {  margin: 0 auto; display: block; margin-bottom: 60px; }
 
 
-.button { padding: 10px 20px; color: white; border: 0px; border-radius: 4px; cursor: pointer;}
+.btn { padding: 10px 20px; color: white; border: 0px; border-radius: 4px; cursor: pointer;}
 .btnpri { background-color: #E36B51; }
 .btnpri:hover { background-color: #C85A42; }
 .btnsec { background-color: #C0C0C0; }
@@ -40,7 +40,7 @@ textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
 
 .search {}
 .search .input { margin-right: 15px; margin-top: 5px; margin-bottom: 5px; }
-.search .button { background-image: url("img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; display: inline-block; height: 34px; width: 100%; margin-top: 5px; margin-bottom: 5px; }
+.search .btn { background-image: url("img/search.png"); background-repeat: no-repeat; background-position: 50% 50%; color: transparent; font-size: 0; display: inline-block; height: 34px; width: 100%; margin-top: 5px; margin-bottom: 5px; }
 
 .form .input { margin-bottom: 30px; }
 
@@ -62,7 +62,7 @@ textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
     .search .input {
         width: 320px;
     }
-    .search .button {
+    .search .btn {
         width: 65px;
     }
 }
