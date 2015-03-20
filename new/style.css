@@ -3,7 +3,7 @@ a { text-decoration: none; color: inherit; }
 a:hover {text-decoration: underline; }
 body {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; color: #555555; background-color: #FDFDFD; }
 input, select, textarea, button { font-family:inherit; font-size: inherit; vertical-align: middle; }
-
+label { padding-bottom: 5px; display: block; }
 h1 {margin-bottom: 24px; font-size: 24px;}
 ul { list-style-type: none; }
 textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
