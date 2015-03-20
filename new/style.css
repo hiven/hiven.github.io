@@ -50,7 +50,7 @@ textarea, input[type="text"], input[type="submit"] {-webkit-appearance: none; }
 
 .description {padding-bottom: 30px;}
 
-.jobtitle { display: block; font-size: 20px; line-height: 25.2px; text-transform: capitalize; }
+.jobtitle { display: block; font-size: 20px; line-height: 32px; text-transform: capitalize; }
 
 
 
