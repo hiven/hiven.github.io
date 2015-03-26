@@ -165,4 +165,5 @@ input[type="submit"] {
     .search .btn {
         width: 65px;
     }
+    .input {margin-left: 20px;}
 }
