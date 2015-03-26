@@ -2,11 +2,12 @@
 <head>
 <style>
 * {margin: 0; padding: 0;}
-.input {width:100%; display: block; border:0; border-bottom: 1px solid blue; padding: 5px 10px;}
+.input {width:100%; display: block; border:0; border-bottom: 1px solid blue; padding: 5px 10px;   margin-bottom: 10px;
+  background-color: transparent;}
 .header {background-color: #f5f5f5; display: block;   border-bottom: 1px solid #e5e5e5; padding: 10px 20px;}
 .searchbtn {float: right;}
 .nav {background-color: white; border-bottom: 1px solid gray; }
-#search {display: none;}
+#search {display: none; padding-top: 10px;}
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
@@ -22,8 +23,8 @@ $( ".searchbtn" ).click(function() {
 <a href="index.html"><img src="./img/logo.svg"></a>
 <a href="#" class="searchbtn"><img src="./img/search.svg"></a>
 <form id="search">
-<input type="text" class="input" id="keyword">
-<input type="text" class="input" id="location">
+<input type="text" class="input" id="keyword" placeholder="Keyword">
+<input type="text" class="input" id="location" placeholder="Location">
 <input type="submit" class="btn">
 </form>
 </div>
