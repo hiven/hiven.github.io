@@ -4,12 +4,19 @@
 * {margin: 0; padding: 0;}
 .input {width:100%; display: block; border:0; border-bottom: 1px solid blue; padding: 5px 10px;}
 .header {background-color: gray; display: block;}
+.searchbtn {float: right;}
 </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$( ".searchbtn" ).click(function() {
+  $( "#search" ).toggle();
+});
+</script>
 </head>
 <body>
 <div class="header">
 <a href="index.html"><img src="./img/logo.svg"></a>
-<a href="search.html"><img src="./img/search.svg"></a>
+<a href="search.html" class="searchbtn"><img src="./img/search.svg"></a>
 <form id="search">
 <input type="text" class="input" id="keyword">
 <input type="text" class="input" id="location">
