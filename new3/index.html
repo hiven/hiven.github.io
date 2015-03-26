@@ -11,8 +11,8 @@ body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 input, select, textarea, button {
   font-family: inherit;
   font-size: inherit; vertical-align: middle;}
-.input {width:100%; display: block; border:0; border-bottom: 1px solid #e5e5e5; padding: 10px 20px; 
-  background-color: transparent;}
+.input {width:100%; display: block; border:0; border-bottom: 1px solid rgb(115,128,200); padding: 10px 20px; 
+  background-color: transparent; color: white;}
 .header {  background-color: rgb(63,81,181); display: block; border-bottom: 1px solid #e5e5e5; padding: 10px 20px; overflow: auto;}
 .searchbtn {float: right;}
 .nav {background-color: rgb(234,234,234); border-bottom: 1px solid #e5e5e5; padding: 15px 20px; }
@@ -22,6 +22,9 @@ input, select, textarea, button {
 .job {padding-bottom: 20px;}
 .jobtitle {display: block; font-size: 16px; line-height: 22px;}
 .secondline {display: block;}
+::-webkit-input-placeholder {
+   color: rgb(115,128,200);
+}
 @media (min-width: 800px) {
     #search {
         display: block; float: left;
