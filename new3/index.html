@@ -6,8 +6,11 @@
 body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #555555;}
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: inherit; vertical-align: middle;}
 .input {width:100%; display: block; border:0; border-bottom: 1px solid #e5e5e5; padding: 5px 10px;   margin-bottom: 10px;
-  background-color: transparent; font-size: inherit;}
+  background-color: transparent;}
 .header {background-color: #f5f5f5; display: block;   border-bottom: 1px solid #e5e5e5; padding: 10px 20px;}
 .searchbtn {float: right;}
 .nav {background-color: white; border-bottom: 1px solid #e5e5e5; padding: 10px 20px; }
@@ -24,8 +27,8 @@ $( ".searchbtn" ).click(function() {
 </head>
 <body>
 <div class="header">
-<a href="index.html"><img src="./img/logo.svg"></a>
-<a href="#" class="searchbtn"><img src="./img/search.svg"></a>
+<a href="index.html"><img src="./img/logo.svg" height="40"></a>
+<a href="#" class="searchbtn"><img src="./img/search.svg" height="40"></a>
 <form id="search">
 <input type="text" class="input" id="keyword" placeholder="Keyword">
 <input type="text" class="input" id="location" placeholder="Location">
