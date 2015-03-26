@@ -12,17 +12,18 @@ input, select, textarea, button {
   font-size: inherit; vertical-align: middle;}
 .input {width:100%; display: block; border:0; border-bottom: 1px solid #e5e5e5; padding: 5px 10px;   margin-bottom: 10px;
   background-color: transparent;}
-.header {background-color: #f5f5f5; display: block;   border-bottom: 1px solid #e5e5e5; padding: 10px 20px;}
+.header {background-color: #f5f5f5; display: block; border-bottom: 1px solid #e5e5e5; padding: 10px 20px;}
 .searchbtn {float: right;}
 .nav {background-color: white; border-bottom: 1px solid #e5e5e5; padding: 10px 20px; }
 #search {display: none; padding-top: 10px;}
 .main {padding: 20px;}
+.logo {float: left;}
 @media (min-width: 800px) {
     #search {
-        display: block;
+        display: block; float: left;
     }
     .searchbtn { display: none;}
-    .input {width: 320px;}
+    .input {width: 320px; display: inline-block;}
 }
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -36,7 +37,7 @@ $( ".searchbtn" ).click(function() {
 </head>
 <body>
 <div class="header">
-<a href="index.html"><img src="http://hiven.github.io/new/img/logo.svg" height="30"></a>
+<a href="index.html" class="logo"><img src="http://hiven.github.io/new/img/logo.svg" height="30"></a>
 <a href="#" class="searchbtn"><img src="./img/search.svg" height="30"></a>
 <form id="search">
 <input type="text" class="input" id="keyword" placeholder="Keyword">
