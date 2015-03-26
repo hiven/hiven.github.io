@@ -17,6 +17,12 @@ input, select, textarea, button {
 .nav {background-color: white; border-bottom: 1px solid #e5e5e5; padding: 10px 20px; }
 #search {display: none; padding-top: 10px;}
 .main {padding: 20px;}
+@media (min-width: 800px) {
+    #search {
+        display: block;
+    }
+    .searchbtn { display: none;}
+}
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
