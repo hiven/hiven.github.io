@@ -78,6 +78,7 @@ button {
     display: block;
 }
 #resultsnav {display: none;}
+.btn {padding:10px 20px display:block; background-color: #E36B51; color: white;}
 @media (min-width: 800px) {
     #resultsnav {
         display: block;
