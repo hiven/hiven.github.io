@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $(".searchbtn").click(function() {
-        $("#search").toggle();
+        $("#resultsnav").toggle();
     });
 });
