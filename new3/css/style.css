@@ -43,7 +43,6 @@ button {
     position: fixed;
     top: 0px;
     border-bottom: 1px solid #e5e5e5;
-    background-color: rgba(245,245,245,0.95);
     background-color:rgba(23,155,255,0.95);
     z-index: 100000;
 }
