@@ -44,6 +44,7 @@ button {
     top: 0px;
     border-bottom: 1px solid #e5e5e5;
     background-color: rgba(245,245,245,0.95);
+    background-color:#179bff;
     z-index: 100000;
 }
 .header#headerhome{
