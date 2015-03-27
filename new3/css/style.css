@@ -30,6 +30,7 @@ button {
     border-bottom: 1px solid #e5e5e5;
     padding: 10px 20px;
     background-color: transparent;
+    margin: 9px 0px;
 }
 .header {
     position: fixed;
