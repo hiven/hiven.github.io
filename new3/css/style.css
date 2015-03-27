@@ -73,9 +73,9 @@ button {
 .secondline {
     display: block;
 }
-.hidden {display: none;}
+#resultsnav {display: none;}
 @media (min-width: 800px) {
-    #search {
+    #resultsnav {
         display: block;
         float: left;
     }
