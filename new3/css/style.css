@@ -45,6 +45,9 @@ button {
     border-bottom: 1px solid #e5e5e5;
     z-index: 100000;
 }
+.header#home{
+      text-align: center;
+}
 .searchbtn {
     float: right;
     padding: 10px 20px;
