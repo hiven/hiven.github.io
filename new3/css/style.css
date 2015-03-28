@@ -81,7 +81,7 @@ background-color: #f9f9f9;
     display: block;
 }
 #resultsnav {display: none; float: left;
-        width: 100%;}
+        width: 100%; text-align: center;}
 .btn {padding:10px 20px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
 @media (min-width: 800px) {
     #resultsnav {
