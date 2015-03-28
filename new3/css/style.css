@@ -46,6 +46,8 @@ button {
     border-bottom: 1px solid #e5e5e5;
 background-color: #f9f9f9;
     z-index: 100000;
+      padding-left: 20px;
+  padding-right: 20px;
 }
 .header#headerhome{
       text-align: center;
@@ -66,7 +68,7 @@ background-color: #f9f9f9;
 }
 .logo {
     float: left;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 .job {
     padding-bottom: 20px;
@@ -81,7 +83,7 @@ background-color: #f9f9f9;
 }
 #resultsnav {display: none; float: left;
         width: 100%; text-align: center;}
-.btn {padding:10px 20px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
+.btn {padding:10px 0px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
 @media (min-width: 800px) {
     #resultsnav {
         display: block; width: auto;
