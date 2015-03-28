@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $(".searchbtn").click(function() {
-        $("#resultsnav").slideToggle( "50", "linear" );
+        $("#resultsnav").slideToggle( "20", "linear" );
     });
 });
