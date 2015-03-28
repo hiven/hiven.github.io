@@ -31,7 +31,7 @@ button {
     border-bottom: 1px solid #e5e5e5;
     padding: 10px 20px;
     background-color: transparent;
-    margin: 9px 0px;
+    margin: 18px 0px;
     font-size: 16px;
 }
 .header {
@@ -44,7 +44,7 @@ button {
     position: fixed;
     top: 0px;
     border-bottom: 1px solid #e5e5e5;
-background-color: rgba(245,245,245,0.95);
+background-color: #f9f9f9;
     z-index: 100000;
 }
 .header#headerhome{
@@ -93,5 +93,7 @@ background-color: rgba(245,245,245,0.95);
         width: 320px;
         display: inline-block;
         margin-right: 20px;
+            margin-top: 9px 
+            margin-bottom: 9px;
     } 
 }
