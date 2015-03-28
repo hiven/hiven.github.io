@@ -96,4 +96,6 @@ background-color: #f9f9f9;
             margin-top: 9px; 
             margin-bottom: 9px;
     } 
+    .searchnav {float: left;
+  width: 100%;}
 }
