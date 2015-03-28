@@ -30,7 +30,7 @@ button {
     border-radius: 0;
     border-bottom: 1px solid #e5e5e5;
     padding: 15px 20px;
-    background-color: white;
+    background-color: transparent;
     font-size: 16px;
     float: left;
 }
@@ -55,7 +55,7 @@ background-color: #f9f9f9;
 .ltgray { }
 .searchbtn {
     float: right;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 .nav {
     background-color: white;
@@ -83,7 +83,7 @@ background-color: #f9f9f9;
 }
 #resultsnav {display: none; float: left;
         width: 100%; text-align: center;}
-.btn {padding:10px 0px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
+.btn {padding:10px 20px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
 @media (min-width: 800px) {
     #resultsnav {
         display: block; width: auto;
@@ -97,7 +97,6 @@ background-color: #f9f9f9;
         margin-right: 20px;
             margin-top: 9px; 
             margin-bottom: 9px;
-            background-color: transparent;
               padding: 10px 20px;
     } 
 }
