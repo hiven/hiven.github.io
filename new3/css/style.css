@@ -85,6 +85,7 @@ background-color: #f9f9f9;
     #resultsnav {
         display: block;
         float: left;
+        width: 100%;
     }
     .searchbtn {
         display: none;
@@ -96,6 +97,4 @@ background-color: #f9f9f9;
             margin-top: 9px; 
             margin-bottom: 9px;
     } 
-    .searchnav {float: left;
-  width: 100%;}
 }
