@@ -56,7 +56,7 @@ background-color: rgba(249,249,249,0.95);
     float: right;
     padding: 10px 0px;
 }
-.ham {float: right; padding: 10px 0px;}
+.ham {float: left; padding: 10px 0px;}
 .nav {
     background-color: white;
     border-bottom: 1px solid #e5e5e5;
@@ -86,6 +86,7 @@ display: inline-block;
 .btn {padding:10px 20px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
 @media (min-width: 800px) {
     .logo {float: left;}
+    .ham {display: none;}
     #resultsnav {
         display: block; width: auto;
     }
