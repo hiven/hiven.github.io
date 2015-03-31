@@ -44,10 +44,8 @@ button {
     position: fixed;
     top: 0px;
     border-bottom: 1px solid #e5e5e5;
-background-color: rgba(249,249,249,0.95);
+background-color: rgba(249,249,249,0.9);
     z-index: 100000;
-      padding-left: 20px;
-  padding-right: 20px;
 }
 .header#headerhome{
       text-align: center;
