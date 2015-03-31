@@ -39,6 +39,7 @@ button {
     width: 100%;
     display: block;
     overflow: auto;
+    text-align: center;
 }
 .header.docked {
     position: fixed;
@@ -65,7 +66,7 @@ background-color: rgba(249,249,249,0.95);
     padding: 20px;
 }
 .logo {
-    float: left;
+display: inline-block;
     padding: 10px 0px;
 }
 .job {
@@ -83,6 +84,7 @@ background-color: rgba(249,249,249,0.95);
         width: 100%; text-align: center;}
 .btn {padding:10px 20px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
 @media (min-width: 800px) {
+    .logo {float: left;}
     #resultsnav {
         display: block; width: auto;
     }
