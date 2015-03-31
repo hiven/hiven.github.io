@@ -44,8 +44,11 @@ button {
     position: fixed;
     top: 0px;
     border-bottom: 1px solid #e5e5e5;
-background-color: rgba(249,249,249,0.95);
+background-color: blue;
     z-index: 100000;
+}
+svg {
+  fill: white;
 }
 .header#headerhome{
       text-align: center;
@@ -100,4 +103,6 @@ display: inline-block;
             margin-bottom: 9px;
               padding: 10px 20px;
     } 
+    svg {fill: black;}
+    .header.docked {background-color: rgba(249,249,249,0.95);}
 }
