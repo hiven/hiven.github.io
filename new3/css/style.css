@@ -53,9 +53,9 @@ background-color: rgba(249,249,249,0.95);
 .ltgray { }
 .searchbtn {
     float: right;
-    padding: 10px 0px;
+    padding: 10px 20px;
 }
-.ham {float: left; padding: 10px 0px;}
+.ham {float: left; padding: 10px 20px;}
 .nav {
     background-color: white;
     border-bottom: 1px solid #e5e5e5;
