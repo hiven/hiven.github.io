@@ -87,7 +87,7 @@ display: inline-block;
         width: 100%; text-align: center;}
 .btn {padding:10px 20px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
 @media (min-width: 800px) {
-    .logo {float: left;}
+    .logo {float: left; display: none;}
     .ham {display: none;}
     #resultsnav {
         display: block; width: auto;
