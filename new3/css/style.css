@@ -83,6 +83,16 @@ color: #4183c4;
     display: block;
     font-size: 14px;
 }
+#query {
+    background-image: url("http://hiven.github.io/new/img/search.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: transparent;
+    font-size: 0;
+    display: inline-block;
+    height: 35px;
+width: 65px;
+}
 #resultsnav {display: none; float: left;
         width: 100%; text-align: center;}
 .btn {padding:8px 20px;   margin: 9px 0px; border: 0; background-color: #4183c4; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
