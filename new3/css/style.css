@@ -62,7 +62,7 @@ background-color: rgba(249,249,249,0.95);
     padding: 15px 20px;
 }
 #homesearch {margin: 0 auto;
-  width: 723;}
+  width: 723; padding-top: 40px;}
 .main {
     padding: 20px;
 }
