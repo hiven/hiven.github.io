@@ -38,16 +38,15 @@ button {
     width: 100%;
     display: block;
     overflow: auto;
-    text-align: center;
 }
 .header.docked {
     position: fixed;
     top: 0px;
     border-bottom: 1px solid #e5e5e5;
-background-color: rgba(249,249,249,0.95);
+
     z-index: 100000;
 }
-
+.ltgray { background-color: rgba(249,249,249,0.95);}
 .header#headerhome{
       text-align: center;
 }
