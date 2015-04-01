@@ -105,5 +105,5 @@ color: #4183c4;
               padding: 10px 20px;
     } 
     .nav {    padding-left: 100px;}
-    .main {    padding-left: 100px;}
+    .main {    padding-left: 100px; width:740px;}
 }
