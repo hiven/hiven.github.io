@@ -70,13 +70,14 @@ background-color: rgba(249,249,249,0.95);
 display: inline-block;
     padding: 10px 20px;
 }
+.description {line-height: 18px; font-size:13px;}
 .job {
     padding-bottom: 20px;
 }
 .jobtitle {
     display: block;
-    font-size: 16px;
-    line-height: 20px;
+font-size: 18px;
+  line-height: 21px;
 }
 .secondline {
     display: block;
