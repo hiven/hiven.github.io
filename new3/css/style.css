@@ -61,7 +61,8 @@ background-color: rgba(249,249,249,0.95);
     border-bottom: 1px solid #e5e5e5;
     padding: 15px 20px;
 }
-
+#homesearch {margin: 0 auto;
+  width: 723;}
 .main {
     padding: 20px;
 }
