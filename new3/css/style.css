@@ -85,7 +85,7 @@ color: #4183c4;
 }
 #resultsnav {display: none; float: left;
         width: 100%; text-align: center;}
-.btn {padding:9px 20px;   margin: 9px 0px; border: 0; background-color: #4183c4; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
+.btn {padding:8px 20px;   margin: 9px 0px; border: 0; background-color: #4183c4; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
 @media (min-width: 800px) {
     .logo {float: left; }
     .ham {display: none;}
