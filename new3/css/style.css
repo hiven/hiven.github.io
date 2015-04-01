@@ -51,7 +51,6 @@ background-color: rgba(249,249,249,0.95);
 .header#headerhome{
       text-align: center;
 }
-.ltgray { }
 .searchbtn {
     float: right;
     padding: 10px 20px;
@@ -97,12 +96,12 @@ color: #4183c4;
         display: none;
     }
     .input {
-        width: 320px;
+        width: 300px;
         display: inline-block;
         margin-right: 20px;
             margin-top: 9px; 
             margin-bottom: 9px;
-              padding: 10px 20px;
+              padding: 8px 20px;
     } 
     .nav {    padding-left: 100px;}
     .main {    padding-left: 100px; width: 870px;}
