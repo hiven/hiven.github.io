@@ -72,7 +72,7 @@ display: inline-block;
 }
 .description {line-height: 18px; font-size:13px;}
 .job {
-    padding-bottom: 20px;
+    padding-bottom: 23px;
 }
 .jobtitle {
     display: block;
@@ -81,6 +81,7 @@ font-size: 18px;
 }
 .secondline {
     display: block;
+    font-size: 14px;
 }
 #resultsnav {display: none; float: left;
         width: 100%; text-align: center;}
