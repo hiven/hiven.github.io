@@ -78,6 +78,7 @@ display: inline-block;
     display: block;
 font-size: 18px;
   line-height: 21px;
+color: #4183c4;
 }
 .secondline {
     display: block;
@@ -85,7 +86,7 @@ font-size: 18px;
 }
 #resultsnav {display: none; float: left;
         width: 100%; text-align: center;}
-.btn {padding:10px 20px;   margin: 9px 0px; border: 0; background-color: #E36B51; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
+.btn {padding:10px 20px;   margin: 9px 0px; border: 0; background-color: #4183c4; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
 @media (min-width: 800px) {
     .logo {float: left; }
     .ham {display: none;}
@@ -103,4 +104,6 @@ font-size: 18px;
             margin-bottom: 9px;
               padding: 10px 20px;
     } 
+    .nav {    padding-left: 100px;}
+    .main {    padding-left: 100px;}
 }
