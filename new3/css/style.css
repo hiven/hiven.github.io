@@ -100,7 +100,7 @@ width: 65px;
     .logo {float: left; }
     .ham {display: none;}
     #resultsnav {
-        display: block; width: auto;
+        display: block; width: auto; padding-left: 20px;
     }
     #homesearch {margin: 0 auto;
   width: 723; padding-top: 40px;}
@@ -113,7 +113,7 @@ width: 65px;
         margin-right: 20px;
             margin-top: 9px; 
             margin-bottom: 9px;
-              padding: 8px 20px; border:1px solid rgb(229, 229, 229); border-radius: 3px;
+              padding: 8px 20px; border:1px solid rgb(229, 229, 229); border-radius: 3px; background-color: white;
     } 
     .nav {    padding-left: 100px;}
     .main {    padding-left: 100px; width: 870px;}
