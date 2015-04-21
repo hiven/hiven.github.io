@@ -69,7 +69,7 @@ button:focus {
 }
 
 .main {
-    padding: 20px;
+        padding-top: 56px;
 }
 .logo {
 display: inline-block;
