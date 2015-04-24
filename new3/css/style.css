@@ -55,7 +55,7 @@ button:focus {
 }
 .ltgray { background-color: rgba(249,249,249,0.95);}
 #headerhome {
-      text-align: center;
+      text-align: center;   padding-top: 60px;
 }
 .searchbtn {
     float: right;
