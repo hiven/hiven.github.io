@@ -56,6 +56,9 @@ button:focus {
 
     z-index: 100000;
 }
+.footer ul li {display: inline-block;}
+.left {float: left;}
+.right {float: right;}
 .ltgray { background-color: rgba(249,249,249,0.95);}
 #headerhome {
       text-align: center;   padding-top: 60px;
