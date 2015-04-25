@@ -212,7 +212,8 @@ input[type="submit"] {
 @media (min-width: 800px) {
     .results {
         width: 836px;
-        padding-left: 100px;
+        margin-left: 100px;
+        margin-right: 0px;
         padding-top: 20px;
     }
     .logo {
