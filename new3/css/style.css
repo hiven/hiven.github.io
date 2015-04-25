@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+	height: 100%;
+}
 a {
     text-decoration: none;
 }
@@ -108,6 +111,17 @@ width: 65px;
   padding-left: 100px;
   padding-top: 20px;   
 }    
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 155px; /* .push must be the same height as .footer */
+}
+
     @media (min-width: 800px) {
     .logo {float: left; }
     .ham {display: none;}
