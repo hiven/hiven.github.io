@@ -113,11 +113,7 @@ width: 65px;
 #resultsnav {display: none; float: left;
         width: 100%; text-align: center;}
 .btn {padding:8px 20px;   margin: 9px 0px; border: 0; background-color: #4183c4; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
-.results {
-   width: 836px;
-  padding-left: 100px;
-  padding-top: 20px;   
-}    
+
 
 .wrapper {
 	min-height: 100%;
@@ -173,6 +169,11 @@ width: 65px;
 }
 
     @media (min-width: 800px) {
+    	.results {
+   width: 836px;
+  padding-left: 100px;
+  padding-top: 20px;   
+}    
     .logo {float: left; }
     .ham {display: none;}
     #resultsnav {
