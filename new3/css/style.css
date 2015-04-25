@@ -148,9 +148,9 @@ width: 65px;
     position:relative;
     color:black;
 }
-.click-nav ul .clicker:hover, .click-nav ul .active {
+/*.click-nav ul .clicker:hover, .click-nav ul .active {
     background:#196F9A;
-}
+}*/
 .click-nav ul li a {
     display:block;
     padding:8px 10px;
