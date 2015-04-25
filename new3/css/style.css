@@ -129,6 +129,47 @@ width: 65px;
 	line-height: 45px;
 }
 
+.click-nav ul {
+    position:relative;
+    display: inline-block;
+}
+.click-nav ul li {
+    position:relative;
+    list-style:none;
+    cursor:pointer;
+    display:inline-block;
+}
+.click-nav ul li ul {
+    position:absolute;
+    left:0;
+    right:0;
+}
+.click-nav ul .clicker {
+    position:relative;
+    color:black;
+}
+.click-nav ul .clicker:hover, .click-nav ul .active {
+    background:#196F9A;
+}
+.click-nav ul li a {
+    display:block;
+    padding:8px 10px;
+    background:#FFF;
+    color:#333;
+    text-decoration:none;
+    white-space: nowrap;
+}
+.click-nav ul li a:hover {
+    background:#F2F2F2;
+}
+/* Fallbacks */
+ .click-nav .no-js ul {
+    display:none;
+}
+.click-nav .no-js:hover ul {
+    display:block;
+}
+
     @media (min-width: 800px) {
     .logo {float: left; }
     .ham {display: none;}
