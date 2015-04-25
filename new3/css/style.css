@@ -228,7 +228,6 @@ input[type="submit"] {
     #resultsnav {
         display: block;
         width: auto;
-        padding-left: 20px;
     }
     .searchbtn {
         display: none;
