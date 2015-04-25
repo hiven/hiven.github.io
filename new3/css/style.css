@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-	height: 100%;
+html,
+body {
+    height: 100%;
 }
 a {
     text-decoration: none;
@@ -32,7 +33,11 @@ button:focus {
     outline: none;
     border: 1px solid #B6C2CD;
 }
-textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
+textarea,
+input[type="text"],
+input[type="submit"] {
+    -webkit-appearance: none;
+}
 .input {
     width: 100%;
     display: block;
@@ -43,8 +48,13 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
     font-size: 16px;
     float: left;
 }
-.results {margin-left: 20px; margin-right: 20px;}
-.filter {display: inline-block;}
+.results {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.filter {
+    display: inline-block;
+}
 .header {
     margin: auto;
     width: 100%;
@@ -55,46 +65,59 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
     position: fixed;
     top: 0px;
     border-bottom: 1px solid #e5e5e5;
-
     z-index: 100000;
 }
-.footer ul li {display: inline-block;}
-.left {float: left;}
-.right {float: right;}
-.ltgray { background-color: rgba(249,249,249,0.95);}
+.footer ul li {
+    display: inline-block;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.ltgray {
+    background-color: rgba(249, 249, 249, 0.95);
+}
 #headerhome {
-      text-align: center;   padding-top: 60px;
-        margin: 0 auto;
-  width: 706px;
-  padding-top: 40px;
+    text-align: center;
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 706px;
+    padding-top: 40px;
 }
 .searchbtn {
     float: right;
     padding: 9px 20px;
 }
-.ham {float: left; padding: 9px 20px;}
+.ham {
+    float: left;
+    padding: 9px 20px;
+}
 .nav {
     background-color: white;
     border-bottom: 1px solid #e5e5e5;
     padding: 15px 20px;
 }
-
 .main {
-        padding-top: 56px;
+    padding-top: 56px;
 }
 .logo {
-display: inline-block;
+    display: inline-block;
     padding: 9px 20px;
 }
-.description {line-height: 18px; font-size:13px;}
+.description {
+    line-height: 18px;
+    font-size: 13px;
+}
 .job {
     padding-bottom: 23px;
 }
 .jobtitle {
     display: block;
-font-size: 18px;
-  line-height: 21px;
-color: #4183c4;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4183c4;
 }
 .secondline {
     display: block;
@@ -109,76 +132,99 @@ color: #4183c4;
     font-size: 0;
     display: inline-block;
     height: 35px;
-width: 65px;
+    width: 65px;
 }
-#resultsnav {display: none; float: left;
-        width: 100%; text-align: center;}
-.btn {padding:8px 20px;   margin: 9px 0px; border: 0; background-color: #4183c4; cursor: pointer; color: white; -webkit-appearance:none; border-radius: 3px;}
-
-
+#resultsnav {
+    display: none;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.btn {
+    padding: 8px 20px;
+    margin: 9px 0px;
+    border: 0;
+    background-color: #4183c4;
+    cursor: pointer;
+    color: white;
+    -webkit-appearance: none;
+    border-radius: 3px;
+}
 .wrapper {
-	min-height: 100%;
-	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-	height: 100%;
-	margin: 0 auto -45px; /* the bottom margin is the negative value of the footer's height */
+    min-height: 100%;
+    height: auto !important;
+    /* This line and the next line are not necessary unless you need IE6 support */
+    
+    height: 100%;
+    margin: 0 auto -45px;
+    /* the bottom margin is the negative value of the footer's height */
 }
-.footer {padding: 0 20px;}
-.footer, .push {
-	height: 45px;
-	line-height: 45px;
+.footer {
+    padding: 0 20px;
 }
-
+.footer,
+.push {
+    height: 45px;
+    line-height: 45px;
+}
 .click-nav ul {
-    position:relative;
+    position: relative;
     display: inline-block;
 }
 .click-nav ul li {
-    position:relative;
-    list-style:none;
-    cursor:pointer;
-    display:inline-block;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
 }
 .click-nav ul li ul {
-    position:absolute;
-    left:0;
-    right:0;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .click-nav ul .clicker {
-    position:relative;
-    color:black;
+    position: relative;
+    color: black;
 }
 /*.click-nav ul .clicker:hover, .click-nav ul .active {
     background:#196F9A;
 }*/
+
 .click-nav ul li a {
-    display:block;
-    padding:8px 10px;
-    background:#FFF;
-    color:#333;
-    text-decoration:none;
+    display: block;
+    padding: 8px 10px;
+    background: #FFF;
+    color: #333;
+    text-decoration: none;
     white-space: nowrap;
 }
 .click-nav ul li a:hover {
-    background:#F2F2F2;
+    background: #F2F2F2;
 }
 /* Fallbacks */
- .click-nav .no-js ul {
-    display:none;
+
+.click-nav .no-js ul {
+    display: none;
 }
 .click-nav .no-js:hover ul {
-    display:block;
+    display: block;
 }
-
-    @media (min-width: 800px) {
-    	.results {
-   width: 836px;
-  padding-left: 100px;
-  padding-top: 20px;   
-}    
-    .logo {float: left; }
-    .ham {display: none;}
+@media (min-width: 800px) {
+    .results {
+        width: 836px;
+        padding-left: 100px;
+        padding-top: 20px;
+    }
+    .logo {
+        float: left;
+    }
+    .ham {
+        display: none;
+    }
     #resultsnav {
-        display: block; width: auto; padding-left: 20px;
+        display: block;
+        width: auto;
+        padding-left: 20px;
     }
     .searchbtn {
         display: none;
@@ -187,10 +233,14 @@ width: 65px;
         width: 300px;
         display: inline-block;
         margin-right: 20px;
-            margin-top: 9px; 
-            margin-bottom: 9px;
-              padding: 8px 20px; border:1px solid rgb(229, 229, 229); border-radius: 3px; background-color: white;
-    } 
-    .nav {    padding-left: 100px;}
-
+        margin-top: 9px;
+        margin-bottom: 9px;
+        padding: 8px 20px;
+        border: 1px solid rgb(229, 229, 229);
+        border-radius: 3px;
+        background-color: white;
+    }
+    .nav {
+        padding-left: 100px;
+    }
 }
