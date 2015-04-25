@@ -7,16 +7,16 @@ html,
 body {
     height: 100%;
 }
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #555555;
+}
 a {
     text-decoration: none;
 }
 li {
     list-style: none;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #555555;
 }
 input,
 select,
