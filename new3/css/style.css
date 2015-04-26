@@ -197,7 +197,7 @@ input[type="submit"] {
     background:#196F9A;
 }*/
 
-.click-nav {  margin-left: 100px;
+.click-nav {  margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;}
   
@@ -221,6 +221,9 @@ input[type="submit"] {
     display: block;
 }
 @media (min-width: 800px) {
+    .click-nav {
+      margin-left: 100px;
+    }
     .results {
         width: 730px;
         margin-left: 100px;
