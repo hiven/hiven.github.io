@@ -88,7 +88,8 @@ input[type="submit"] {
     margin: 0 auto;
     margin-top: 40px;
 }
-#headerhome img {text-align: center;}
+#headerhome img {display: block;
+  margin: 0 auto;}
 .searchbtn {
     float: right;
     padding: 9px 20px;
