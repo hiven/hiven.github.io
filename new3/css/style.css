@@ -175,7 +175,7 @@ input[type="submit"] {
     position: relative;
     list-style: none;
     cursor: pointer;
-    display: inline-block;
+    display: block;
 }
 .click-nav ul li ul {
     position: absolute;
