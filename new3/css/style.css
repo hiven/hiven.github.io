@@ -87,7 +87,6 @@ input[type="submit"] {
 #headerhome {
     text-align: center;
     margin: 0 auto;
-    width: 706px;
     margin-top: 40px;
 }
 .searchbtn {
@@ -221,6 +220,7 @@ input[type="submit"] {
     display: block;
 }
 @media (min-width: 800px) {
+    #headerhome {    width: 706px;}
     .click-nav {
       margin-left: 100px;
     }
