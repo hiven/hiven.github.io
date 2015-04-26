@@ -55,6 +55,11 @@ input[type="submit"] {
 .filter {
     display: inline-block;
 }
+.hometext {  display: block;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 15px;}
 .header {
     margin: auto;
     width: 100%;
