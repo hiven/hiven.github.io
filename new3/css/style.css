@@ -194,14 +194,14 @@ input[type="submit"] {
 
 .click-nav ul li a {
     display: block;
-    padding: 8px 10px;
+    padding: 0px 10px;
     background: #FFF;
     color: #333;
     text-decoration: none;
     white-space: nowrap;
 }
 .click-nav ul li a:hover {
-    background: #F2F2F2;
+    color: black;
 }
 /* Fallbacks */
 
