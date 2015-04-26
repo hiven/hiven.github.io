@@ -85,10 +85,10 @@ input[type="submit"] {
     background-color: rgba(249, 249, 249, 0.95);
 }
 #headerhome {
-    text-align: center;
     margin: 0 auto;
     margin-top: 40px;
 }
+#headerhome img {text-align: center;}
 .searchbtn {
     float: right;
     padding: 9px 20px;
