@@ -193,6 +193,10 @@ input[type="submit"] {
     background:#196F9A;
 }*/
 
+.click-nav {  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;}
+  
 .click-nav ul li a {
     display: block;
     padding: 10px 0px;
