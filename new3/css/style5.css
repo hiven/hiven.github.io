@@ -1,286 +1,329 @@
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em, img, small, strike, strong, sub, sup, tt, var, b, u, i, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td {
-margin : 0;
-padding : 0;
-border : 0;
-font-size : 100%;
-font : inherit;
-vertical-align : baseline;
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em, img, small, strike, strong, sub, sup, tt, var, b, u, i, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td
+{
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
-body {
+html,
+body
+{
+	height: 100%;
+}
+body
+{
+	color: #555555;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li
+{
 	list-style: none;
 }
-table {
+table
+{
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-
-
-    
-
-
-
-* {
-box-sizing: border-box;
+a
+{
+	text-decoration: none;
 }
-html,
-body {
-    height: 100%;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #555555;
-}
-a {
-    text-decoration: none;
-    border: 0;
-}
-li {
-    list-style: none;
+*
+{
+	box-sizing: border-box;
 }
 input,
 select,
 textarea,
-button {
-    font-family: inherit;
-    font-size: inherit;
-    vertical-align: middle;
+button
+{
+	font-family: inherit;
+	font-size: inherit;
+	vertical-align: middle;
 }
 input:focus,
 select:focus,
 textarea:focus,
-button:focus {
-    outline: none;
-    border: 1px solid #B6C2CD;
+button:focus
+{
+	border: 1px solid #B6C2CD;
+	outline: none;
 }
 textarea,
 input[type="text"],
-input[type="submit"] {
-    -webkit-appearance: none;
+input[type="submit"]
+{
+	webkit-appearance: none;
 }
-.input {
-    width: 100%;
-    display: block;
-    border: 0;
-    border-radius: 0;
-    padding: 15px 20px;
-    background-color: transparent;
-    font-size: 16px;
-    float: left;
+.input
+{
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	display: block;
+	float: left;
+	font-size: 16px;
+	padding: 15px 20px;
+	width: 100%;
 }
-.results {
-    margin-left: 20px;
-    margin-right: 20px;
+.results
+{
+	margin-left: 20px;
+	margin-right: 20px;
 }
-.filter {
-    display: inline-block;
+.filter
+{
+	display: inline-block;
 }
-
-.header {
-    margin: auto;
-    width: 100%;
-    display: block;
-    overflow: auto;
+.header
+{
+	display: block;
+	margin: auto;
+	overflow: auto;
+	width: 100%;
 }
-.header.docked {
-    position: fixed;
-    top: 0px;
-    border-bottom: 1px solid #e5e5e5;
-    z-index: 100000;
+.header.docked
+{
+	border-bottom: 1px solid #e5e5e5;
+	position: fixed;
+	top: 0px;
+	z-index: 100000;
 }
-.footer ul li {
-    display: inline-block;
+.footer ul li
+{
+	display: inline-block;
 }
-.left {
-    float: left;
+.left
+{
+	float: left;
 }
-.right {
-    float: right;
+.right
+{
+	float: right;
 }
-.ltgray {
-    background-color: rgba(249, 249, 249, 0.95);
+.ltgray
+{
+	background-color: rgba(249, 249, 249, 0.95);
 }
-#headerhome { margin: 0 auto; margin-top: 40px; }
-#headerhome img {display: block; margin: 0 auto;}
-#headerhome .hometext { display: block; margin-top: 30px; margin-bottom: 10px; color: #4183C4; font-size: 15px; }
-
-
-
-
-.searchbtn {
-    float: right;
-    padding: 9px 20px;
+#headerhome
+{
+	margin: 0 auto;
+	margin-top: 40px;
 }
-.ham {
-    float: left;
-    padding: 9px 20px;
+#headerhome img
+{
+	display: block;
+	margin: 0 auto;
 }
-.nav {
-    background-color: white;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 15px 20px;
+#headerhome .hometext
+{
+	color: #4183C4;
+	display: block;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 30px;
 }
-.main {
-    padding-top: 56px;
+.searchbtn
+{
+	float: right;
+	padding: 9px 20px;
 }
-.logo {
-    display: inline-block;
-    padding: 9px 20px;
+.ham
+{
+	float: left;
+	padding: 9px 20px;
 }
-.description {
-    line-height: 18px;
-    font-size: 13px;
+.nav
+{
+	background-color: white;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 15px 20px;
 }
-.job {
-    padding-bottom: 23px;
+.main
+{
+	padding-top: 56px;
 }
-.jobtitle {
-    display: block;
-    font-size: 18px;
-    line-height: 21px;
-    color: #4183c4;
+.logo
+{
+	display: inline-block;
+	padding: 9px 20px;
 }
-.secondline {
-    display: block;
-    font-size: 14px;
-    line-height: 20px;
+.description
+{
+	font-size: 13px;
+	line-height: 18px;
 }
-#query {
-    background-image: url("http://hiven.github.io/new/img/search.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    color: transparent;
-    font-size: 0;
-    display: inline-block;
-    height: 35px;
-    width: 65px;
+.job
+{
+	padding-bottom: 23px;
 }
-#resultsnav {
-    display: none;
-    float: left;
-    width: 100%;
-    text-align: center;
+.jobtitle
+{
+	color: #4183c4;
+	display: block;
+	font-size: 18px;
+	line-height: 21px;
 }
-.btn {
-    padding: 8px 20px;
-    margin: 9px 0px;
-    border: 0;
-    background-color: #4183c4;
-    cursor: pointer;
-    color: white;
-    -webkit-appearance: none;
-    border-radius: 3px;
+.secondline
+{
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
 }
-.wrapper {
-    min-height: 100%;
-    height: auto !important;
-    /* This line and the next line are not necessary unless you need IE6 support */
-    
-    height: 100%;
-    margin: 0 auto -45px;
-    /* the bottom margin is the negative value of the footer's height */
+#query
+{
+	background-image: url("http://hiven.github.io/new/img/search.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	color: transparent;
+	display: inline-block;
+	font-size: 0;
+	height: 35px;
+	width: 65px;
 }
-.footer {
-    padding: 0 20px;
+#resultsnav
+{
+	display: none;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+.btn
+{
+	background-color: #4183c4;
+	border: 0;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	margin: 9px 0px;
+	padding: 8px 20px;
+	webkit-appearance: none;
+}
+.wrapper
+{
+	height: 100%;
+	height: auto !important;
+	margin: 0 auto -45px;
+	min-height: 100%;
+}
+.footer
+{
+	padding: 0 20px;
 }
 .footer, 
-.push {
-    height: 45px;
-    line-height: 45px;
+.push
+{
+	height: 45px;
+	line-height: 45px;
 }
-.click-nav ul {
-    position: relative;
-    display: inline-block;
+.click-nav ul
+{
+	display: inline-block;
+	position: relative;
 }
-.click-nav ul li {
-    position: relative;
-    list-style: none;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 20px;
+.click-nav ul li
+{
+	cursor: pointer;
+	display: inline-block;
+	list-style: none;
+	margin-right: 20px;
+	position: relative;
 }
-.click-nav ul li ul {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 160px;
-  background-color: rgba(255,255,255,0.95);
+.click-nav ul li ul
+{
+	background-color: rgba(255,255,255,0.95);
+	left: 0;
+	position: absolute;
+	right: 0;
+	width: 160px;
 }
-.click-nav ul .clicker {
-    position: relative;
-    color: black;
+.click-nav ul .clicker
+{
+	color: black;
+	position: relative;
 }
-/*.click-nav ul .clicker:hover, .click-nav ul .active {
-    background:#196F9A;
-}*/
-
-.click-nav {  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;}
-  
-.click-nav ul li a {
-    display: block;
-    padding: 10px 0px;
-    background: #FFF;
-    color: #333;
-    text-decoration: none;
-    white-space: nowrap;
+.click-nav
+{
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 10px;
 }
-.click-nav ul li a:hover {
-    color: black;
+.click-nav ul li a
+{
+	background: #FFF;
+	color: #333;
+	display: block;
+	padding: 10px 0px;
+	text-decoration: none;
+	white-space: nowrap;
 }
-/* Fallbacks */
-
-.click-nav .no-js ul {
-    display: none;
+.click-nav ul li a:hover
+{
+	color: black;
 }
-.click-nav .no-js:hover ul {
-    display: block;
+.click-nav .no-js ul
+{
+	display: none;
 }
-@media (min-width: 800px) {
-    #headerhome {    width: 706px;}
-    .click-nav {
-      margin-left: 100px;
-    }
-    .results {
-        width: 730px;
-        margin-left: 100px;
-        margin-right: 0px;
-    }
-    .logo {
-        float: left;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .ham {
-        display: none;
-    }
-    #resultsnav {
-        display: block;
-        width: auto;
-    }
-    .searchbtn {
-        display: none;
-    }
-    .input {
-        width: 300px;
-        display: inline-block;
-        margin-right: 20px;
-        margin-top: 9px;
-        margin-bottom: 9px;
-        padding: 8px 20px;
-        border: 1px solid rgb(229, 229, 229);
-        border-radius: 3px;
-        background-color: white;
-    }
-    .nav {
-        padding-left: 100px;
-    }
+.click-nav .no-js:hover ul
+{
+	display: block;
+}
+@media (min-width: 800px)
+{
+	#headerhome
+	{
+		width: 706px;
+	}
+	.click-nav
+	{
+		margin-left: 100px;
+	}
+	.results
+	{
+		margin-left: 100px;
+		margin-right: 0px;
+		width: 730px;
+	}
+	.logo
+	{
+		float: left;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.ham
+	{
+		display: none;
+	}
+	#resultsnav
+	{
+		display: block;
+		width: auto;
+	}
+	.searchbtn
+	{
+		display: none;
+	}
+	.input
+	{
+		background-color: white;
+		border: 1px solid rgb(229, 229, 229);
+		border-radius: 3px;
+		display: inline-block;
+		margin-bottom: 9px;
+		margin-right: 20px;
+		margin-top: 9px;
+		padding: 8px 20px;
+		width: 300px;
+	}
+	.nav
+	{
+		padding-left: 100px;
+	}
 }
