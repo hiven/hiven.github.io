@@ -150,7 +150,7 @@ input[type="submit"]
 .logo
 {
 	display: inline-block;
-	padding: 9px 20px;
+	padding: 9px 10px;
 }
 .description
 {
@@ -294,8 +294,6 @@ input[type="submit"]
 		float: left;
 		margin-left: 20px;
 		margin-right: 20px;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 	.ham
 	{
