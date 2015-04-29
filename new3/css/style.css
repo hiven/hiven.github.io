@@ -291,7 +291,7 @@ input[type="submit"]
 	}
 	#resultsnav
 	{
-		display: block;
+		display: inline-block;
 		width: auto;
 	}
 	.searchbtn
