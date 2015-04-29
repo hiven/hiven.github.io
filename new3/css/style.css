@@ -133,11 +133,6 @@ input[type="submit"]
 	float: right;
 	padding: 9px 20px;
 }
-.ham
-{
-	float: left;
-	padding: 9px 20px;
-}
 .nav
 {
 	background-color: white;
@@ -189,7 +184,6 @@ input[type="submit"]
 #resultsnav
 {
 	display: none;
-	float: left;
 	text-align: center;
 	width: 100%;
 }
@@ -292,13 +286,8 @@ input[type="submit"]
 	}
 	.logo
 	{
-		float: left;
 		margin-left: 20px;
 		margin-right: 20px;
-	}
-	.ham
-	{
-		display: none;
 	}
 	#resultsnav
 	{
