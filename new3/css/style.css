@@ -147,6 +147,9 @@ input[type="submit"]
 {
 	display: inline-block;
 	padding: 9px 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: blue;
 }
 .description
 {
@@ -281,11 +284,6 @@ input[type="submit"]
 		margin-left: 100px;
 		margin-right: 0px;
 		width: 730px;
-	}
-	.logo
-	{
-		margin-left: 20px;
-		margin-right: 20px;
 	}
 	#resultsnav
 	{
