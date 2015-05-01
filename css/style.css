@@ -110,11 +110,12 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 #query
 {
 	background-image: url("http://hiven.github.io/img/search.svg");
+	background-size: 22px;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	color: transparent;
 	display: inline-block;
-	font-size: 0;
+	font-size: 0px;
 	height: 35px;
 	width: 65px;
 }
