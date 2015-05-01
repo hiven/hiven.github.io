@@ -8,30 +8,11 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em
 	vertical-align: baseline;
 }
 html,
-body
-{
-	height: 100%;
-}
-body
-{
-	color: #555555;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1;
-}
-ol, ul, li
-{
-	list-style: none;
-}
-table
-{
-	border-collapse: collapse;
-	border-spacing: 0px;
-}
-a
-{
-	text-decoration: none;
-}
+body { height: 100%; }
+body { color: #555555; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1; }
+ol, ul, li { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+a { text-decoration: none; color: inherit; }
 *
 {
 	box-sizing: border-box;
