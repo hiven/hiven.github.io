@@ -95,8 +95,9 @@ input[type="submit"]
 
 /* Results */
 .job { padding-bottom: 23px; }
-.job a { color: #4183c4; display: block; font-size: 18px; line-height: 21px; }
-.job p { font-size: 13px; line-height: 18px; }
+.job .title { color: #4183c4; display: block; font-size: 18px; line-height: 21px; }
+.job .description { font-size: 13px; line-height: 18px; }
+.job .company { display: block; font-size: 14px; line-height: 20px; }
 
 
 
@@ -145,12 +146,7 @@ input[type="submit"]
 
 
 
-.secondline
-{
-	display: block;
-	font-size: 14px;
-	line-height: 20px;
-}
+
 #query
 {
 	background-image: url("http://hiven.github.io/new/img/search.png");
