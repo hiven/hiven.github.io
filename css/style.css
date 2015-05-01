@@ -132,7 +132,7 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 	cursor: pointer;
 	margin: 9px 0px;
 	padding: 8px 20px;
-	webkit-appearance: none;
+	::-webkit-appearance: none;
 }
 .wrapper
 {
