@@ -95,9 +95,9 @@ input[type="submit"]
 
 /* Results */
 .job { padding-bottom: 23px; }
-.job .title { color: #4183c4; display: block; font-size: 18px; line-height: 21px; }
+.job .title { color: #4183c4; font-size: 18px; line-height: 21px; }
 .job .description { font-size: 13px; line-height: 18px; }
-.job .company { display: block; font-size: 14px; line-height: 20px; }
+.job .company { color: #63a35c; display: block; font-size: 14px; line-height: 20px; }
 
 
 
