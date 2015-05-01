@@ -93,6 +93,7 @@ input[type="submit"]
 	position: fixed;
 	top: 0px;
 	z-index: 100000;
+	background-color: rgba(249, 249, 249, 0.95);
 }
 .footer ul li
 {
@@ -106,10 +107,7 @@ input[type="submit"]
 {
 	float: right;
 }
-.ltgray
-{
-	background-color: rgba(249, 249, 249, 0.95);
-}
+
 #headerhome
 {
 	margin: 0 auto;
