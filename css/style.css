@@ -109,7 +109,7 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 
 #query
 {
-	background-image: url("http://hiven.github.io/new/img/search.png");
+	background-image: url("http://hiven.github.io/img/search.svg");
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	color: transparent;
