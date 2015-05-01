@@ -80,36 +80,20 @@ input[type="submit"]
 {
 	display: inline-block;
 }
-.header
-{
-	display: block;
-	margin: auto;
-	overflow: auto;
-	width: 100%;
-}
-.header.docked
-{
-	border-bottom: 1px solid #e5e5e5;
-	position: fixed;
-	top: 0px;
-	z-index: 100000;
-	background-color: rgba(249, 249, 249, 0.95);
-}
+
+/* Header */
+.header { display: block; margin: auto; overflow: auto; width: 100%; }
+.header.docked { border-bottom: 1px solid #e5e5e5; position: fixed; top: 0px; z-index: 100000; background-color: rgba(249, 249, 249, 0.95); }
 
 
-.footer p
-{
-	float: left;
-}
+/* Footer */
+.footer { padding: 0 20px; }
+.footer, .push { height: 45px; line-height: 45px; }
+.footer p { float: left; }
+.footer ul { float: right; }
+.footer ul li { display: inline-block; }
 
-.footer ul
-{
-	float: right;
-}
-.footer ul li
-{
-	display: inline-block;
-}
+
 
 
 #headerhome
@@ -208,16 +192,7 @@ input[type="submit"]
 	margin: 0 auto -45px;
 	min-height: 100%;
 }
-.footer
-{
-	padding: 0 20px;
-}
-.footer, 
-.push
-{
-	height: 45px;
-	line-height: 45px;
-}
+
 .click-nav ul
 {
 	display: inline-block;
