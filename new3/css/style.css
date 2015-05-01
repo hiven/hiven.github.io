@@ -42,7 +42,7 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 }
 
 /* Header */
-.header { display: block; margin: auto; overflow: auto; width: 100%; }
+.header { display: block; margin: auto; overflow: auto; width: 100%; font-size: 0px; }
 .header.docked { border-bottom: 1px solid #e5e5e5; position: fixed; top: 0px; z-index: 100000; background-color: rgba(249, 249, 249, 0.95); }
 
 
