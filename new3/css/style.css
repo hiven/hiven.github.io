@@ -7,8 +7,7 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em
 	padding: 0px;
 	vertical-align: baseline;
 }
-html,
-body { height: 100%; }
+html, body { height: 100%; }
 body { color: #555555; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1; }
 ol, ul, li { list-style: none; }
 table { border-collapse: collapse; border-spacing: 0px; }
@@ -18,29 +17,9 @@ a { text-decoration: none; color: inherit; }
 	box-sizing: border-box;
 }
 ::-webkit-input-placeholder { font-weight: 300; }
-input,
-select,
-textarea,
-button
-{
-	font-family: inherit;
-	font-size: inherit;
-	vertical-align: middle;
-}
-input:focus,
-select:focus,
-textarea:focus,
-button:focus
-{
-	border: 1px solid #B6C2CD;
-	outline: none;
-}
-textarea,
-input[type="text"],
-input[type="submit"]
-{
-	-webkit-appearance: none;
-}
+input, select, textarea, button { font-family: inherit; font-size: inherit; vertical-align: middle; }
+input:focus, select:focus, textarea:focus, button:focus { border: 1px solid #B6C2CD; outline: none; }
+textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 .input
 {
 	background-color: transparent;
