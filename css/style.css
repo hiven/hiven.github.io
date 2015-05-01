@@ -1,16 +1,16 @@
 html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em, img, small, strike, strong, sub, sup, tt, var, b, u, i, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td
 {
-	border: 0px;
+	border: 0;
 	font: inherit;
 	font-size: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	vertical-align: baseline;
 }
 html, body { height: 100%; }
 body { color: #555555; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1; }
 ol, ul, li { list-style: none; }
-table { border-collapse: collapse; border-spacing: 0px; }
+table { border-collapse: collapse; border-spacing: 0; }
 a { text-decoration: none; color: inherit; }
 *
 {
@@ -42,8 +42,8 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 }
 
 /* Header */
-.header { display: block; margin: auto; overflow: auto; width: 100%; font-size: 0px; }
-.header.docked { border-bottom: 1px solid #e5e5e5; position: fixed; top: 0px; z-index: 100000; background-color: rgba(249, 249, 249, 0.95); }
+.header { display: block; margin: auto; overflow: auto; width: 100%; font-size: 0; }
+.header.docked { border-bottom: 1px solid #e5e5e5; position: fixed; top: 0; z-index: 100000; background-color: rgba(249, 249, 249, 0.95); }
 
 
 /* Footer */
@@ -115,7 +115,7 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 	background-repeat: no-repeat;
 	color: transparent;
 	display: inline-block;
-	font-size: 0px;
+	font-size: 0;
 	height: 35px;
 	width: 65px;
 }
@@ -130,7 +130,7 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 	border-radius: 3px;
 	color: white;
 	cursor: pointer;
-	margin: 9px 0px;
+	margin: 9px 0;
 	padding: 8px 20px;
 }
 .wrapper
@@ -178,7 +178,7 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 	background: #FFF;
 	color: #333;
 	display: block;
-	padding: 10px 0px;
+	padding: 10px 0;
 	text-decoration: none;
 	white-space: nowrap;
 }
@@ -207,7 +207,7 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 	.results
 	{
 		margin-left: 100px;
-		margin-right: 0px;
+		margin-right: 0;
 		width: 730px;
 	}
 	#resultsnav
