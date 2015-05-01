@@ -95,18 +95,22 @@ input[type="submit"]
 	z-index: 100000;
 	background-color: rgba(249, 249, 249, 0.95);
 }
+
+
+.footer p
+{
+	float: left;
+}
+
+.footer ul
+{
+	float: right;
+}
 .footer ul li
 {
 	display: inline-block;
 }
-.left
-{
-	float: left;
-}
-.right
-{
-	float: right;
-}
+
 
 #headerhome
 {
