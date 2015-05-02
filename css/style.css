@@ -18,7 +18,7 @@ a { text-decoration: none; color: inherit; }
 }
 ::-webkit-input-placeholder { font-weight: 300; }
 input, select, textarea, button { font-family: inherit; font-size: inherit; vertical-align: middle; }
-input:focus, select:focus, textarea:focus, button:focus { border: 1px solid #B6C2CD; outline: none; }
+input[type="text"]:focus, select:focus, textarea:focus, button:focus { border: 1px solid #B6C2CD; outline: none; }
 textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 .input
 {
