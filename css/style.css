@@ -133,7 +133,8 @@ textarea, input[type="text"], input[type="submit"] { -webkit-appearance: none; }
 	margin: 9px 0;
 	padding: 8px 20px;
 }
-.btn:focus { outline: none;}
+.btn:hover { background-color: blue; }
+.btn:focus { outline: none; }
 .wrapper
 {
 	height: 100%;
