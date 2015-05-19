@@ -13,6 +13,8 @@ body {
     font-size: 14px;
     line-height: 1;
 }
+/* Content */
+.wrapper { height: 100%; height: auto !important; margin: 0 auto -45px; min-height: 100%; }
 ul li {
     list-style: none;
 }
