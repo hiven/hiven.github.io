@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: white;
+    color: #555555;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+}
+ul li {
+    list-style: none;
+}
+.content {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.ie #listings li.even-child, #listings li:nth-child(even) {
+    background-color: #fcfcfc;
+}
+#listings li {
+    /*    border-bottom: 1px solid #efefef; */
+}
+#listings li>a {
+    display: block;
+    overflow: hidden;
+    padding: 17px 11px;
+    color: #222;
+    padding: 20px 0px;
+}
+#listings li>a>span {
+    min-height: 37px;
+    display: block;
+    position: relative;
+}
+#listings li img {
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-right: 35px;
+    position: static;
+    top: auto;
+    left: auto;
+}
+#listings li .role {
+    float: left;
+    width: 550px;
+    margin-right: 20px;
+    position: relative;
+}
+#listings li .role>span {
+    display: inline;
+}
+#listings li .location {
+    float: left;
+    width: 145px;
+    padding: 7px 0 7px 13px;
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: left;
+    max-width: none;
+    white-space: normal;
+    overflow: visible;
+}
+#listings li .meta {
+    position: relative;
+    top: -1px;
+}
+#listings li .meta {
+    float: right;
+    text-align: right;
+}
+#listings {
+    clear: left;
+}
+#listings li .meta .new, #listings li .meta .posted {
+    display: inline;
+}
+#listings li .meta .type {
+    display: block;
+    margin-bottom: 2px;
+}
+h3 {
+    color: #4183c4;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+}
+h4 {
+    color: #63a35c;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+input {
+    background-color: rgba(250, 250, 250, 1);
+    border: 0;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80%;
+    font-size: 18px;
+    color: black;
+}
+.header {
+    display: block;
+    background-color: rgba(249, 249, 249, 0.95);
+    padding: 20px 100px;
+    margin-bottom: 20px;
+}
+.header img {
+    float: left;
+    margin-right: 20px;
+}
+.recruit {
+    float: right;
+    padding: 10px;
+    background-color: white;
+    background-color: #4183c4;
+    border-radius: 3px;
+    color: white;
+}
+.click-nav ul {
+    display: inline-block;
+    position: relative;
+}
+.click-nav ul li {
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    position: relative;
+}
+.click-nav ul li ul {
+    background-color: rgba(255, 255, 255, 0.95);
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 160px;
+}
+.click-nav ul .clicker {
+    color: #aaa;
+    ;
+    position: relative;
+}
+.click-nav {
+}
+.click-nav ul li a {
+    background: #FFF;
+    color: #333;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.click-nav ul li a:hover {
+    color: black;
+}
+.click-nav .no-js ul {
+    display: none;
+}
+.click-nav .no-js:hover ul {
+    display: block;
+}
+textarea, input {
+    outline: none;
+}
