@@ -20,8 +20,8 @@ ul li {
     list-style: none;
 }
 .content {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .ie #listings li.even-child, #listings li:nth-child(even) {
     background-color: #fcfcfc;
@@ -119,8 +119,7 @@ input {
 .header {
     display: block;
     background-color: rgba(249, 249, 249, 0.95);
-    padding: 20px 100px;
-    margin-bottom: 20px;
+    padding: 20px 200px;
 }
 .header img {
     float: left;
