@@ -64,7 +64,7 @@ input {
 .header {
     display: block;
     background-color: rgba(249, 249, 249, 0.95);
-    padding: 20px 200px;
+    padding: 20px 0px;
 }
 .header img {
     float: left;
