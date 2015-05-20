@@ -67,7 +67,10 @@ input {
 }
 .header img {
     float: left;
-    margin-right: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 20px;
 }
 .recruit {
     float: right;
@@ -76,6 +79,10 @@ input {
     background-color: #4183c4;
     border-radius: 3px;
     color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
 }
 #listings {
     clear: left;
