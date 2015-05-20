@@ -18,7 +18,6 @@ body {
     line-height: 1;
 }
 /* Content */
-
 .wrapper {
     height: 100%;
     height: auto !important;
@@ -161,6 +160,9 @@ input {
 #listings li .meta .new {
     display: none;
 }
+textarea, input {
+    outline: none;
+}
 @media only screen and (min-width: 768px) {
     .content {
     margin-left: 20px;
@@ -190,7 +192,7 @@ input {
         width: 32px;
         height: 32px;
         float: left;
-        margin-right: 13px;
+margin-right: 35px;
         position: static;
         top: auto;
         left: auto;
