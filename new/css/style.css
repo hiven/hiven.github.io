@@ -114,6 +114,10 @@ ul li {
     color: #888;
     display: none;
 }
+#listings li .meta .posted {
+  color: #888;
+  display: none;
+}
 #listings li .location {
     color: #888;
     position: absolute;
