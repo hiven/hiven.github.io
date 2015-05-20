@@ -208,13 +208,15 @@ margin-right: 35px;
         top: -3px;
     }
     #listings li .role h3 {
+        font-weight: normal;
+        color: #4183c4;
         position: static;
         top: auto;
         left: auto;
         width: auto;
     }
     #listings li .role h4 {
-        font-weight: 600;
+font-weight: normal;
         color: #222;
         position: static;
         top: auto;
