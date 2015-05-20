@@ -140,6 +140,10 @@ ul li {
     display: none;
 }
 @media only screen and (min-width: 1040px) {
+        .content {
+    margin-left: 200px;
+    margin-right: 200px;
+}
     #listings {
         border-top: 1px solid #e5e5e5;
         margin-top: 28px;
@@ -150,8 +154,8 @@ ul li {
 }
 @media only screen and (min-width: 768px) {
     .content {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
     #listings li .meta .new,
     #listings li .meta .posted {
