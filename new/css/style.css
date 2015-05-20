@@ -194,6 +194,7 @@ margin-right: 35px;
         position: static;
         top: auto;
         left: auto;
+        display: inline-block;
     }
     #listings li .role>span {
         display: inline;
