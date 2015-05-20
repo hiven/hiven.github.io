@@ -64,7 +64,7 @@ input {
 .header {
     display: block;
     background-color: rgba(249, 249, 249, 0.95);
-    padding: 20px 0px;
+    padding: 20px;
 }
 .header img {
     float: left;
@@ -86,11 +86,7 @@ input {
     overflow: hidden;
     padding: 17px 11px;
     color: #222;
-    padding: 16px 13px 12px 13px;
-    -moz-transition: all .1s linear;
-    -o-transition: all .1s linear;
-    -webkit-transition: all .1s linear;
-    transition: all .1s linear;
+    padding: 20px;
 }
 #listings li>a>span {
     min-height: 37px;
