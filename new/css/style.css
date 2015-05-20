@@ -139,19 +139,6 @@ ul li {
 #listings li .meta .new {
     display: none;
 }
-@media only screen and (min-width: 1040px) {
-        .content {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-    #listings {
-        border-top: 1px solid #e5e5e5;
-        margin-top: 28px;
-    }
-    #listings li .role {
-        margin-right: 20px;
-    }
-}
 @media only screen and (min-width: 768px) {
     .content {
     margin-left: 20px;
@@ -211,5 +198,18 @@ ul li {
         max-width: none;
         white-space: normal;
         overflow: visible;
+    }
+}
+@media only screen and (min-width: 1040px) {
+        .content {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+    #listings {
+        border-top: 1px solid #e5e5e5;
+        margin-top: 28px;
+    }
+    #listings li .role {
+        margin-right: 20px;
     }
 }
