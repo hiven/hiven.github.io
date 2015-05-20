@@ -93,12 +93,9 @@ input {
     position: relative;
 }
 #listings li img {
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 21px;
-    left: 0;
+display: none;
 }
+
 #listings li .role h3 {
     font-size: 18px;
     font-weight: 600;
