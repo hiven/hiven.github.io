@@ -32,168 +32,114 @@ ul li {
 .footer p { float: left; }
 .footer ul { float: right; }
 .footer ul li { display: inline-block; padding-left: 8px; }
-#listings li {
-    /*    border-bottom: 1px solid #efefef; */
+
+#listings {
+  clear: left;
 }
 #listings li>a {
-    display: block;
-    overflow: hidden;
-    padding: 17px 11px;
-    color: #222;
-    padding: 20px 0px;
+  display: block;
+  overflow: hidden;
+  padding: 17px 11px;
+  color: #222;
+  padding: 16px 13px 12px 13px;
+  -moz-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
 }
 #listings li>a>span {
-    min-height: 37px;
-    display: block;
-    position: relative;
+  min-height: 37px;
+  display: block;
+  position: relative;
 }
+
 #listings li img {
-    width: 32px;
-    height: 32px;
-    float: left;
-    margin-right: 35px;
-    position: static;
-    top: auto;
-    left: auto;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 21px;
+  left: 0;
 }
-#listings li .role {
-    float: left;
-    width: 550px;
-    margin-right: 20px;
-    position: relative;
+
+#listings li .role h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 4px;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76%;
 }
-#listings li .role>span {
-    display: inline;
-}
-#listings li .location {
+
+#listings li .role h4 {
+  font-size: 12px;
+  display: inline;
+  font-weight: normal;
   color: #888;
   position: absolute;
   top: 21px;
-  right: 0;
-  text-align: right;
+  left: 21px;
   max-width: 45%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-#listings li .meta {
-    position: relative;
-    top: -1px;
-}
-#listings li .meta {
-    float: right;
-    text-align: right;
-}
-#listings {
-    clear: left;
-}
-#listings li .meta .type {
-    display: block;
-    margin-bottom: 2px;
-}
-h3 {
-    color: #4183c4;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 22px;
-}
-h4 {
-    color: #63a35c;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-}
-input {
-    background-color: rgba(250, 250, 250, 1);
-    border: 0;
-    padding: 7px 10px;
-    border-radius: 3px;
-    width: 80%;
-    font-size: 18px;
-    color: black;
-}
-.header {
-    display: block;
-    background-color: rgba(249, 249, 249, 0.95);
-    padding: 20px 200px;
-}
-.header img {
-    float: left;
-    margin-right: 20px;
-}
-.recruit {
-    float: right;
-    padding: 10px;
-    background-color: white;
-    background-color: #4183c4;
-    border-radius: 3px;
-    color: white;
-}
-.click-nav ul {
-    display: inline-block;
-    position: relative;
-}
-.click-nav ul li {
-    cursor: pointer;
-    display: inline-block;
-    list-style: none;
-    margin-right: 20px;
-    position: relative;
-}
-.click-nav ul li ul {
-    background-color: rgba(255, 255, 255, 0.95);
-    left: 0;
-    position: absolute;
-    right: 0;
-    width: 160px;
-}
-.click-nav ul .clicker {
-    color: #aaa;
-    ;
-    position: relative;
-}
-.click-nav {
-}
-.click-nav ul li a {
-    background: #FFF;
-    color: #333;
-    display: block;
-    padding: 10px 0;
-    text-decoration: none;
-    white-space: nowrap;
-}
-.click-nav ul li a:hover {
-    color: black;
-}
-.click-nav .no-js ul {
-    display: none;
-}
-.click-nav .no-js:hover ul {
-    display: block;
-}
-textarea, input {
-    outline: none;
+
+#listings li .role>span {
+  padding-left: .5em;
+  color: #888;
+  display: none;
 }
 
+@media only screen and (min-width: 1040px) {
+#listings {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 28px;
+}
+#listings li .role {
+  margin-right: 20px;
+}
+}
 
 @media only screen and (min-width: 768px) {
-#listings li .location {
+#listings li img {
+  width: 32px;
+  height: 32px;
   float: left;
-  width: 145px;
-  padding: 7px 0 7px 13px;
-  position: relative;
+  margin-right: 13px;
+  position: static;
   top: auto;
   left: auto;
-  text-align: left;
+}
+#listings li .role>span {
+  display: inline;
+}
+#listings li .role {
+  float: left;
+  width: 350px;
+  margin-right: 12px;
+  position: relative;
+  top: -3px;
+}
+#listings li .role h3 {
+  position: static;
+  top: auto;
+  left: auto;
+  width: auto;
+}
+#listings li .role h4 {
+  font-weight: 600;
+  color: #222;
+  position: static;
+  top: auto;
+  left: auto;
   max-width: none;
   white-space: normal;
   overflow: visible;
-}
-#listings li .meta .new, #listings li .meta .posted {
-  display: inline;
-}
-#listings li .meta .posted {
-  color: #888;
-  display: none;
 }
 }
