@@ -10,7 +10,8 @@ body {
 a {
     text-decoration: none;
 }
-.form {margin-left: 60px; margin-right: 60px;}
+.form {margin-left: 60px;
+  margin-right: 80px;}
 body {
     background-color: white;
     color: #555555;
@@ -33,7 +34,7 @@ input {
     border: 0;
     padding: 7px 10px;
     border-radius: 3px;
-    width: 80%;
+    width: 100%;
     font-size: 18px;
     color: black;
 }
@@ -81,7 +82,6 @@ input {
     position: relative;
     right: 0;
     top: 0;
-    margin: 20px;
 }
 #listings {
     clear: left;
