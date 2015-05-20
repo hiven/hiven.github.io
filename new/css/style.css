@@ -66,16 +66,15 @@ ul li {
     display: inline;
 }
 #listings li .location {
-    float: left;
-    width: 145px;
-    padding: 7px 0 7px 13px;
-    position: relative;
-    top: auto;
-    left: auto;
-    text-align: left;
-    max-width: none;
-    white-space: normal;
-    overflow: visible;
+  color: #888;
+  position: absolute;
+  top: 21px;
+  right: 0;
+  text-align: right;
+  max-width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 #listings li .meta {
     position: relative;
@@ -87,9 +86,6 @@ ul li {
 }
 #listings {
     clear: left;
-}
-#listings li .meta .new, #listings li .meta .posted {
-    display: inline;
 }
 #listings li .meta .type {
     display: block;
@@ -177,4 +173,27 @@ input {
 }
 textarea, input {
     outline: none;
+}
+
+
+@media only screen and (min-width: 768px)
+#listings li .location {
+  float: left;
+  width: 145px;
+  padding: 7px 0 7px 13px;
+  position: relative;
+  top: auto;
+  left: auto;
+  text-align: left;
+  max-width: none;
+  white-space: normal;
+  overflow: visible;
+}
+@media only screen and (min-width: 768px)
+#listings li .meta .new, #listings li .meta .posted {
+  display: inline;
+}
+#listings li .meta .posted {
+  color: #888;
+  display: none;
 }
