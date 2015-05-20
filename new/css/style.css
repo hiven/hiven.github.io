@@ -176,7 +176,7 @@ textarea, input {
 }
 
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) {
 #listings li .location {
   float: left;
   width: 145px;
@@ -189,11 +189,11 @@ textarea, input {
   white-space: normal;
   overflow: visible;
 }
-@media only screen and (min-width: 768px)
 #listings li .meta .new, #listings li .meta .posted {
   display: inline;
 }
 #listings li .meta .posted {
   color: #888;
   display: none;
+}
 }
