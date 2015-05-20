@@ -28,10 +28,6 @@ body {
 ul li {
     list-style: none;
 }
-.content {
-    margin-left: 200px;
-    margin-right: 200px;
-}
 .ie #listings li.even-child,
 #listings li:nth-child(even) {
     background-color: #fcfcfc;
@@ -153,6 +149,10 @@ ul li {
     }
 }
 @media only screen and (min-width: 768px) {
+    .content {
+    margin-left: 200px;
+    margin-right: 200px;
+}
     #listings li .meta .new,
     #listings li .meta .posted {
         display: inline;
