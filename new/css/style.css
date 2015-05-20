@@ -185,6 +185,8 @@ textarea, input {
         overflow: visible;
     }
     #listings li img {
+    position: absolute;
+    top: 21px;
         width: 32px;
         height: 32px;
         float: left;
