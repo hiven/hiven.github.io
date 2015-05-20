@@ -104,8 +104,8 @@ display: none;
 
 #listings li .role h3 {
     font-size: 18px;
+    line-height: 20px;
     font-weight: 600;
-    line-height: 1;
     margin-bottom: 4px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -117,6 +117,7 @@ display: none;
 }
 #listings li .role h4 {
     font-size: 14px;
+    line-height: 16px;
     display: inline;
     font-weight: normal;
     color: #888;
