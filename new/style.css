@@ -22,6 +22,10 @@ background-color: rgb(235, 239, 242);
 li {
     list-style: none;
 }
+.billboard {font-size: 32px;
+  color: white;
+  padding-top: 80px;
+  display: block;}
 .nav {
     display: block;
     padding: 20px 0px;
