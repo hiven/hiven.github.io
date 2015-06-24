@@ -29,7 +29,7 @@ li {
     width: 100%;
     overflow: auto;
 }
-.nav img {
+.nav a {
     float: left;
 }
 .nav ul {
