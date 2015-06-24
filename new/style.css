@@ -3,10 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: "myfont";
-    src: url("pm-reg2.woff") format('woff');
-}
 html, body {
     height: 100%;
     font-family: myfont, arial, sans-serif;
@@ -14,7 +10,7 @@ html, body {
 }
 @font-face {
     font-family: "myfont";
-    src: url("pm-reg2.woff") format('woff');
+    src: url("pm-reg.woff") format('woff');
 }
 a {
     text-decoration: none;
