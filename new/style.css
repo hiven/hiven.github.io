@@ -28,7 +28,7 @@ li {
   display: block;}
 .nav {
     display: block;
-    padding: 20px 0px;
+    padding: 20px 12px;
     width: 100%;
     overflow: auto;
 }
