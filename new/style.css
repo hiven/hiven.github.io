@@ -16,7 +16,6 @@ a {
     height: 100%;
     width: 100%;
 background-color: rgb(235, 239, 242);
-    text-align: center;
     min-height: 350px;
     position: relative;
 }
@@ -25,7 +24,7 @@ li {
 }
 .nav {
     display: block;
-    padding: 20px;
+    padding: 20px 0px;
     width: 100%;
     overflow: auto;
 }
