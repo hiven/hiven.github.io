@@ -3692,7 +3692,7 @@ iframe {
   -moz-transition: all 0.3s ease;
 }
 .pricing-table-2:hover {
-/* background: #33c68a; */
+  background: #33c68a;
   z-index: 2;
 }
 .pricing-table-2:hover h2 {
