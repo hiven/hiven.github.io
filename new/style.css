@@ -29,6 +29,7 @@ li {
 .billboard {font-size: 32px;
   color: gray;
   padding-top: 80px;
+  text-align: center;
   display: block;}
 .nav {
     display: block;
