@@ -19,7 +19,7 @@ a {
 .header {
     height: 100%;
     width: 100%;
-background-color: rgb(235, 239, 242);
+  background-image: url("http://i.imgur.com/Gm4vWnP.jpg");
     min-height: 350px;
     position: relative;
 }
