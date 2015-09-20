@@ -27,7 +27,7 @@ li {
     list-style: none;
 }
 .billboard {font-size: 32px;
-  color: black;
+  color: gray;
   padding-top: 80px;
   display: block;}
 .nav {
