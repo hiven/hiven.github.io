@@ -18,7 +18,7 @@ body {
     margin:2% auto 0
 }
 #navigation {
-    height:25px;
+    height:40px;
     width:70%;
     margin:0 auto
 }
@@ -39,10 +39,10 @@ body {
     text-decoration:line-through
 }
 .logo {
-    width:60px;
-    height:25px;
+    width:45px;
+    height:40px;
     background:url(../img/logo.svg) no-repeat;
-    background-size:60px 25px;
+    background-size:45px 40px;
     -webkit-animation-duration:.9s;
     animation-duration:.9s;
     -webkit-animation-fill-mode:both;
@@ -52,6 +52,7 @@ body {
     float:left
 }
 .navigation {
+    line-height: 40px;
     float:right;
     margin:0 auto;
     -webkit-animation-duration:.9s;
