@@ -65,12 +65,12 @@ body {
 #hero {
     width:70%;
     position:relative;
-    margin:250px auto 0
+    margin:150px auto 0
 }
 .title {
     font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight:600;
-    font-size:72px;
+    font-size:50px;
     text-align:left;
     color:#111;
     -webkit-animation-duration:.9s;
