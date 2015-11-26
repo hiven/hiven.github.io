@@ -5,8 +5,8 @@ a { text-decoration: none; color: inherit; }
 a:hover { color: black; }
 
 h1, h2 {display: block; color: black; }
-h1 { font-size: 1.2em; margin-top: 0.7em; margin-bottom: 0.5em; }
-h2 { margin-bottom: 0.5em; margin-top: 0.5em; margin-botom: 0.5em; }
+h1 { font-size: 1.2em; margin-top: 0.8em; margin-bottom: 0.8em; }
+h2 { margin-bottom: 0.6em; margin-top: 0.6em; }
 p { display: block; }
 
 .header {margin: 20px 0px;}
