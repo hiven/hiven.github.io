@@ -27,15 +27,12 @@
     </ul>
 </div>
 <div>
-  <form>
-      <input placeholder="Name">
-      <input placeholder="Site">
-      <input placeholder="Email">
-      <input placeholder="Repeat Email">
-      <input placeholder="Password">
-      <input placeholder="Repeat Password">
-      <input type="submit" value="Register">
-    </form>
+<form action="" method="POST">
+    <input id="site" type="text" name="site" placeholder="site" />
+    <input id="email" type="email" name="email" placeholder="email"/>
+    <input id="password" type="password" name="password" placeholder="password" />
+    <input type="submit" name="submit" value="Register" />
+</form>
 </div>
 <div class="footer">
     <ul>
