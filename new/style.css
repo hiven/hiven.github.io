@@ -1,9 +1,0 @@
-body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; margin: 20px; }
-ul { list-style: none }
-a { color: inherit; text-decoration: none; } 
-.header {padding: 10px 0px;}
-.header ul {text-align:right;}
-.header ul li {display: inline}
-.footer ul li {display: inline}
-.header ul li:first-child{float:left}
-.header ul li:not(:first-child) { margin-left: 10px; }
