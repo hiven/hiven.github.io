@@ -1,8 +1,8 @@
 * { box-sizing: border-box; }
-body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; margin: 20px 0px;}
+body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; margin: 20px;}
 ul { list-style: none; }
 a { text-decoration: none; color: inherit; }
-.header {margin: 20px 0px;}
+.header {margin: 0px 20px;}
 .header ul {text-align:right;}
 .header ul li {display: inline}
 .header ul li:first-child{float:left}
