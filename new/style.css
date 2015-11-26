@@ -6,3 +6,4 @@ ul {list-style: none}
 .footer {padding: 10px;}
 .footer ul li {display: inline}
 .header ul li:first-child{float:left}
+.header ul li:not(:first-child) { margin-left: 10px; }
