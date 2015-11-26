@@ -14,5 +14,6 @@ a:hover { color: black; }
 .footer ul li {display: inline}
 .footer ul li:not(:first-child){ margin-left: 10px;}
 
+.adminnav {margin-bottom: 20px; color:navy;}
 .adminnav ul li {display: inline;}
 .adminnav ul li:last-child{float:right}
