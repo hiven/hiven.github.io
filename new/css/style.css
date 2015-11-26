@@ -4,8 +4,9 @@ ul { list-style: none; }
 a { text-decoration: none; color: inherit; }
 a:hover { color: black; }
 
-h1 { display: block; font-size: 1.2em; font-weight: bold; }
-h2 { display: block; font-size: 1em; font-weight: bold; margin-bottom: 0.5em; margin-top: 0.5em;}
+h1, h2 {display: block; color: black; }
+h1 { font-size: 1.2em; font-weight: bold; }
+h2 { margin-bottom: 0.5em; margin-top: 0.5em;}
 p { display: block; }
 
 .header {margin: 20px 0px;}
