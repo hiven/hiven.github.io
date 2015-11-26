@@ -2,6 +2,7 @@
 body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; margin: 20px;}
 ul { list-style: none; }
 a { text-decoration: none; color: inherit; }
+a:hover { color: black; }
 .header {margin: 20px 0px;}
 .header ul {text-align:right;}
 .header ul li {display: inline}
