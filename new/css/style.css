@@ -1,24 +1,8 @@
-<?php 
-    include_once("config.php");
-?>
-
-<?php if( !(isset( $_POST['register'] ) ) ) { ?>
-    <form method="post">
-        <input type="text" id="usn" maxlength="30" required autofocus name="username" />
-        <input type="password" id="passwd" maxlength="30" required name="password" />
-        <input type="password" id="conpasswd" maxlength="30" required name="conpassword" />
-        <input type="submit" name="register" value="Register" />
-    </form>
-
-<?php 
-} else {
-    $usr = new Users;
-    $usr->storeFormValues( $_POST );
-	
-    if( $_POST['password'] == $_POST['conpassword'] ) {
-        echo $usr->register($_POST);	
-    } else {
-        echo "Password and Confirm password not match";	
-    }
-}
-?>
+* { box-sizing: border-box; }
+body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; margin: 20px;}
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+.header ul {text-align:right;}
+.header ul li {display: inline}
+.header ul li:first-child{float:left}
+.header ul li:not(:first-child){ margin-left: 10px;}
