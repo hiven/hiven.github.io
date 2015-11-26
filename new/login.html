@@ -1,42 +1,21 @@
-<?php
-require_once 'connect.php';
-if (isset($_POST['submit'])){
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-
-$sql = "SELECT * FROM `confirm` WHERE username='$username' and password='$password' and active=1";
-$result = mysql_query($sql) or die(mysql_error());
-$count = mysql_num_rows($result);
-if ($count == 1){
-	echo "You are logged in";
-}else {
-	echo "Login Failed";
-}
+<?php 
+	include_once("config.php");
+?>
+<?php if( !(isset( $_POST['login'] ) ) ) { ?>
+            	<form method="post" action="">
+                        	<input type="text" maxlength="30" required autofocus name="username" />
+                          	<input type="password" maxlength="30" required name="password" />
+                        	<input type="submit" name="login" value="Log me in" />
+            	</form>
+<?php 
+} else {
+	$usr = new Users;
+	$usr->storeFormValues( $_POST );
+	
+	if( $usr->userLogin() ) {
+		echo "Welcome";	
+	} else {
+		echo "Incorrect Username/Password";	
+	}
 }
 ?>
-<head>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<div class="header">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li class="active"><a href="login.html">Login</a></li>
-    </ul>
-</div>
-<div>
-<form action="" method="post">
-    <input type="text" name="username" placeholder="Username" />
-    <input type="password" name="password" placeholder="Password" />
-    <input type="submit" name="submit" value="Login" />
-</form>
-</div>
-<div class="footer">
-    <ul>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</div>
