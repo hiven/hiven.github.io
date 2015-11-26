@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
+ul {list-style: none}
+.header {padding: 10px;}
+.header ul li {display: inline}
+.footer {padding: 10px;}
+.footer ul li {display: inline}
