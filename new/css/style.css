@@ -17,5 +17,6 @@ a:hover { color: black; }
 .adminnav {margin-bottom: 20px; color:navy;}
 .adminnav ul li {display: inline;}
 .adminnav ul li:last-child{float:right}
+.adminnav ul li:not(:first-child){ margin-left: 10px;}
 
 .adminlist ul li {margin-top: 20px; margin-bottom: 20px;}
