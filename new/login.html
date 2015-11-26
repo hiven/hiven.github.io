@@ -1,21 +1,21 @@
 <?php 
-	include_once("config.php");
+    include_once("config.php");
 ?>
 <?php if( !(isset( $_POST['login'] ) ) ) { ?>
-            	<form method="post" action="">
-                        	<input type="text" maxlength="30" required autofocus name="username" />
-                          	<input type="password" maxlength="30" required name="password" />
-                        	<input type="submit" name="login" value="Log me in" />
-            	</form>
+    <form method="post" action="">
+        <input type="text" maxlength="30" required autofocus name="username" />
+        <input type="password" maxlength="30" required name="password" />
+        <input type="submit" name="login" value="Log me in" />
+    </form>
 <?php 
 } else {
-	$usr = new Users;
-	$usr->storeFormValues( $_POST );
+    $usr = new Users;
+    $usr->storeFormValues( $_POST );
 	
-	if( $usr->userLogin() ) {
-		echo "Welcome";	
-	} else {
-		echo "Incorrect Username/Password";	
-	}
+    if( $usr->userLogin() ) {
+        echo "Welcome";	
+    } else {
+        echo "Incorrect Username/Password";	
+    }
 }
 ?>
