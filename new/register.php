@@ -1,42 +1,24 @@
-<?php
-	require('connect.php');
-    // If the values are posted, insert them into the database.
-    if (isset($_POST['username']) && isset($_POST['password'])){
-        $username = $_POST['username'];
-		$email = $_POST['email'];
-        $password = $_POST['password'];
- 
-        $query = "INSERT INTO `user` (username, password, email) VALUES ('$username', '$password', '$email')";
-        $result = mysql_query($query);
-        if($result){
-            $msg = "User Created Successfully.";
-        }
-    }
+<?php 
+    include_once("config.php");
 ?>
-<head>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<div class="header">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li class="active"><a href="register.html">Register</a></li>
-        <li><a href="login.html">Login</a></li>
-    </ul>
-</div>
-<div>
-<form action="" method="POST">
-    <input id="site" type="text" name="site" placeholder="site" />
-    <input id="email" type="email" name="email" placeholder="email"/>
-    <input id="password" type="password" name="password" placeholder="password" />
-    <input type="submit" name="submit" value="Register" />
-</form>
-</div>
-<div class="footer">
-    <ul>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</div>
+
+<?php if( !(isset( $_POST['register'] ) ) ) { ?>
+    <form method="post">
+        <input type="text" id="usn" maxlength="30" required autofocus name="username" />
+        <input type="password" id="passwd" maxlength="30" required name="password" />
+        <input type="password" id="conpasswd" maxlength="30" required name="conpassword" />
+        <input type="submit" name="register" value="Register" />
+    </form>
+
+<?php 
+} else {
+    $usr = new Users;
+    $usr->storeFormValues( $_POST );
+	
+    if( $_POST['password'] == $_POST['conpassword'] ) {
+        echo $usr->register($_POST);	
+    } else {
+        echo "Password and Confirm password not match";	
+    }
+}
+?>
