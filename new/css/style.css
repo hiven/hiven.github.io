@@ -3,6 +3,7 @@ body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; m
 ul { list-style: none; }
 a { text-decoration: none; color: inherit; }
 a:hover { color: black; }
+input, label { display:block; }
 
 h1, h2 {display: block; color: black; }
 h1 { font-size: 1.2em; margin-top: 0.8em; margin-bottom: 0.8em; }
