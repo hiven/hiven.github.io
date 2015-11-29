@@ -8,7 +8,7 @@ input { padding: 5px 10px; margin-bottom: 15px; }
 label { margin-bottom: 5px; }
 
 h1, h2 {display: block; color: black; }
-h1 { font-size: 1.2em; margin-top: 0.8em; margin-bottom: 0.8em; }
+h1 { font-size: 1.2em; margin-bottom: 0.8em; }
 h2 { margin-bottom: 0.6em; margin-top: 0.6em; }
 p { display: block; }
 
@@ -23,7 +23,7 @@ p { display: block; }
 .footer ul li {display: inline}
 .footer ul li:not(:first-child){ margin-left: 10px;}
 
-.adminnav {margin-bottom: 20px; color:navy; background-color: #fafafa; padding: 15px;}
+.adminnav {margin-bottom: 20px; color:navy; background-color: rgba(255, 255, 255, 0.5); padding: 15px;}
 .adminnav ul li {display: inline;}
 .adminnav ul li:last-child{float:right}
 .adminnav ul li:not(:first-child){ margin-left: 10px;}
