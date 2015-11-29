@@ -17,8 +17,8 @@ p { display: block; }
 .header ul li {display: inline}
 .header ul li:first-child{float:left}
 .header ul li:not(:first-child){ margin-left: 10px;}
-
-.footer {margin: 20px 0px;}
+.main {margin: 20px;}
+.footer {margin: 20px;}
 .footer ul {text-align:right;}
 .footer ul li {display: inline}
 .footer ul li:not(:first-child){ margin-left: 10px;}
