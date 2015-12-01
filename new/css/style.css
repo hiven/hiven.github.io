@@ -3,8 +3,9 @@ body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; b
 ul { list-style: none; }
 a { text-decoration: none; color: inherit;  }
 a:hover {     color: #268bd2; }
-input, label, textarea { display:block; }
-input, textarea { padding: 5px 10px; margin-bottom: 15px; }
+
+input, textarea { display: block; padding: 5px 10px; margin-bottom: 15px; }
+.text { width: 400px; }
 label { margin-bottom: 5px; }
 
 h1, h2 {display: block; color: #F0652F; }
