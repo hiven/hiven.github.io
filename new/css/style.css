@@ -3,7 +3,7 @@ body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; b
 ul { list-style: none; }
 a { text-decoration: none; color: inherit;  }
 a:hover {     color: #268bd2; }
-input, label { display:block; }
+input, label, textarea { display:block; }
 input { padding: 5px 10px; margin-bottom: 15px; }
 label { margin-bottom: 5px; }
 
