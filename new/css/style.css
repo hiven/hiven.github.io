@@ -29,3 +29,5 @@ p { display: block; }
 .adminnav ul li:not(:first-child){ margin-left: 10px;}
 
 .adminlist ul li {margin-top: 20px; margin-bottom: 20px;}
+
+#home span {font-size: 30px; }
