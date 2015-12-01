@@ -7,7 +7,7 @@ a:hover {     color: #268bd2; }
 input, textarea, label { display: block; }
 input, textarea { padding: 5px 10px; margin-bottom: 15px; }
 label { margin-bottom: 5px; }
-.text { width: 400px; }
+.text { width: 300px; }
 
 
 h1, h2 {display: block; color: #F0652F; }
