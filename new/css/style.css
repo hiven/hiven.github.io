@@ -4,9 +4,11 @@ ul { list-style: none; }
 a { text-decoration: none; color: inherit;  }
 a:hover {     color: #268bd2; }
 
-input, textarea { display: block; padding: 5px 10px; margin-bottom: 15px; }
-.text { width: 400px; }
+input, textarea, label { display: block; }
+input, textarea { padding: 5px 10px; margin-bottom: 15px; }
 label { margin-bottom: 5px; }
+.text { width: 400px; }
+
 
 h1, h2 {display: block; color: #F0652F; }
 h1 { font-size: 1.2em; margin-bottom: 1.2em; }
