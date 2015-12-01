@@ -30,4 +30,5 @@ p { display: block; }
 
 .adminlist ul li {margin-top: 20px; margin-bottom: 20px;}
 
-#home span {font-size: 30px; }
+#home {padding-top:30px; padding-bottom: 30px;}
+#home span {font-size: 24px; }
