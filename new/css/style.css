@@ -48,7 +48,7 @@ p { display: block; }
   display: inline-block;
 }
 
-.nav li .inactive {display: none;}
+.nav .inactive {display: none;}
 .burger { margin-left: 10px; display: inline-block;}
 
 /* Desktop */
