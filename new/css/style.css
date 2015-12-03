@@ -49,7 +49,7 @@ p { display: block; }
 }
 
 .nav .inactive {display: none;}
-.burger { margin-left: 10px; display: inline-block;}
+.burger { margin-left: 10px; display: inline-block; font-weight: bold; }
 
 /* Desktop */
 @media (min-width: 680px) {
