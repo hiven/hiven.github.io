@@ -40,15 +40,15 @@ p { display: block; }
 .circle {display: inline-block; height: 14px; width: 14px; border-radius: 50%;}
 .new {background-color: blue;}
 
-nav {
+.nav {
   display: inline-block;
 }
 
-nav li {
+.nav li {
   display: inline-block;
 }
 
-.inactive {display: none;}
+.nav li .inactive {display: none;}
 .burger { margin-left: 10px; display: inline-block;}
 
 /* Desktop */
