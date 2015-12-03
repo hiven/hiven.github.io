@@ -50,7 +50,9 @@ nav li {
 
 .inactive {display: none;}
 .burger { margin-left: 10px; display: inline-block;}
-@media (max-width: 680px) {
+
+/* Desktop */
+@media (min-width: 680px) {
   .inactive {
     display: inline-block;
   }
