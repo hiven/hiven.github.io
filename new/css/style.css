@@ -39,6 +39,7 @@ p { display: block; }
 .circle {display: inline-block; height: 8px; width: 8px; border-radius: 50%; margin-left:8px; margin-right:8px;}
 .new {background-color: #3498DC;}
 
+.jobtitle {font-size: 16px;}
 .nav {
   display: inline-block;
 }
