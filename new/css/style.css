@@ -19,7 +19,6 @@ p { display: block; }
 .header ul {text-align:right;}
 .header ul li {display: inline}
 .header ul li:first-child{}
-.header ul li:not(:last-child){ margin-right: 10px;}
 .main {margin-left: 20px; margin-right: 20px; margin-bottom: 20px;}
 .footer {margin: 20px;}
 .footer ul {text-align:right;}
@@ -49,7 +48,7 @@ p { display: block; }
 }
 
 .nav .inactive {display: none;}
-.burger { margin-left: 10px; display: inline-block; font-weight: bold; }
+.burger { display: inline-block; font-weight: bold; }
 
 /* Desktop */
 @media (min-width: 680px) {
