@@ -17,7 +17,7 @@ p { display: block; }
 
 .header { padding: 20px; margin-bottom: 20px; vertical-align: top;}
 .header ul {text-align:right;}
-.header ul li {display: inline}
+.header ul li {display: inline; margin-right: 10px;}
 .header ul li:first-child{}
 .main {margin-left: 20px; margin-right: 20px; margin-bottom: 20px;}
 .footer {margin: 20px;}
