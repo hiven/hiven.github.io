@@ -15,7 +15,7 @@ h1 { font-size: 1.2em; margin-bottom: 1.2em; }
 h2 { margin-bottom: 0.6em; margin-top: 0.6em; }
 p { display: block; }
 
-.header { padding: 20px; margin-bottom: 20px; vertical-align: top; background-color: #F5F5F5;}
+.header { padding: 20px; vertical-align: top; background-color: #F5F5F5;}
 .header ul {text-align:right;}
 .header ul li {display: inline; margin-right: 10px;}
 .header ul li:first-child{}
