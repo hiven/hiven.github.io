@@ -1,5 +1,5 @@
 * { box-sizing: border-box; padding: 0px; margin: 0px; }
-body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282;}
+body { background-color: #E0E7EF; font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282;}
 ul { list-style: none; }
 a { text-decoration: none; color: inherit;  }
 a:hover {     color: #268bd2; }
@@ -15,7 +15,7 @@ h1 { font-size: 1.2em; margin-bottom: 1.2em; }
 h2 { margin-bottom: 0.6em; margin-top: 0.6em; }
 p { display: block; }
 
-.header { padding: 20px; margin-bottom: 20px; vertical-align: top;}
+.header { padding: 20px; margin-bottom: 20px; vertical-align: top; background-color: #5C5C7E;}
 .header ul {text-align:right;}
 .header ul li {display: inline; margin-right: 10px;}
 .header ul li:first-child{}
