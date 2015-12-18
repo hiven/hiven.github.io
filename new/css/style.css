@@ -25,7 +25,7 @@ p { display: block; }
 .footer ul li {display: inline}
 .footer ul li:not(:first-child){ margin-left: 10px;}
 
-.adminnav {margin-bottom: 20px; color:navy; background-color: #FAFAFA; }
+.adminnav {margin: 20px; color:navy; background-color: #FAFAFA; }
 .adminnav ul li {display: inline;}
 .adminnav ul li:last-child{float:right}
 .adminnav ul li:not(:first-child){ margin-left: 10px;}
