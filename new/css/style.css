@@ -15,7 +15,7 @@ h1 { font-size: 1.2em; margin-bottom: 1.2em; }
 h2 { margin-bottom: 0.6em; margin-top: 0.6em; }
 p { display: block; }
 
-.header { padding: 20px; vertical-align: top; background-color: #F5F5F5;}
+.header { padding: 20px; vertical-align: top; }
 .header ul {text-align:right;}
 .header ul li {display: inline; margin-right: 10px;}
 .header ul li:first-child{}
@@ -25,7 +25,7 @@ p { display: block; }
 .footer ul li {display: inline}
 .footer ul li:not(:first-child){ margin-left: 10px;}
 
-.adminnav {padding: 20px; color:navy; background-color: #FAFAFA; }
+.adminnav {padding: 20px; color:navy; }
 .adminnav ul li {display: inline;}
 .adminnav ul li:last-child{float:right}
 .adminnav ul li:not(:first-child){ margin-left: 10px;}
