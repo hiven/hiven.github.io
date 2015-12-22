@@ -30,7 +30,7 @@ p { display: block; }
 .adminnav ul li:last-child{float:right}
 .adminnav ul li:not(:first-child){ margin-left: 10px;}
 
-.adminlist ul li {margin-top: 20px; margin-bottom: 20px;}
+.adminlist ul li {margin-top: 20px; margin-bottom: 20px; background-color: white;}
 
 #home {padding-top:30px; padding-bottom: 30px;}
 #home span {font-size: 24px; display: block; color: #F0652F;}
