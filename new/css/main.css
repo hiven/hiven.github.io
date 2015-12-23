@@ -4,10 +4,6 @@
     src: url(/src/type/gothamrnd-book.eot) format("embedded-opentype"), url(/src/type/gothamrnd-book.woff2) format("woff2"), url(/src/type/gothamrnd-book.woff) format("woff"), url(/src/type/gothamrnd-book.ttf) format("truetype"), url(/src/type/gothamrnd-book.svg#GothamRoundedBook) format("svg")
 }
 
-.ng-hide {
-    display: none!important
-}
-
 body {
     min-height: 730px;
     color: #4F4F4F;
