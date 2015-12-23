@@ -35,10 +35,8 @@ h6 {
     letter-spacing: 0;
     font-family: GothamRoundedBook, sans-serif
 }
-h2 { font-size: 18px}
-h3 {
-    font-size: 14px
-}
+h2, h3 { font-size: 18px}
+
 
 .contact {
     position: absolute;
