@@ -1,4 +1,4 @@
-* { box-sizing: border-box; padding: 0px; margin: 0px; }
+body,html{position:relative;margin:0;padding:0;height:100%}
 body { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#4F4F4F; }
 ul { list-style: none; }
 a { text-decoration: none; color: inherit;  }
@@ -32,7 +32,7 @@ p { display: block; }
 
 .adminlist ul li {margin-top: 20px; margin-bottom: 20px; background-color: white; padding: 20px; border: 1px solid LightGray; border-radius: 4px;}
 
-#home {padding-top:30px; padding-bottom: 30px;}
+#home {height: 100%;}
 #home span {font-size: 24px; display: block; color: #F0652F;}
 
 .candidatelist input {display: inline-block;}
