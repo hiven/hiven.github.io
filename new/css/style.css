@@ -33,7 +33,7 @@ p { display: block; }
 .adminlist ul li {margin-top: 20px; margin-bottom: 20px; background-color: white; padding: 20px; border: 1px solid LightGray; border-radius: 4px;}
 
 #home {height: 100%;}
-#home span {font-size: 24px; display: block; color: #F0652F;}
+#home span {font-size: 24px; }
 
 .candidatelist input {display: inline-block;}
 .circle {display: inline-block; height: 8px; width: 8px; border-radius: 50%; margin-left:8px; margin-right:8px;}
