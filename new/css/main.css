@@ -36,9 +36,8 @@ h6 {
     font-family: GothamRoundedBook, sans-serif
 }
 h2 {
-    font-size: 18px
+    font-size: 18px; color: #FF6F54;
 }
-
 h3 {
     font-size: 14px
 }
