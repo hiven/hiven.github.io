@@ -35,7 +35,13 @@ h6 {
     letter-spacing: 0;
     font-family: GothamRoundedBook, sans-serif
 }
-h2, h3 { font-size: 18px}
+h2 {
+    font-size: 20px
+}
+
+h3 {
+    font-size: 14px
+}
 
 
 .contact {
