@@ -113,9 +113,8 @@ section {
 }
 .close {
   color: red;
-  float: right;
+  text-align:right;
   margin-bottom: 20px;
-  display: block;
 }
 
 @media screen and (min-width: 600px) {
