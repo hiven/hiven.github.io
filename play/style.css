@@ -127,6 +127,7 @@ section {
     padding: 0;
     float: left;
     width: auto;
+    height: auto;
   }
   .close,
   .open {
@@ -137,4 +138,5 @@ section {
     margin: 0;
   }
   label {display: none;}
+  
 }
