@@ -28,6 +28,8 @@ body {
 	margin: 0 auto;
 }
 
+#navigation ul {padding: 0;}
+
 #navigation ul li {
 	width: auto;
 	float: left;
