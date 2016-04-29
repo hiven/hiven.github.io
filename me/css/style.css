@@ -120,9 +120,34 @@ a {
 }
 
 
+@media screen and (min-width:769px) {
+.footer_mobile {
+	display: none;
+}
+}
+
+
 
 
 @media screen and (max-width:768px) {
+#selected_work {
+	width: 90%;
+	margin-top: 120px;
+}
+
+.work_line,.work_line_first {
+	height: 80px;
+}
+
+.project_info,.project_title {
+	line-height: 80px;
+	font-size: 16px;
+}
+.selected_work_title {
+	line-height: 80px;
+	font-size: 16px;
+}
+
 .logo {
 	height: 25px;
 }
@@ -144,7 +169,6 @@ a {
 	font-size: 50px;
 	line-height: 50px;
 }
-
 }
 
 @media only screen and (min-width :1824px) {
@@ -267,25 +291,7 @@ a {
 	text-decoration: line-through;
 }
 
-@media screen and (max-width:768px) {
-#selected_work {
-	width: 90%;
-	margin-top: 120px;
-}
 
-.work_line,.work_line_first {
-	height: 80px;
-}
-
-.project_info,.project_title {
-	line-height: 80px;
-	font-size: 16px;
-}
-.selected_work_title {
-	line-height: 80px;
-	font-size: 16px;
-}
-}
 
 @media only screen and (min-width :1824px) {
 .selected_work_title {
@@ -372,6 +378,8 @@ a {
 	float: left;
 }
 }
+
+
 
 @media only screen and (min-width :1824px) {
 .footer {
@@ -521,48 +529,7 @@ body#cv_page {
 }
 }
 
-@media only screen and (min-width :1824px) {
-.cv_page {
-	width: 60%;
-}
 
-.cv_big {
-	font-size: 100px;
-	line-height: 140px;
-}
-
-.cv_item_big {
-	margin: 300px 0;
-}
-
-.cv_item {
-	margin: 200px 0;
-}
-
-.cv_title {
-	font-size: 20px;
-}
-
-.cv_content {
-	margin-top: -10px;
-	font-size: 22px;
-	line-height: 48px;
-}
-
-.cv_content .light {
-	color: #bbb;
-	font-size: 22px;
-	line-height: 34px;
-}
-
-.cv_btn {
-	font-size: 20px;
-}
-
-.footer_back {
-	padding: 0 0 140px;
-}
-}
 
 #arrows {
 	position: fixed;
@@ -804,11 +771,24 @@ video {
 }
 }
 
-@media screen and (min-width:769px) {
-.footer_mobile {
-	display: none;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width :1824px) {
 #header_work {
@@ -881,6 +861,46 @@ video {
 	background-size: 165px 120px;
 	width: 165px;
 	height: 120px;
+}
+.cv_page {
+	width: 60%;
+}
+
+.cv_big {
+	font-size: 100px;
+	line-height: 140px;
+}
+
+.cv_item_big {
+	margin: 300px 0;
+}
+
+.cv_item {
+	margin: 200px 0;
+}
+
+.cv_title {
+	font-size: 20px;
+}
+
+.cv_content {
+	margin-top: -10px;
+	font-size: 22px;
+	line-height: 48px;
+}
+
+.cv_content .light {
+	color: #bbb;
+	font-size: 22px;
+	line-height: 34px;
+}
+
+.cv_btn {
+	font-size: 20px;
+}
+
+.footer_back {
+	padding: 0 0 140px;
 }
 }
 
