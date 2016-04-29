@@ -65,7 +65,7 @@ body {
 	text-align: left;
 	text-transform: uppercase;
 	
-	width: 180px;
+	width: 80px;
 	height: 25px;
 
 	float: left;
@@ -124,7 +124,6 @@ a {
 
 @media screen and (max-width:768px) {
 .logo {
-	width: 100px;
 	height: 25px;
 }
 #header {
@@ -1002,6 +1001,3 @@ video {
 }
 
 
-
-
-d
