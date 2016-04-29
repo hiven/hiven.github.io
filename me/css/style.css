@@ -35,6 +35,10 @@ body {
 	margin-left: 40px;
 }
 
+#navigation ul li:not(:first-child) {
+    margin-left: 0;
+}
+
 #navigation li a {
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
