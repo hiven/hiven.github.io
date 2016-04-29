@@ -89,14 +89,14 @@ a {
 #hero {
 	width: 70%;
 	position: relative;
-	margin: 125px auto 0;
+	margin: 85px auto 0;
 }
 
 .title {
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight: 500;
-	font-size: 65px;
-	line-height: 65px;
+	font-size: 50px;
+	line-height: 50px;
 	text-align: left;
 	color: #111;
 	margin-left: -5px;
@@ -185,7 +185,7 @@ a {
 #selected_work {
 	width: 70%;
 	position: relative;
-	margin: 200px auto 0;
+	margin: 85px auto 0;
 }
 
 #works a {
