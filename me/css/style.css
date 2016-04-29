@@ -35,7 +35,7 @@ body {
 	margin-left: 40px;
 }
 
-#navigation ul li:not(:first-child) {
+#navigation ul li:nth-child(n+2) {
     margin-left: 0;
 }
 
