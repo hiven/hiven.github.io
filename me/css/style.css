@@ -34,10 +34,10 @@ body {
 	display: inline;
 	margin-left: 40px;
 }
-
+/*
 #navigation li:nth-child(n+2) {
     margin-left: 0;
-}
+}*/
 
 #navigation li a {
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
