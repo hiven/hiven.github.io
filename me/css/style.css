@@ -36,7 +36,7 @@ body {
 }
 
 #navigation ul li:last-child {
-    margin-left: 0; background: pink;
+    margin-right: 0; background: pink;
 }
 
 #navigation li a {
