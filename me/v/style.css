@@ -10,6 +10,9 @@ p {
     margin: 0;
     padding: 0;
 }
+html {
+    -webkit-text-size-adjust: none;
+}
 body {
     background: white;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
