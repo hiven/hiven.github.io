@@ -65,12 +65,12 @@ h3 {
   color: #444;
 }
 
-p,
+.company,
 h3 {
   margin-bottom: 10px;
 }
 
-.smallitem p {
+.company {
   font-weight: 600;
   font-size: 14px;
 }
