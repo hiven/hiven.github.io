@@ -17,7 +17,7 @@ body {
     background: white;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 12px;
-    margin: 120px 60px 60px 60px;
+    margin: 80px 60px 60px 60px;
 }
 ul {
     list-style-position: inside;
@@ -26,7 +26,7 @@ ul {
     margin-bottom: 5px;
 }
 #header {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     align-items: center;
 }
 #header ul {
