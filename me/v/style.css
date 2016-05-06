@@ -36,7 +36,6 @@ ul {
 #header ul {
   list-style: none;
   text-align: right;
-  background: blue;
 }
 
 #header ul li {
@@ -81,7 +80,6 @@ h3 {
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 15px;
-  background: pink;
 }
 
 #references {
