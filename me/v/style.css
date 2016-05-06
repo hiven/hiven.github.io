@@ -21,6 +21,7 @@ body {
 }
 ul {
     list-style-position: inside;
+    -webkit-padding-start: 0px;
 }
 .bigitem ul li {
     margin-bottom: 5px;
