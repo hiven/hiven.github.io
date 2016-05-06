@@ -34,17 +34,17 @@ ul {
   margin-bottom: 5px;
 }
 
-header ul li {
+#header ul li {
   display: inline-block;
   margin-left: 20px;
 }
 
-header ul {
+#header ul {
   list-style: none;
   text-align: right;
 }
 
-header {
+#header {
   margin-bottom: 60px;
   display: block;
   margin-top: 60px;
@@ -83,7 +83,7 @@ h3 {
   font-size: 14px;
 }
 
-header h1 {
+#header h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
