@@ -51,11 +51,6 @@ h3 {
     font-size: 14px;
     margin-bottom: 10px;
 }
-#references {
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 60px;
-}
 .flexcontainer {
     display: -webkit-flex;
     display: flex;
