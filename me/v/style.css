@@ -28,6 +28,7 @@ ul {
 #header ul li {
     display: inline-block;
     margin-left: 20px;
+    border-left: 1px solid #808080;
 }
 h1 {
     vertical-align: middle;
