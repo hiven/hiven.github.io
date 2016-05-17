@@ -38,11 +38,11 @@ h1 {
 }
 h2 {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
 }
 h3 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
     margin-bottom: 10px;
 }
@@ -51,7 +51,7 @@ h3 {
 }
 .company {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 10px;
 }
 .flexcontainer {
