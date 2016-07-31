@@ -18,7 +18,7 @@ function startScript()
 			{
 				var data = CryptoJS.AES.decrypt(encrypted,key);
 				console.log(data);
-				$("#decryptedTxt").text(data.toString(CryptoJS.enc.Utf8));
+				$("#decryptedTxt").val(data.toString(CryptoJS.enc.Utf8));
 			} 
 			catch (e)
 			{
