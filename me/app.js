@@ -12,7 +12,7 @@ function startScript()
 		});
 		
 		$("#decryptBtn").click(function(){
-			var encrypted = $("#encryptedTxt").text();
+			var encrypted = $("#encryptedTxt").val();
 			var key = $("#secretTxt").val();
 			try
 			{
