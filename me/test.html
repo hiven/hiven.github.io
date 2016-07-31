@@ -2,15 +2,33 @@
 <script src="app.js"></script>
 <script src="aes.js"></script><br />
 
-<input id="dataTxt" size="40" type="text" />
-<input id="secretTxt" size="40" type="text" />
-<input id="encryptBtn" type="button" value="Encrypt" />
-<input id="decryptBtn" type="button" value="Decrypt" />
-
 <table>
 <tbody>
 <tr>
+<td><strong>Data :</strong></td>
+<td><input id="dataTxt" size="40" type="text" /></td>
+</tr>
+<tr>
+<td><strong>Secret Key :</strong></td>
+<td><input id="secretTxt" size="40" type="text" /></td>
+</tr>
+<tr>
+<td colspan="2"><input id="encryptBtn" type="button" value="Encrypt" /></td>
+</tr>
+<tr>
+<td colspan="2">
+<hr />
+</td>
+</tr>
+<tr>
+<td><strong>Encrypted Data :</strong></td>
 <td id="encryptedTxt"></td>
+</tr>
+<tr>
+<td colspan="2"><input id="decryptBtn" type="button" value="Decrypt" /></td>
+</tr>
+<tr>
+<td><strong>Decrypted Data :</strong></td>
 <td id="decryptedTxt"></td>
 </tr>
 </tbody>
