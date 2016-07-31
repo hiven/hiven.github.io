@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Encrypting data with Crypto-JS in JavaScript | Ram&#039;s Blog</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://ramkulkarni.com/blog/wp-content/themes/twentyten/style.css" />
+<link rel="pingback" href="http://ramkulkarni.com/blog/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Ram&#039;s Blog &raquo; Feed" href="http://ramkulkarni.com/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ram&#039;s Blog &raquo; Comments Feed" href="http://ramkulkarni.com/blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ram&#039;s Blog &raquo; Encrypting data with Crypto-JS in JavaScript Comments Feed" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/ramkulkarni.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='jetpack_image_widget-css'  href='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/modules/widgets/image-widget/style.css?ver=20140808' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=3.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='acx-si-style-css'  href='http://ramkulkarni.com/blog/wp-content/plugins/floating-social-media-icon/style.css?ver=4.5.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/modules/related-posts/related-posts.js?ver=20150408'></script>
+<link rel='https://api.w.org/' href='http://ramkulkarni.com/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ramkulkarni.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ramkulkarni.com/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='My Last Day at Adobe' href='http://ramkulkarni.com/blog/my-last-day-at-adobe/' />
+<link rel='next' title='Configuring Apache on Mac OS X (Mavericks) for Python scripting' href='http://ramkulkarni.com/blog/configuring-apache-on-mac-os-x-mavericks-for-python-scripting/' />
+<meta name="generator" content="WordPress 4.5.3" />
+<link rel="canonical" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/" />
+<link rel='shortlink' href='http://wp.me/p2g9O8-lb' />
+<link rel="alternate" type="application/json+oembed" href="http://ramkulkarni.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Framkulkarni.com%2Fblog%2Fencrypting-data-with-crypto-js-in-javascript%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://ramkulkarni.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Framkulkarni.com%2Fblog%2Fencrypting-data-with-crypto-js-in-javascript%2F&#038;format=xml" />
+
+
+
+<!-- Starting Styles For Social Media Icon From Acurax International www.acurax.com -->
+<style type='text/css'>
+#divBottomRight img 
+{
+width: 32px; 
+}
+</style>
+<!-- Ending Styles For Social Media Icon From Acurax International www.acurax.com -->
+
+
+
+	<link href="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Styles/SyntaxHighlighter.css" type="text/css" rel="stylesheet" />
+	<style type="text/css" >#subscribe-widget-div { text-align: left; margin-top:5px; }</style>
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//s1.wp.com'>
+<link rel='dns-prefetch' href='//s2.wp.com'>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+<link rel='dns-prefetch' href='//widgets.wp.com'>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Encrypting data with Crypto-JS in JavaScript" />
+<meta property="og:url" content="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/" />
+<meta property="og:description" content="I have been working intermittently on a HTML5 mobile application for some time now. This application stores some sensitive date locally (it is a standalone mobile application) and I did not want to…" />
+<meta property="article:published_time" content="2014-09-13T05:02:27+00:00" />
+<meta property="article:modified_time" content="2014-09-13T05:04:18+00:00" />
+<meta property="article:author" content="http://www.facebook.com/ram.kulkarni2" />
+<meta property="og:site_name" content="Ram&#039;s Blog" />
+<meta property="og:image" content="http://ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt-300x48.png" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@ram_kulkarni" />
+
+<style id="custom-css-css">ins {
+	background:#fff;
+	text-decoration:none;
+}</style>
+</head>
+
+<body class="single single-post postid-1313 single-format-standard">
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://ramkulkarni.com/blog/" title="Ram&#039;s Blog" rel="home">Ram&#039;s Blog</a>
+					</span>
+				</div>
+				<div id="site-description">My experiments with technologies</div>
+
+										<img src="http://ramkulkarni.com/blog/wp-content/uploads/2012/03/cropped-CIMG1850.jpg" width="940" height="198" alt="" />
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li ><a href="http://ramkulkarni.com/blog/">Home</a></li><li class="page_item page-item-5"><a href="http://ramkulkarni.com/blog/about-me/">About Me</a></li><li class="page_item page-item-1712"><a href="http://ramkulkarni.com/blog/contact-me-3/">Contact Me</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://ramkulkarni.com/blog/my-last-day-at-adobe/" rel="prev"><span class="meta-nav">&larr;</span> My Last Day at Adobe</a></div>
+					<div class="nav-next"><a href="http://ramkulkarni.com/blog/configuring-apache-on-mac-os-x-mavericks-for-python-scripting/" rel="next">Configuring Apache on Mac OS X (Mavericks) for Python scripting <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-1313" class="post-1313 post type-post status-publish format-standard hentry category-javascript category-mobile tag-cryptojs tag-encryption tag-javascript">
+					<h1 class="entry-title">Encrypting data with Crypto-JS in JavaScript</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/" title="10:32 am" rel="bookmark"><span class="entry-date">September 13, 2014</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://ramkulkarni.com/blog/author/admin/" title="View all posts by Ram Kulkarni">Ram Kulkarni</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p><script src="http://ramkulkarni.com/temp/2014-09-13/jquery-2.1.1.min.js"></script><script src="http://ramkulkarni.com/temp/2014-09-13/app-script.js"></script><script src="http://ramkulkarni.com/temp/2014-09-13/aes.js"></script><br />
+I have been working intermittently on a HTML5 mobile application for some time now. This application stores some sensitive date locally (it is a standalone mobile application) and I did not want to store the data in clear text. I wanted to make retrieval of data difficult to some extent, if the device ends up in the wrong hands. So the data had to be encrypted. The application code is in JavaScript, so I started looking for a JS library that can encrypt data. I found that <a href="https://code.google.com/p/crypto-js/" target="_blank">Crypto-JS</a> met my requirements and it was easy to use too.</p>
+<p>Before I proceed further, I must confess that my knowledge of encryption and digital security in general is very basic. So the solutions discussed in this post may not be the best in terms of protecting the data.</p>
+<p>As I said, Crypto-JS is very simple to use. You can use different cipher algorithms like AES. DES etc. and APIs are simple. e.g. to encrypt using AES , you would call &#8211;</p>
+<p><strong>encryptedData = CryptoJS.AES.encrypt(textToEncrypt, secretPhrase);</strong> //include aes.js script</p>
+<p>In the above API, the first argument to encrypt function is text data you want to encrypt, e.g. password. The second argument is a secret phrase (also called passPhrase). This could be any text. Secret phrase is the key that is used to encrypt the data. However you will have to use the same key (secret phrase) when decrypting the data.<span id="more-1313"></span></p>
+<p>The decision I had to make was how to select a secret phrase/key. Most server-side applications generate a key and store it in a secure location on the server and use that key to encrypt data. However my application is a mobile application written in JavaScript, so it would be very easy to find the secret key if someone really wants to &#8211; by looking at the JS source code. So I decided to ask user to enter secret key along with password at the time of registration and subsequent login attempts.<br />
+When user registers for the first time, she enters password and secret key/phrase. Using the secret key I encrypt the password and store it in the local database. I don&#8217;t save the secret key entered by the user. Subsequently login operation requires user to enter password as well as the same secret key she had entered at the time of registration. The problem with this approach is that user has to remember secret key along with the password.</p>
+<p>If I did not want to retrieve password in clear text in the application and if I did not want to encrypt any other data in the application, I could have used hashing algorithm, instead of encryption e.g.</p>
+<p><strong>hashedPassword = CryptoJS.SHA256(password);</strong> //include sha256.js  script</p>
+<p>Once the data is hashed, you cannot retrieve it in its original form. For the password example above, I could hash the password that user entered at the time of registration and store in the database. When user enters password at the time of login, I would hash it and compare the hashed value with the one stored in the database.</p>
+<p>Coming back to the encrypt function, the value it returns is not a string, but an object. If you log the value to console, this is what you get &#8211;</p>
+<p><a href="http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png"><img class="alignnone size-medium wp-image-1314" src="http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png?resize=300%2C97" alt="20140913RetObjFromEncrypt" srcset="http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png?resize=300%2C97 300w, http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png?resize=1024%2C331 1024w, http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png?w=1162 1162w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+<p>However you can store string representation of this object (by calling toString()) and use it in decrypt function. Interesting thing about the encrypt function is that the result of encryption is not the same each time you call the function with the same data and secret key. If you log the object returned by encrypt function above, you will see three fields &#8211; iv (initialization vector) , key and salt. Together they are used to encrypt the data. And these values change each time you call encrypt function with the same arguments (see demo at the end of this post).</p>
+<p>Decrypt function is also very easy to use. You pass encrypted object/string and secret key to the function &#8211;</p>
+<p><strong>decryptedData = CryptoJS.AES.decrypt(encryptedData, secretPhrase);</strong></p>
+<p>The returned value is not a string, but a JS Object that contains array of words &#8211;</p>
+<p><a href="http://i2.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt.png"><img class="alignnone size-medium wp-image-1316" src="http://i2.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt.png?resize=300%2C48" alt="20140913RetObjFromDecrypt" srcset="http://i2.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt.png?resize=300%2C48 300w, http://i2.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt.png?w=784 784w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
+<p>To get back the original string, you need to call toString with proper encoding &#8211;</p>
+<p><strong>originalData = decryptedData.toString(CryptoJS.enc.Utf8);</strong></p>
+<p>Try out following demo. Enter data to be encrypted and secret key and click Encrypt button. The data would be encrypted and displayed next to the Encrypted Data label. To get back original text from the encrypted data, click Decrypt without changing the secret key. The original text would be displayed next to Decrypted Data label.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Data :</strong></td>
+<td><input id="dataTxt" size="40" type="text" /></td>
+</tr>
+<tr>
+<td><strong>Secret Key :</strong></td>
+<td><input id="secretTxt" size="40" type="text" /></td>
+</tr>
+<tr>
+<td colspan="2"><input id="encryptBtn" type="button" value="Encrypt" /></td>
+</tr>
+<tr>
+<td colspan="2">
+<hr />
+</td>
+</tr>
+<tr>
+<td><strong>Encrypted Data :</strong></td>
+<td id="encryptedTxt"></td>
+</tr>
+<tr>
+<td colspan="2"><input id="decryptBtn" type="button" value="Decrypt" /></td>
+</tr>
+<tr>
+<td><strong>Decrypted Data :</strong></td>
+<td id="decryptedTxt"></td>
+</tr>
+</tbody>
+</table>
+<p>-Ram Kulkarni</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1313" class="share-facebook sd-button share-icon" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?share=facebook" target="_blank" title="Share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1313" class="share-twitter sd-button share-icon" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1313" class="share-google-plus-1 sd-button share-icon" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-1313" class="share-linkedin sd-button share-icon" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-email"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/#print" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-33403624-1313-579e2da33f0f7' data-src='//widgets.wp.com/likes/#blog_id=33403624&amp;post_id=1313&amp;origin=ramkulkarni.com&amp;obj_id=33403624-1313-579e2da33f0f7' data-name='like-post-frame-33403624-1313-579e2da33f0f7'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>
+											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+						This entry was posted in <a href="http://ramkulkarni.com/blog/category/javascript/" rel="category tag">JavaScript</a>, <a href="http://ramkulkarni.com/blog/category/mobile/" rel="category tag">Mobile</a> and tagged <a href="http://ramkulkarni.com/blog/tag/cryptojs/" rel="tag">CryptoJS</a>, <a href="http://ramkulkarni.com/blog/tag/encryption/" rel="tag">Encryption</a>, <a href="http://ramkulkarni.com/blog/tag/javascript/" rel="tag">JavaScript</a>. Bookmark the <a href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/" title="Permalink to Encrypting data with Crypto-JS in JavaScript" rel="bookmark">permalink</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://ramkulkarni.com/blog/my-last-day-at-adobe/" rel="prev"><span class="meta-nav">&larr;</span> My Last Day at Adobe</a></div>
+					<div class="nav-next"><a href="http://ramkulkarni.com/blog/configuring-apache-on-mac-os-x-mavericks-for-python-scripting/" rel="next">Configuring Apache on Mac OS X (Mavericks) for Python scripting <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-below -->
+				
+			<div id="comments">
+
+
+			<h3 id="comments-title">5 Responses to <em>Encrypting data with Crypto-JS in JavaScript</em></h3>
+
+
+			<ol class="commentlist">
+					<li class="comment even thread-even depth-1" id="li-comment-1073">
+		<div id="comment-1073">
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/48cb4a2446034dc6443a7a40f2b00608?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/48cb4a2446034dc6443a7a40f2b00608?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn">Deepak Kumar</cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-meta commentmetadata"><a href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/#comment-1073">
+			September 14, 2014 at 7:59 am</a>		</div><!-- .comment-meta .commentmetadata -->
+
+		<div class="comment-body"><p>So on client side for secure data which is better to use hashing or encryption ?</p>
+</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?replytocom=1073#respond' onclick='return addComment.moveForm( "comment-1073", "1073", "respond", "1313" )' aria-label='Reply to Deepak Kumar'>Reply</a>		</div><!-- .reply -->
+	</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-1074">
+		<div id="comment-1074">
+		<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/bf1a3de194b4a2ab6a1af56bbf65cb87?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bf1a3de194b4a2ab6a1af56bbf65cb87?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://ramkulkarni.com' rel='external nofollow' class='url'>Ram Kulkarni</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-meta commentmetadata"><a href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/#comment-1074">
+			September 14, 2014 at 9:19 am</a>		</div><!-- .comment-meta .commentmetadata -->
+
+		<div class="comment-body"><p>If you don&#8217;t need to retrieve the data and use it only for verification, for example, to verify the password, then you can use hashing. However I don&#8217;t think there would be many situations where you won&#8217;t need to get back the original data (even in the case of password you may want to retrieve and email it if user forgets the password). So in most cases you might want to use encryption.</p>
+</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?replytocom=1074#respond' onclick='return addComment.moveForm( "comment-1074", "1074", "respond", "1313" )' aria-label='Reply to Ram Kulkarni'>Reply</a>		</div><!-- .reply -->
+	</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-1079">
+		<div id="comment-1079">
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/cdd9582435a55d67977a789a905e8e43?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cdd9582435a55d67977a789a905e8e43?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='http://peterboughton.net' rel='external nofollow' class='url'>Peter Boughton</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-meta commentmetadata"><a href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/#comment-1079">
+			September 15, 2014 at 3:01 pm</a>		</div><!-- .comment-meta .commentmetadata -->
+
+		<div class="comment-body"><p>&gt; even in the case of password you may want to retrieve and email it if user forgets the password</p>
+<p>NO NO NO NO NO!</p>
+<p>You *never* email passwords. And you neither encrypt them nor just hash them!</p>
+<p>You use an expensive one-way process using a known and tested algorithm (i.e. bcrypt/pbkdf2/scrypt) for authenticating a user&#8217;s secret value.<br />
+If it has been forgotten and needs resetting, you send them a temporary single-use non-predictable token which is unrelated to their password.</p>
+</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?replytocom=1079#respond' onclick='return addComment.moveForm( "comment-1079", "1079", "respond", "1313" )' aria-label='Reply to Peter Boughton'>Reply</a>		</div><!-- .reply -->
+	</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-1260">
+		<div id="comment-1260">
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1f20573c7bd4952c5184dc9cd9fabcf3?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/1f20573c7bd4952c5184dc9cd9fabcf3?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn">Praveen</cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-meta commentmetadata"><a href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/#comment-1260">
+			February 6, 2015 at 10:25 pm</a>		</div><!-- .comment-meta .commentmetadata -->
+
+		<div class="comment-body"><p>is it possible to decrypt javascript code without having secret key? i have seen people who do it and wondering how. i have the encrypted javascirpt file.</p>
+</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?replytocom=1260#respond' onclick='return addComment.moveForm( "comment-1260", "1260", "respond", "1313" )' aria-label='Reply to Praveen'>Reply</a>		</div><!-- .reply -->
+	</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-1314">
+		<div id="comment-1314">
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/145bdf121cc475d0ab093c1c2cce573c?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/145bdf121cc475d0ab093c1c2cce573c?s=80&amp;d=mm&amp;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />			<cite class="fn"><a href='https://plus.google.com/+SaketNalegaonkar' rel='external nofollow' class='url'>Saket Nalegaonkar</a></cite> <span class="says">says:</span>		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-meta commentmetadata"><a href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/#comment-1314">
+			January 15, 2016 at 3:21 pm</a>		</div><!-- .comment-meta .commentmetadata -->
+
+		<div class="comment-body"><p>var CryptoJS = require(&#8220;crypto-js&#8221;);<br />
+var passphrase = &#8220;bymfqp92rs8iu52jxuf0g0klxozutrve8vv5bbikr&#8221;;<br />
+var  thingname = CryptoJS.AES.encrypt(req.body.name, passphrase);<br />
+var thingtype = CryptoJS.AES.encrypt(req.body.type, passphrase);<br />
+var resultn = mydevicename.toString();<br />
+var resultt = mydevicetype.toString();<br />
+var EJSONObject = {&#8220;name&#8221;: resultn, &#8220;type&#8221;:resultt };<br />
+collection.insert(EJSONObject, function(err, result){ // Some code )};</p>
+<p>but when i decrypt :</p>
+<p>collection.find({},{},function(e,docs){<br />
+decryptedName = CryptoJS.AES.decrypt(docs.name, passphrase);<br />
+Console.log(decryptedName);</p>
+<p>I am getting error : TypeError: Cannot read property &#8216;salt&#8217; of undefined</p>
+<p>How can I store SALT and IV for above example ?</p>
+</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/?replytocom=1314#respond' onclick='return addComment.moveForm( "comment-1314", "1314", "respond", "1313" )' aria-label='Reply to Saket Nalegaonkar'>Reply</a>		</div><!-- .reply -->
+	</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+			</ol>
+
+
+
+		
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/encrypting-data-with-crypto-js-in-javascript/#respond" style="display:none;">Cancel reply</a></small></h3>
+			<div id="commentform" class="comment-form">
+				<iframe src="http://jetpack.wordpress.com/jetpack-comment/?blogid=33403624&#038;postid=1313&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=mystery&#038;greeting=Leave+a+Reply&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en-US&#038;jetpack_version=3.8.3&#038;sig=4f3184933f496a96cdd7ce40b4f7f9d6460a3f46#parent=http%3A%2F%2Framkulkarni.com%2Fblog%2Fencrypting-data-with-crypto-js-in-javascript%2F" allowtransparency="false" style="width:100%; height: 430px;border:0px;" frameBorder="0" scrolling="no" name="jetpack_remote_comment" id="jetpack_remote_comment"></iframe>
+			</div>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		
+</div><!-- #comments -->
+
+<a href="https://twitter.com/ram_kulkarni" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ram_kulkarni</a>
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://ramkulkarni.com/blog/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li><li id="calendar-2" class="widget-container widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>July 2016</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://ramkulkarni.com/blog/2016/05/">&laquo; May</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="4" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td>
+	</tr>
+	<tr>
+		<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+	</tr>
+	<tr>
+		<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+	</tr>
+	<tr>
+		<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+	</tr>
+	<tr>
+		<td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td id="today">31</td>
+	</tr>
+	</tbody>
+	</table></div></li><li id="image-4" class="widget-container widget_image"><div class="jetpack-image-container"><a target="_blank" href="http://www.amazon.com/gp/product/1785285343"><img src="http://ramkulkarni.com/blog/wp-content/uploads/2015/10/JEE-Book-Cover-1.jpg" class="alignnone" width="200" height="247" /></a></div>
+</li><li id="image-2" class="widget-container widget_image"><div class="jetpack-image-container"><a href="http://www.amazon.com/Instant-Eclipse-RCP-Development-How-/dp/1782169520/ref=sr_1_cc_1?s=aps&#038;ie=UTF8&#038;qid=1373942223&#038;sr=1-1-catcorr&#038;keywords=instant+Eclipse+4+RCP+how-to"><img src="http://ramkulkarni.com/blog/wp-content/uploads/2013/07/9529OS_cov_small.jpg" class="alignnone" width="200" height="247" /></a></div>
+</li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://ramkulkarni.com/blog/setting-up-webpack-babel-reactjs/">Setting up Webpack + Babel + ReactJS</a>
+						</li>
+					<li>
+				<a href="http://ramkulkarni.com/blog/using-reactjs-with-babel-and-es6-2/">Using ReactJS with Babel and ES6</a>
+						</li>
+					<li>
+				<a href="http://ramkulkarni.com/blog/setting-up-es6-babel-gulp/">Setting up ES6+Babel+Gulp</a>
+						</li>
+					<li>
+				<a href="http://ramkulkarni.com/blog/using-javascript-promises-with-cordova/">Using JavaScript Promises with Cordova</a>
+						</li>
+					<li>
+				<a href="http://ramkulkarni.com/blog/50-off-on-my-book-java-ee-development-with-eclipse-second-edition/">50% Off on My Book : Java EE Development with Eclipse &#8211; Second Edition</a>
+						</li>
+				</ul>
+		</li>		<li id="recent-comments-2" class="widget-container widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='http://ramkulkarni.com' rel='external nofollow' class='url'>Ram Kulkarni</a></span> on <a href="http://ramkulkarni.com/blog/record-and-playback-drawing-in-html5-canvas/#comment-1341">Record and Playback Drawing in HTML5 Canvas</a></li><li class="recentcomments"><span class="comment-author-link">Kavita Hiran</span> on <a href="http://ramkulkarni.com/blog/record-and-playback-drawing-in-html5-canvas/#comment-1340">Record and Playback Drawing in HTML5 Canvas</a></li><li class="recentcomments"><span class="comment-author-link">Victor Antonio Lopez Villamar</span> on <a href="http://ramkulkarni.com/blog/capturing-absolute-offsets-for-javaccjjtree-tokens/#comment-1338">Capturing absolute offsets for JavaCC/JJTree tokens</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gravatar.com/theodorenorvell' rel='external nofollow' class='url'>Theodore Norvell</a></span> on <a href="http://ramkulkarni.com/blog/capturing-absolute-offsets-for-javaccjjtree-tokens/#comment-1337">Capturing absolute offsets for JavaCC/JJTree tokens</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gravatar.com/vlopezv' rel='external nofollow' class='url'>vlopezv</a></span> on <a href="http://ramkulkarni.com/blog/capturing-absolute-offsets-for-javaccjjtree-tokens/#comment-1336">Capturing absolute offsets for JavaCC/JJTree tokens</a></li></ul></li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+		<select id="archives-dropdown-2" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+			
+			<option value="">Select Month</option>
+				<option value='http://ramkulkarni.com/blog/2016/05/'> May 2016 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2016/03/'> March 2016 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2016/02/'> February 2016 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2015/12/'> December 2015 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2015/11/'> November 2015 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2015/10/'> October 2015 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2015/01/'> January 2015 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2014/09/'> September 2014 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2014/08/'> August 2014 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2014/07/'> July 2014 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2014/05/'> May 2014 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2014/04/'> April 2014 &nbsp;(3)</option>
+	<option value='http://ramkulkarni.com/blog/2014/03/'> March 2014 &nbsp;(4)</option>
+	<option value='http://ramkulkarni.com/blog/2014/02/'> February 2014 &nbsp;(3)</option>
+	<option value='http://ramkulkarni.com/blog/2014/01/'> January 2014 &nbsp;(3)</option>
+	<option value='http://ramkulkarni.com/blog/2013/12/'> December 2013 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2013/10/'> October 2013 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2013/08/'> August 2013 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2013/07/'> July 2013 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2013/06/'> June 2013 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2013/05/'> May 2013 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2013/04/'> April 2013 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2013/03/'> March 2013 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2013/02/'> February 2013 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2013/01/'> January 2013 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2012/11/'> November 2012 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2012/10/'> October 2012 &nbsp;(3)</option>
+	<option value='http://ramkulkarni.com/blog/2012/09/'> September 2012 &nbsp;(2)</option>
+	<option value='http://ramkulkarni.com/blog/2012/08/'> August 2012 &nbsp;(1)</option>
+	<option value='http://ramkulkarni.com/blog/2012/07/'> July 2012 &nbsp;(4)</option>
+	<option value='http://ramkulkarni.com/blog/2012/06/'> June 2012 &nbsp;(5)</option>
+	<option value='http://ramkulkarni.com/blog/2012/05/'> May 2012 &nbsp;(6)</option>
+	<option value='http://ramkulkarni.com/blog/2012/04/'> April 2012 &nbsp;(5)</option>
+	<option value='http://ramkulkarni.com/blog/2012/03/'> March 2012 &nbsp;(4)</option>
+
+		</select>
+		</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="103">Adobe&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="3">Android Programming&nbsp;&nbsp;(7)</option>
+	<option class="level-0" value="101">AngularJS&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="22">ColdFusion&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="21">ColdFusion Builder&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="125">Cordova&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="48">Debugger&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="23">Eclipse&nbsp;&nbsp;(13)</option>
+	<option class="level-0" value="19">Game&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="11">HTML5&nbsp;&nbsp;(14)</option>
+	<option class="level-0" value="17">iOS Programming&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="109">Java&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="6">JavaScript&nbsp;&nbsp;(22)</option>
+	<option class="level-0" value="8">JavaScript HTML &amp; CSS&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="110">JEE&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="27">JQuery Mobile&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="74">Mobile&nbsp;&nbsp;(14)</option>
+	<option class="level-0" value="69">Parsing&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="14">PhoneGap&nbsp;&nbsp;(11)</option>
+	<option class="level-0" value="106">Python&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(4)</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://ramkulkarni.com/blog/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</li><li id="blog_subscription-2" class="widget-container jetpack_subscription_widget"><h3 class="widget-title">Subscribe to My Blog via Email</h3>
+			<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-2">
+				<div id="subscribe-text"><p>Enter your email address to subscribe to my blog and receive notifications of new posts by email.</p>
+</div>					<p id="subscribe-email">
+						<label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-2">
+							Email Address						</label>
+						<input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-2" placeholder="Email Address" />
+					</p>
+
+					<p id="subscribe-submit">
+						<input type="hidden" name="action" value="subscribe" />
+						<input type="hidden" name="source" value="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/" />
+						<input type="hidden" name="sub-type" value="widget" />
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-2" />
+												<input type="submit" value="Subscribe" name="jetpack_subscriptions_widget" />
+					</p>
+							</form>
+
+			<script>
+			/*
+			Custom functionality for safari and IE
+			 */
+			(function( d ) {
+				// Creates placeholders for IE
+				if ( ( 'placeholder' in d.createElement( 'input' ) ) ) {
+					var label = d.getElementById( 'jetpack-subscribe-label' );
+						label.style.clip 	 = 'rect(1px, 1px, 1px, 1px)';
+						label.style.position = 'absolute';
+						label.style.height   = '1px';
+						label.style.width    = '1px';
+						label.style.overflow = 'hidden';
+				}
+
+				// Make sure the email value is filled in before allowing submit
+				var form = d.getElementById('subscribe-blog-blog_subscription-2'),
+					input = d.getElementById('subscribe-field-blog_subscription-2'),
+					handler = function( event ) {
+						if ( '' === input.value ) {
+							input.focus();
+
+							if ( event.preventDefault ){
+								event.preventDefault();
+							}
+
+							return false;
+						}
+					};
+
+				if ( window.addEventListener ) {
+					form.addEventListener( 'submit', handler, false );
+				} else {
+					form.attachEvent( 'onsubmit', handler );
+				}
+			})( document );
+			</script>
+				
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+<!--
+				<a href="http://ramkulkarni.com/blog/" title="Ram&#039;s Blog" rel="home">
+					Ram&#039;s Blog				</a>
+-->
+			Copyright &copy; 2014 &middot; All Rights Reserved &middot; <a href="http://ramkulkarni.com/blog/" >Ram Kulkarni's Blog</a>
+			</div><!-- #site-info -->
+
+			<!--
+			<div id="site-generator">
+								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress.</a>
+			</div> #site-generator -->
+
+		</div><!-- #colophon -->
+		
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<div style='text-align:center;color:gray;font-family:arial;font-size:11px;text-decoration:none;'><a href='http://www.acurax.com/products/floating-social-media-icon-plugin-wordpress/' target='_blank' title='Social Media Wordpress plugin' style='text-align:center;color:gray;font-family:arial;font-size:11px;text-decoration:none;'>Animated Social Media Icons</a> Powered by <a href='http://www.acurax.com/services/wordpress-designing-experts.php?utm_source=blink&utm_medium=link&utm_campaign=footer' target='_blank' title='Wordpress Development Company' style='text-align:center;color:gray;font-family:arial;font-size:11px;text-decoration:none;'>Acurax Wordpress Development Company</a></div><script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shCore.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushCSharp.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushPhp.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushJScript.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushJava.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushVb.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushSql.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushXml.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushDelphi.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushPython.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushRuby.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushCss.js"></script>
+<script class="javascript" src="http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushCpp.js"></script>
+<script class="javascript">
+dp.SyntaxHighlighter.ClipboardSwf = 'http://ramkulkarni.com/blog/wp-content/plugins/google-syntax-highlighter/Scripts/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+	<div style="display:none">
+	<div class="grofile-hash-map-48cb4a2446034dc6443a7a40f2b00608">
+	</div>
+	<div class="grofile-hash-map-bf1a3de194b4a2ab6a1af56bbf65cb87">
+	</div>
+	<div class="grofile-hash-map-cdd9582435a55d67977a789a905e8e43">
+	</div>
+	<div class="grofile-hash-map-1f20573c7bd4952c5184dc9cd9fabcf3">
+	</div>
+	<div class="grofile-hash-map-145bdf121cc475d0ab093c1c2cce573c">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"http:\/\/ramkulkarni.com\/blog\/encrypting-data-with-crypto-js-in-javascript\/":1313};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+			<div id="sharing_email" style="display: none;">
+		<form action="/blog/encrypting-data-with-crypto-js-in-javascript/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="" />
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" />
+			<script> document.getElementById('jetpack-source_f_name').value = ''; </script>
+			
+			<img style="float: right; display: none" class="loading" src="http://ramkulkarni.com/blog/wp-content/plugins/jetpack/modules/sharedaddy/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a rel="nofollow" href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-includes/js/comment-reply.min.js?ver=4.5.3'></script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201630'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2016Julaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.5.3'></script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-includes/js/wp-embed.min.js?ver=4.5.3'></script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/_inc/postmessage.js?ver=3.8.3'></script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/_inc/jquery.jetpack-resize.js?ver=3.8.3'></script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/_inc/jquery.inview.js?ver=3.8.3'></script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/modules/likes/queuehandler.js?ver=3.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=3.8.3'></script>
+		<iframe src='http://widgets.wp.com/likes/master.html?ver=20151215#ver=20151215' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		
+
+
+<!-- Starting Icon Display Code For Social Media Icon From Acurax International www.acurax.com -->
+<div id='divBottomRight' style='text-align:center;'><a href='http://www.twitter.com/ram_kulkarni' target='_blank' title='Visit Us On Twitter'><img src=http://ramkulkarni.com/blog/wp-content/plugins/floating-social-media-icon/images/themes/1/twitter.png style='border:0px;' alt='Visit Us On Twitter' /></a><a href='https://www.facebook.com/ram.kulkarni2' target='_blank' title='Visit Us On Facebook'><img src=http://ramkulkarni.com/blog/wp-content/plugins/floating-social-media-icon/images/themes/1/facebook.png style='border:0px;' alt='Visit Us On Facebook' /></a><a href='https://plus.google.com/104727026437529935387' target='_blank' title='Visit Us On Google Plus'><img src=http://ramkulkarni.com/blog/wp-content/plugins/floating-social-media-icon/images/themes/1/googleplus.png style='border:0px;' alt='Visit Us On Google Plus' /></a><a href='http://in.linkedin.com/pub/ram-kulkarni/7/556/592' target='_blank' title='Visit Us On Linkedin'><img src=http://ramkulkarni.com/blog/wp-content/plugins/floating-social-media-icon/images/themes/1/linkedin.png style='border:0px;' alt='Visit Us On Linkedin' /></a><a href='http://www.ramkulkarni.com/blog/feed' target='_blank' title='Check Our Feed'><img src=http://ramkulkarni.com/blog/wp-content/plugins/floating-social-media-icon/images/themes/1/feed.png style='border:0px;' alt='Check Our Feed' /></a></div>
+<!-- Ending Icon Display Code For Social Media Icon From Acurax International www.acurax.com -->
+
+
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+			// window.location.reload() doesn't respect the Hash in IE
+			window.location.hash = window.location.hash;
+		}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			var comm_par_el = document.getElementById( 'comment_parent' ),
+			    comm_par = (comm_par_el && comm_par_el.value) ? comm_par_el.value : '',
+			    frame = document.getElementById( 'jetpack_remote_comment' ),
+			    tellFrameNewParent;
+
+			tellFrameNewParent = function() {
+				if ( comm_par ) {
+					frame.src = "http://jetpack.wordpress.com/jetpack-comment/?blogid=33403624&postid=1313&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=3.8.3&sig=4f3184933f496a96cdd7ce40b4f7f9d6460a3f46#parent=http%3A%2F%2Framkulkarni.com%2Fblog%2Fencrypting-data-with-crypto-js-in-javascript%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+				} else {
+					frame.src = "http://jetpack.wordpress.com/jetpack-comment/?blogid=33403624&postid=1313&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=3.8.3&sig=4f3184933f496a96cdd7ce40b4f7f9d6460a3f46#parent=http%3A%2F%2Framkulkarni.com%2Fblog%2Fencrypting-data-with-crypto-js-in-javascript%2F";
+				}
+			};
+
+	
+			if ( 'undefined' !== typeof addComment ) {
+				addComment._Jetpack_moveForm = addComment.moveForm;
+
+				addComment.moveForm = function( commId, parentId, respondId, postId ) {
+					var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ), cancelClick, cancel;
+
+					if ( false === returnValue ) {
+						cancel = document.getElementById( 'cancel-comment-reply-link' );
+						cancelClick = cancel.onclick;
+						cancel.onclick = function() {
+							var cancelReturn = cancelClick.call( this );
+							if ( false !== cancelReturn ) {
+								return cancelReturn;
+							}
+
+							if ( !comm_par ) {
+								return cancelReturn;
+							}
+
+							comm_par = 0;
+
+							tellFrameNewParent();
+
+							return cancelReturn;
+						};
+					}
+
+					if ( comm_par == parentId ) {
+						return returnValue;
+					}
+
+					comm_par = parentId;
+
+					tellFrameNewParent();
+
+					return returnValue;
+				};
+			}
+
+	
+			if ( window.postMessage ) {
+				if ( document.addEventListener ) {
+					window.addEventListener( 'message', function( event ) {
+						if ( "http:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				} else if ( document.attachEvent ) {
+					window.attachEvent( 'message', function( event ) {
+						if ( "http:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				}
+			}
+		</script>
+
+	
+
+
+<!-- Starting Javascript For Social Media Icon From Acurax International www.acurax.com -->
+	<script type="text/javascript">
+	var ns = (navigator.appName.indexOf("Netscape") != -1);
+	var d = document;
+	var px = document.layers ? "" : "px";
+	function JSFX_FloatDiv(id, sx, sy)
+	{
+		var el=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];
+		window[id + "_obj"] = el;
+		if(d.layers)el.style=el;
+		el.cx = el.sx = sx;el.cy = el.sy = sy;
+		el.sP=function(x,y){this.style.left=x+px;this.style.top=y+px;};
+		el.flt=function()
+		{
+			var pX, pY;
+			pX = (this.sx >= 0) ? 0 : ns ? innerWidth : 
+			document.documentElement && document.documentElement.clientWidth ? 
+			document.documentElement.clientWidth : document.body.clientWidth;
+			pY = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+			document.documentElement.scrollTop : document.body.scrollTop;
+			if(this.sy<0) 
+			pY += ns ? innerHeight : document.documentElement && document.documentElement.clientHeight ? 
+			document.documentElement.clientHeight : document.body.clientHeight;
+			this.cx += (pX + this.sx - this.cx)/8;this.cy += (pY + this.sy - this.cy)/8;
+			this.sP(this.cx, this.cy);
+			setTimeout(this.id + "_obj.flt()", 40);
+		}
+		return el;
+	}
+	 JSFX_FloatDiv("divBottomRight", -190, -70).flt();
+	</script>
+	<!-- Ending Javascript Code For Social Media Icon From Acurax International www.acurax.com -->
+
+
+<script type='text/javascript' src='http://stats.wp.com/e-201630.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.8.3',blog:'33403624',post:'1313',tz:'5.5',srv:'ramkulkarni.com'} ]);
+	_stq.push([ 'clickTrackerInit', '33403624', '1313' ]);
+</script>
+</body>
+</html>
