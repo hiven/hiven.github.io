@@ -8,7 +8,7 @@ function startScript()
 			var key = $("#secretTxt").val();
 			var encrypted = CryptoJS.AES.encrypt(data,key);
 			console.log(encrypted);
-			$("#encryptedTxt").text(encrypted);
+			$("#encryptedTxt").val(encrypted);
 		});
 		
 		$("#decryptBtn").click(function(){
