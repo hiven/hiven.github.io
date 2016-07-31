@@ -8,32 +8,6 @@
 <link rel='stylesheet' id='acx-si-style-css'  href='http://ramkulkarni.com/blog/wp-content/plugins/floating-social-media-icon/style.css?ver=4.5.3' type='text/css' media='all' />
 <script type='text/javascript' src='http://ramkulkarni.com/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='http://ramkulkarni.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='http://ramkulkarni.com/blog/wp-content/plugins/jetpack/modules/related-posts/related-posts.js?ver=20150408'></script>
-<link rel='https://api.w.org/' href='http://ramkulkarni.com/blog/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ramkulkarni.com/blog/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ramkulkarni.com/blog/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='My Last Day at Adobe' href='http://ramkulkarni.com/blog/my-last-day-at-adobe/' />
-<link rel='next' title='Configuring Apache on Mac OS X (Mavericks) for Python scripting' href='http://ramkulkarni.com/blog/configuring-apache-on-mac-os-x-mavericks-for-python-scripting/' />
-<meta name="generator" content="WordPress 4.5.3" />
-<link rel="canonical" href="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/" />
-<link rel='shortlink' href='http://wp.me/p2g9O8-lb' />
-<link rel="alternate" type="application/json+oembed" href="http://ramkulkarni.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Framkulkarni.com%2Fblog%2Fencrypting-data-with-crypto-js-in-javascript%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://ramkulkarni.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Framkulkarni.com%2Fblog%2Fencrypting-data-with-crypto-js-in-javascript%2F&#038;format=xml" />
-
-
-<!-- Jetpack Open Graph Tags -->
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Encrypting data with Crypto-JS in JavaScript" />
-<meta property="og:url" content="http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/" />
-<meta property="og:description" content="I have been working intermittently on a HTML5 mobile application for some time now. This application stores some sensitive date locally (it is a standalone mobile application) and I did not want to…" />
-<meta property="article:published_time" content="2014-09-13T05:02:27+00:00" />
-<meta property="article:modified_time" content="2014-09-13T05:04:18+00:00" />
-<meta property="article:author" content="http://www.facebook.com/ram.kulkarni2" />
-<meta property="og:site_name" content="Ram&#039;s Blog" />
-<meta property="og:image" content="http://ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt-300x48.png" />
-<meta property="og:locale" content="en_US" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="@ram_kulkarni" />
 
 
 <body class="single single-post postid-1313 single-format-standard">
@@ -78,26 +52,7 @@
 
 					<div class="entry-content">
 						<p><script src="http://ramkulkarni.com/temp/2014-09-13/jquery-2.1.1.min.js"></script><script src="http://ramkulkarni.com/temp/2014-09-13/app-script.js"></script><script src="http://ramkulkarni.com/temp/2014-09-13/aes.js"></script><br />
-I have been working intermittently on a HTML5 mobile application for some time now. This application stores some sensitive date locally (it is a standalone mobile application) and I did not want to store the data in clear text. I wanted to make retrieval of data difficult to some extent, if the device ends up in the wrong hands. So the data had to be encrypted. The application code is in JavaScript, so I started looking for a JS library that can encrypt data. I found that <a href="https://code.google.com/p/crypto-js/" target="_blank">Crypto-JS</a> met my requirements and it was easy to use too.</p>
-<p>Before I proceed further, I must confess that my knowledge of encryption and digital security in general is very basic. So the solutions discussed in this post may not be the best in terms of protecting the data.</p>
-<p>As I said, Crypto-JS is very simple to use. You can use different cipher algorithms like AES. DES etc. and APIs are simple. e.g. to encrypt using AES , you would call &#8211;</p>
-<p><strong>encryptedData = CryptoJS.AES.encrypt(textToEncrypt, secretPhrase);</strong> //include aes.js script</p>
-<p>In the above API, the first argument to encrypt function is text data you want to encrypt, e.g. password. The second argument is a secret phrase (also called passPhrase). This could be any text. Secret phrase is the key that is used to encrypt the data. However you will have to use the same key (secret phrase) when decrypting the data.<span id="more-1313"></span></p>
-<p>The decision I had to make was how to select a secret phrase/key. Most server-side applications generate a key and store it in a secure location on the server and use that key to encrypt data. However my application is a mobile application written in JavaScript, so it would be very easy to find the secret key if someone really wants to &#8211; by looking at the JS source code. So I decided to ask user to enter secret key along with password at the time of registration and subsequent login attempts.<br />
-When user registers for the first time, she enters password and secret key/phrase. Using the secret key I encrypt the password and store it in the local database. I don&#8217;t save the secret key entered by the user. Subsequently login operation requires user to enter password as well as the same secret key she had entered at the time of registration. The problem with this approach is that user has to remember secret key along with the password.</p>
-<p>If I did not want to retrieve password in clear text in the application and if I did not want to encrypt any other data in the application, I could have used hashing algorithm, instead of encryption e.g.</p>
-<p><strong>hashedPassword = CryptoJS.SHA256(password);</strong> //include sha256.js  script</p>
-<p>Once the data is hashed, you cannot retrieve it in its original form. For the password example above, I could hash the password that user entered at the time of registration and store in the database. When user enters password at the time of login, I would hash it and compare the hashed value with the one stored in the database.</p>
-<p>Coming back to the encrypt function, the value it returns is not a string, but an object. If you log the value to console, this is what you get &#8211;</p>
-<p><a href="http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png"><img class="alignnone size-medium wp-image-1314" src="http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png?resize=300%2C97" alt="20140913RetObjFromEncrypt" srcset="http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png?resize=300%2C97 300w, http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png?resize=1024%2C331 1024w, http://i0.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromEncrypt.png?w=1162 1162w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
-<p>However you can store string representation of this object (by calling toString()) and use it in decrypt function. Interesting thing about the encrypt function is that the result of encryption is not the same each time you call the function with the same data and secret key. If you log the object returned by encrypt function above, you will see three fields &#8211; iv (initialization vector) , key and salt. Together they are used to encrypt the data. And these values change each time you call encrypt function with the same arguments (see demo at the end of this post).</p>
-<p>Decrypt function is also very easy to use. You pass encrypted object/string and secret key to the function &#8211;</p>
-<p><strong>decryptedData = CryptoJS.AES.decrypt(encryptedData, secretPhrase);</strong></p>
-<p>The returned value is not a string, but a JS Object that contains array of words &#8211;</p>
-<p><a href="http://i2.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt.png"><img class="alignnone size-medium wp-image-1316" src="http://i2.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt.png?resize=300%2C48" alt="20140913RetObjFromDecrypt" srcset="http://i2.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt.png?resize=300%2C48 300w, http://i2.wp.com/ramkulkarni.com/blog/wp-content/uploads/2014/09/20140913RetObjFromDecrypt.png?w=784 784w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
-<p>To get back the original string, you need to call toString with proper encoding &#8211;</p>
-<p><strong>originalData = decryptedData.toString(CryptoJS.enc.Utf8);</strong></p>
-<p>Try out following demo. Enter data to be encrypted and secret key and click Encrypt button. The data would be encrypted and displayed next to the Encrypted Data label. To get back original text from the encrypted data, click Decrypt without changing the secret key. The original text would be displayed next to Decrypted Data label.</p>
+
 <table>
 <tbody>
 <tr>
@@ -346,67 +301,7 @@ Console.log(decryptedName);</p>
 		</li>		<li id="recent-comments-2" class="widget-container widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='http://ramkulkarni.com' rel='external nofollow' class='url'>Ram Kulkarni</a></span> on <a href="http://ramkulkarni.com/blog/record-and-playback-drawing-in-html5-canvas/#comment-1341">Record and Playback Drawing in HTML5 Canvas</a></li><li class="recentcomments"><span class="comment-author-link">Kavita Hiran</span> on <a href="http://ramkulkarni.com/blog/record-and-playback-drawing-in-html5-canvas/#comment-1340">Record and Playback Drawing in HTML5 Canvas</a></li><li class="recentcomments"><span class="comment-author-link">Victor Antonio Lopez Villamar</span> on <a href="http://ramkulkarni.com/blog/capturing-absolute-offsets-for-javaccjjtree-tokens/#comment-1338">Capturing absolute offsets for JavaCC/JJTree tokens</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gravatar.com/theodorenorvell' rel='external nofollow' class='url'>Theodore Norvell</a></span> on <a href="http://ramkulkarni.com/blog/capturing-absolute-offsets-for-javaccjjtree-tokens/#comment-1337">Capturing absolute offsets for JavaCC/JJTree tokens</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://gravatar.com/vlopezv' rel='external nofollow' class='url'>vlopezv</a></span> on <a href="http://ramkulkarni.com/blog/capturing-absolute-offsets-for-javaccjjtree-tokens/#comment-1336">Capturing absolute offsets for JavaCC/JJTree tokens</a></li></ul></li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
 		<select id="archives-dropdown-2" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
 			
-			<option value="">Select Month</option>
-				<option value='http://ramkulkarni.com/blog/2016/05/'> May 2016 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2016/03/'> March 2016 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2016/02/'> February 2016 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2015/12/'> December 2015 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2015/11/'> November 2015 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2015/10/'> October 2015 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2015/01/'> January 2015 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2014/09/'> September 2014 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2014/08/'> August 2014 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2014/07/'> July 2014 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2014/05/'> May 2014 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2014/04/'> April 2014 &nbsp;(3)</option>
-	<option value='http://ramkulkarni.com/blog/2014/03/'> March 2014 &nbsp;(4)</option>
-	<option value='http://ramkulkarni.com/blog/2014/02/'> February 2014 &nbsp;(3)</option>
-	<option value='http://ramkulkarni.com/blog/2014/01/'> January 2014 &nbsp;(3)</option>
-	<option value='http://ramkulkarni.com/blog/2013/12/'> December 2013 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2013/10/'> October 2013 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2013/08/'> August 2013 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2013/07/'> July 2013 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2013/06/'> June 2013 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2013/05/'> May 2013 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2013/04/'> April 2013 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2013/03/'> March 2013 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2013/02/'> February 2013 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2013/01/'> January 2013 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2012/11/'> November 2012 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2012/10/'> October 2012 &nbsp;(3)</option>
-	<option value='http://ramkulkarni.com/blog/2012/09/'> September 2012 &nbsp;(2)</option>
-	<option value='http://ramkulkarni.com/blog/2012/08/'> August 2012 &nbsp;(1)</option>
-	<option value='http://ramkulkarni.com/blog/2012/07/'> July 2012 &nbsp;(4)</option>
-	<option value='http://ramkulkarni.com/blog/2012/06/'> June 2012 &nbsp;(5)</option>
-	<option value='http://ramkulkarni.com/blog/2012/05/'> May 2012 &nbsp;(6)</option>
-	<option value='http://ramkulkarni.com/blog/2012/04/'> April 2012 &nbsp;(5)</option>
-	<option value='http://ramkulkarni.com/blog/2012/03/'> March 2012 &nbsp;(4)</option>
 
-		</select>
-		</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
-	<option value='-1'>Select Category</option>
-	<option class="level-0" value="103">Adobe&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="3">Android Programming&nbsp;&nbsp;(7)</option>
-	<option class="level-0" value="101">AngularJS&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="22">ColdFusion&nbsp;&nbsp;(13)</option>
-	<option class="level-0" value="21">ColdFusion Builder&nbsp;&nbsp;(10)</option>
-	<option class="level-0" value="125">Cordova&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="48">Debugger&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="23">Eclipse&nbsp;&nbsp;(13)</option>
-	<option class="level-0" value="19">Game&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="11">HTML5&nbsp;&nbsp;(14)</option>
-	<option class="level-0" value="17">iOS Programming&nbsp;&nbsp;(5)</option>
-	<option class="level-0" value="109">Java&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="6">JavaScript&nbsp;&nbsp;(22)</option>
-	<option class="level-0" value="8">JavaScript HTML &amp; CSS&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="110">JEE&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="27">JQuery Mobile&nbsp;&nbsp;(5)</option>
-	<option class="level-0" value="74">Mobile&nbsp;&nbsp;(14)</option>
-	<option class="level-0" value="69">Parsing&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="14">PhoneGap&nbsp;&nbsp;(11)</option>
-	<option class="level-0" value="106">Python&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(4)</option>
-</select>
 
 <script type='text/javascript'>
 /* <![CDATA[ */
