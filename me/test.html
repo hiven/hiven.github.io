@@ -4,10 +4,16 @@
 <style>
   * {padding: 0; margin: 0; border: 0;}
   html, body {width: 80%;}
-  .input {padding: 10px; border: 1px solid gray;}
+  .input {padding: 10px;}
   #dataTxt { display: block; width: 100%;}
+  #block { border: 1px solid gray;}
+  #blockHeader {background-color: light-gray};
 </style>
-<textarea id="dataTxt" class="input" size="40" type="text" /></textarea>
+<div id="block">
+ <div id="blockHeader">Input</div>
+ <textarea id="dataTxt" class="input" size="40" type="text" /></textarea>
+ </div>
+ 
 <input id="secretTxt" class="input" size="40" type="text" />
 <input id="encryptBtn" type="button" value="Encrypt" />
 <input id="decryptBtn" type="button" value="Decrypt" />
