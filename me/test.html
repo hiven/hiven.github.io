@@ -7,10 +7,11 @@
   .input {padding: 10px;}
   #dataTxt, #encryptedTxt { display: block; width: 100%; border-top: 1px solid gray; }
   #block { border: 1px solid gray;}
-  #blockHeader {background-color: #f9f9f9; padding: 20px; font-size: 14px;};
+  #blockHeader {background-color: #f9f9f9; padding: 20px 10px;};
 </style>
+<h1></h1>
 <div id="block">
- <div id="blockHeader">Input</div>
+ <div id="blockHeader"><h2>Input</h2></div>
  <textarea id="dataTxt" class="input" size="40" type="text" /></textarea>
  </div>
  
@@ -18,7 +19,7 @@
 <input id="encryptBtn" type="button" value="Encrypt" />
 <input id="decryptBtn" type="button" value="Decrypt" />
 <div id="block">
- <div id="blockHeader">Output</div>
+ <div id="blockHeader"><h2>Output</h2></div>
 <textarea id="encryptedTxt" class="input" size="40" type="text" /></textarea>
  </div>
 <input id="decryptedTxt" class="input">
