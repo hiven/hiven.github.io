@@ -12,13 +12,13 @@ function startScript()
 		});
 		
 		$("#decryptBtn").click(function(){
-			var encrypted = $("#encryptedTxt").val();
+			var encrypted = $("#dataTxt").val();
 			var key = $("#secretTxt").val();
 			try
 			{
 				var data = CryptoJS.AES.decrypt(encrypted,key);
 				console.log(data);
-				$("#decryptedTxt").val(data.toString(CryptoJS.enc.Utf8));
+				$("#encryptedTxt").val(data.toString(CryptoJS.enc.Utf8));
 			} 
 			catch (e)
 			{
