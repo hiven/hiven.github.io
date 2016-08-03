@@ -7,17 +7,15 @@ function startScript()
 			var data = $("#dataTxt").val();
 			var key = $("#secretTxt").val();
 			var encrypted = CryptoJS.AES.encrypt(data,key);
-			console.log(encrypted);
 			$("#encryptedTxt").val(encrypted);
 		});
 		
 		$("#decryptBtn").click(function(){
-			var encrypted = $("#dataTxt").val();
+			var data = $("#dataTxt").val();
 			var key = $("#secretTxt").val();
 			try
 			{
-				var data = CryptoJS.AES.decrypt(encrypted,key);
-				console.log(data);
+				var data = CryptoJS.AES.decrypt(data,key);
 				$("#encryptedTxt").val(data.toString(CryptoJS.enc.Utf8));
 			} 
 			catch (e)
