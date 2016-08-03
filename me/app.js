@@ -4,21 +4,21 @@ function startScript()
 {
 	$(document).bind("ready", function(){
 		$("#encryptBtn").click(function(){
-			var data = $("#inputTxt").val();
+			var data = $("#dataTxt").val();
 			var key = $("#secretTxt").val();
 			var encrypted = CryptoJS.AES.encrypt(data,key);
 			console.log(encrypted);
-			$("#ouputTxt").val(encrypted);
+			$("#encryptedTxt").val(encrypted);
 		});
 		
 		$("#decryptBtn").click(function(){
-			var encrypted = $("#inputTxt").val();
+			var encrypted = $("#dataTxt").val();
 			var key = $("#secretTxt").val();
 			try
 			{
 				var data = CryptoJS.AES.decrypt(encrypted,key);
 				console.log(data);
-				$("#outputTxt").val(data.toString(CryptoJS.enc.Utf8));
+				$("#encryptedTxt").val(data.toString(CryptoJS.enc.Utf8));
 			} 
 			catch (e)
 			{
