@@ -12,18 +12,6 @@ svg {
 }
 </style>
 
-<script>
-    var width = 350,
-      height = 80;
-    var textNode = document.getElementById("t1");
-    for (var k = 1; k < 60; k++) {
-      textNode.setAttribute("font-size", k)
-      var bb = textNode.getBBox()
-      if (bb.width > width || bb.height > height)
-        break;
-    }
-</script>
-
 <svg version="1.2" viewBox="0 0 600 400" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
   <text id="t1" style="fill: white;" x="50%" y="50%" text-anchor="middle">Plumbing station</text>
 </svg>
