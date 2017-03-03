@@ -1,0 +1,34 @@
+<style>
+div {
+  width: 600px;
+  height: 400px;
+  line-height: 400px;
+  background: #43C6AC;
+  background: -webkit-linear-gradient(to left, #43C6AC, #191654);
+  background: linear-gradient(to left, #43C6AC, #191654);
+  display: inline-block;
+}
+
+h1 {
+  color: white;
+  display: inline-block;
+  margin-left: 100px;
+  vertical-align: middle;
+  line-height: normal;
+}
+</style>
+
+<div>
+  <h1>This is me I'm so fun World</h1>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(function() {
+  var width = "400";
+  var inner = $('h1'),
+  difference = width -inner.width(),
+  ratio = width /inner.width(),
+  style = 'translateX(' + difference/2 + 'px) ' + 'scale(' + ratio + ')';
+  inner.css({'webkit-transform': style, transform: style});
+});
+</script>
