@@ -45,7 +45,7 @@ $(function(){
   $("#brandinput").on("change keypress input", function() {
     $("#t1").text( $(this).val() );
   }).change();    
-});
+
 
 $('#font').on('change', function() {
   $('#t1').css('font-family', $(this).val());
@@ -54,6 +54,8 @@ $('#font').on('change', function() {
 $('#colour').on('change', function() {
   $('#t1').css('fill', $(this).val());
 });
+  
+  });
   </script>
       <header>
   <input id="brandinput" value="Test">
