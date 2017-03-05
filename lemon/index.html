@@ -40,19 +40,36 @@ svg {height: 100%; width: 100%;}
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
-    $(function(){
+$(function(){
   $("#brandinput").on("change keypress input", function() {
     $("#t1").text( $(this).val() );
   }).change();    
+});
+
+$('#font').on('change', function() {
+  $('#t1').css('font-family', $(this).val());
+});
+
+$('#colour').on('change', function() {
+  $('#t1').css('fill', $(this).val());
 });
   </script>
   
 <body>
   <header>
   <input id="brandinput" value="Test">
-    <select>
+   <select id="font">
   <option value="arial">Arial</option>
-  <option value="saab">Saab</option>
+  <option value="Sonsie One">Sonsie One</option>
+</select>
+  <select id="colour">
+    <option value="black">Black</option>
+  <option value="blue">Blue</option>
+  <option value="pink">Pink</option>
+</select>
+ <select>
+  <option value="">Bird</option>
+  <option value="">Camera</option>
 </select>
 <a href="/">Logo</a>
     <a href="/">Next</a>
