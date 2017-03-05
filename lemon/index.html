@@ -1,10 +1,10 @@
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-</head>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Sonsie+One');
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Sonsie+One');
 * {
   padding: 0;
   margin: 0;
@@ -18,28 +18,29 @@ header {
 }
 
 text {
-  font-family: "Sonsie One";
+  font-family: "Arial";
   font-size: 5vw;
   display: table-cell;
   vertical-align: middle;
+  color: blue;
 }
 
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-
 }
-
+nav {position: fixed; bottom: 0; height: 40px; background: grey; width: 100%;}
+ul, li {display: inline-block;}
 body {
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
 }
 
 svg {height: 100%; width: 100%;}
-  </style>
+
+</style>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>
+<script>
 $(function(){
   $("#brandinput").on("change keypress input", function() {
     $("#t1").text( $(this).val() );
@@ -54,30 +55,6 @@ $('#colour').on('change', function() {
   $('#t1').css('fill', $(this).val());
 });
   </script>
-  
-<body>
-  <header>
-  <input id="brandinput" value="Test">
-   <select id="font">
-  <option value="arial">Arial</option>
-  <option value="Sonsie One">Sonsie One</option>
-</select>
-  <select id="colour">
-    <option value="black">Black</option>
-  <option value="blue">Blue</option>
-  <option value="pink">Pink</option>
-</select>
- <select>
-  <option value="">Bird</option>
-  <option value="">Camera</option>
-</select>
-<a href="/">Logo</a>
-    <a href="/">Next</a>
-  </header>
-          <svg version="1.2" xmlns="http://www.w3.org/2000/svg">
-  <text id="t1" style="fill: black;" x="50%" y="50%" text-anchor="middle"></text>
-</svg>
-  <span class="brand"></span>
   </body>
   </html>
 
