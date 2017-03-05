@@ -2,6 +2,63 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Sonsie+One');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: block;
+  padding: 15px;
+  position: fixed;
+  top: 0px;
+}
+
+text {
+  font-family: "Sonsie One";
+  font-size: 5vw;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.brand.left::before { 
+    content: "A";
+}
+.brand.top::before { 
+    content: "C";
+    display: block;
+}
+.brand.right::after { 
+     content: "A";
+}
+.brand.below::after { 
+    content: "D";
+    display: block;
+}
+.top {font-family: arial;}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+}
+
+svg {height: 100%; width: 100%;}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+  $("#brandinput").on("change keypress input", function() {
+    $("#t1").text( $(this).val() );
+  }).change();    
+});
+  </script>
+  
 <body>
   <header>
   <input id="brandinput" value="Test">
