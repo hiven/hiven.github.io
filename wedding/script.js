@@ -1,10 +1,11 @@
+/* ----- JavaScript ----- */
 function show() {
   /* Cache the collection. */
   var extra = document.getElementsByClassName('extra');
 
   /* Iterate over every element in the collection. */
-  [].forEach.call(extra, function (element) {
-     element.style.display = 'block';
+  [].forEach.call(extra, function(element) {
+    element.style.display = 'block';
   });
 }
 
@@ -13,7 +14,7 @@ function hide() {
   var extra = document.getElementsByClassName('extra');
 
   /* Iterate over every element in the collection. */
-  [].forEach.call(extra, function (element) {
-     element.style.display = 'none';
+  [].forEach.call(extra, function(element) {
+    element.style.display = 'none';
   });
 }
