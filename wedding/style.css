@@ -69,7 +69,8 @@ h1 span {
   width:100%;
   max-width: 600px;
   margin: 0 auto;
-  
+  margin-top: 50px;
+  margin-bottom: 50px;  
 }
 
 body,
