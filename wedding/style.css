@@ -87,6 +87,8 @@ fieldset {
   border: none;
 }
 
+.extra {display: none;}
+
 .form-radio,
 .form-group {
   position: relative;
