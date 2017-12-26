@@ -39,6 +39,7 @@ border-bottom: 3px solid black;
     display: inline-block;
 }
 header {
+  text-align: center;
   height: 100%;
   background-color: #888888;
   Background: -webkit-linear-gradient(to right, #888888, #666666);
