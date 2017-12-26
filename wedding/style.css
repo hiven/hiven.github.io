@@ -21,7 +21,7 @@ span {
   font-size: 40px;
 }
 
-.logo {height: 400px;}
+.logo {height: 50%;}
 
 h1 {
   text-align: center;
@@ -39,6 +39,7 @@ border-bottom: 3px solid black;
     display: inline-block;
 }
 header {
+  height: 100%;
   background-color: #888888;
   Background: -webkit-linear-gradient(to right, #888888, #666666);
   /* Chrome 10-25, Safari 5.1-6 */
