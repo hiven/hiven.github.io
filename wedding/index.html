@@ -7,7 +7,18 @@
   <img src="ja.svg" alt="James and Anna" class="logo">
 </header>
 <section>
- <h2>RSVP</h2>
+ <h2>LOCATION</h2>
+ <label>Enter your location</label><input type="text" id="txtSource" value="" />
+<input type="text" id="txtDestination" value="anran @ tidwell farm, Ashburton, United Kingdom" style="display:none" />
+<br />
+<input type="button" value="Get Route" onclick="GetRoute()" />
+
+<div id="dvDistance">
+</div>
+<div id="dvMap" style="width: 500px; height: 500px">
+</div>
+<div id="dvPanel" style="width: 500px; height: 500px">
+</div>
  </section>
 
 <section>
