@@ -495,21 +495,23 @@ fieldset {
   left: 0;
   width: 100%;
 }
-
 .button {
-  position: relative;
-  background: currentColor;
-  border: 1px solid currentColor;
-  font-size: 1.1rem;
-      color: #749477;
+    position: relative;
+    background: currentColor;
+    border: 1px solid currentColor;
+    font-size: 0.8rem;
+    font-weight: 300px;
+    color: #749477;
     border-radius: 3px;
-  padding: 0.75rem 3rem;
-  cursor: pointer;
-  -webkit-transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, -webkit-box-shadow 0.28s ease;
-  overflow: hidden;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
+    transition: background-color 0.28s ease, color 0.28s ease, -webkit-box-shadow 0.28s ease;
+    transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, -webkit-box-shadow 0.28s ease;
+    overflow: hidden;
 }
 
 .button span {
