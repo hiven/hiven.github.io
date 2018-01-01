@@ -243,7 +243,7 @@ fieldset {
   left: 50%;
   bottom: -0.0625rem;
   position: absolute;
-  background: #337ab7;
+  background: #749477;
   -webkit-transition: left 0.28s ease, width 0.28s ease;
   transition: left 0.28s ease, width 0.28s ease;
   z-index: 2;
@@ -310,7 +310,7 @@ fieldset {
 .form-group select:focus ~ .control-label,
 .form-group input:focus ~ .control-label,
 .form-group textarea:focus ~ .control-label {
-  color: #337ab7;
+  color: #749477;
 }
 
 .form-group select:focus ~ .bar::before,
@@ -376,12 +376,12 @@ fieldset {
 .radio .helper::after {
   -webkit-transform: scale(0);
   transform: scale(0);
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #749477;
+  border-color: #749477;
 }
 
 .radio label:hover .helper {
-  color: #337ab7;
+  color: #749477;
 }
 
 .radio input:checked ~ .helper::after {
@@ -390,7 +390,7 @@ fieldset {
 }
 
 .radio input:checked ~ .helper::before {
-  color: #337ab7;
+  color: #749477;
 }
 
 .checkbox {
@@ -417,7 +417,7 @@ fieldset {
   position: absolute;
   height: 0;
   width: 0.2rem;
-  background-color: #337ab7;
+  background-color: #749477;
   display: block;
   -webkit-transform-origin: left top;
   transform-origin: left top;
