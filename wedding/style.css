@@ -445,11 +445,11 @@ fieldset {
 }
 
 .checkbox label:hover .helper {
-  color: #337ab7;
+  color: #546b56;;
 }
 
 .checkbox input:checked ~ .helper {
-  color: #337ab7;
+  color: #546b56;;
 }
 
 .checkbox input:checked ~ .helper::after,
