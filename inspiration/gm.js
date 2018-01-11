@@ -2,7 +2,7 @@ function initialize() {
 
   var myLatLng = new google.maps.LatLng(50.482663, -3.733047),
     myOptions = {
-      zoom: 13,
+      zoom: 14,
 
 
       styles: [
