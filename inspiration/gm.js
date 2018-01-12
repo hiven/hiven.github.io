@@ -1,11 +1,14 @@
-function initialize() {
+// This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
 
-  var myLatLng = new google.maps.LatLng(50.482663, -3.733047),
-    myOptions = {
-      zoom: 15,
-
-
-      styles: [
+function initMap() {
+  var uluru = {
+    lat: 50.482663,
+    lng: -3.733047
+  };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+          styles: [
   {
     "elementType": "geometry",
     "stylers": [
@@ -191,22 +194,34 @@ function initialize() {
     ]
   }
 ],
-      center: myLatLng,
+         center: uluru,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true,
       draggable: false,
       scrollwheel: false,
       panControl: false
-    },
-    map = new google.maps.Map(document.getElementById('map-canvas'), myOptions),
-    marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map
-    });
+  });
 
-  marker.setMap(map);
+  var contentString = '<div id="content">' +
 
+    '<h2 id="firstHeading" class="firstHeading">Anran</h2>' +
+    '<div id="bodyContent">' +
+    '<p>Test</p>' +
+    '</div>' +
+    '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    title: 'Uluru (Ayers Rock)'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+  infowindow.open(map, marker);
 
 }
-
-initialize();
