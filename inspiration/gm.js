@@ -206,7 +206,11 @@ function initMap() {
 
     '<h2 id="firstHeading" class="firstHeading">Anran</h2>' +
     '<div id="bodyContent">' +
-    '<p>Test</p>' +
+    '<p><b>Anran</b></p>' +
+    '<p>Ashburton,</p>' +
+    '<p>Landscove,</p>' +
+     '<p>Devon,</p>' +
+     '<p>TQ137LY</p>' + 
     '</div>' +
     '</div>';
 
