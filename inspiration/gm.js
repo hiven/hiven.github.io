@@ -194,7 +194,7 @@ function initMap() {
     ]
   }
 ],
-         center: uluru,
+       center: {lat: -28.643387, lng: 153.612224},
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true,
       draggable: false,
