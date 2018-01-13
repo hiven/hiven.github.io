@@ -204,9 +204,9 @@ function initMap() {
 
   var contentString = '<div id="content">' +
 
-    '<h4 id="firstHeading" class="firstHeading">Anran</h4>' +
+    '<h3 id="firstHeading" class="firstHeading">Anran</h3>' +
     '<div id="bodyContent">' +
-    '<p>Ashburton, Devon, TQ137LY</p>' +
+    '<p>Ashburton,<br />Devon,<br />TQ137LY</p>' +
     '</div>' +
     '</div>';
 
