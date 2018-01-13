@@ -181,7 +181,7 @@ body *::before {
   box-sizing: border-box;
 }
 
-.button-container {
+form .button-container {
   text-align: center;
 }
 
@@ -528,7 +528,7 @@ fieldset {
   left: 0;
   width: 100%;
 }
-.button {
+form .button {
     position: relative;
     background: #749477;;
     border: 1px solid #749477;;
@@ -547,13 +547,13 @@ fieldset {
     overflow: hidden;
 }
 
-.button span {
+form .button span {
   color: #fff;
   position: relative;
   z-index: 1;
 }
 
-.button::before {
+form .button::before {
   content: '';
   position: absolute;
   background: #071017;
@@ -570,14 +570,14 @@ fieldset {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.button:hover {
+form .button:hover {
   color: #546b56;
   -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
-.button:active::before,
-.button:focus::before {
+form .button:active::before,
+form .button:focus::before {
   -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
   transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
@@ -587,6 +587,6 @@ fieldset {
   opacity: 0;
 }
 
-.button:focus {
+form .button:focus {
   outline: none;
 }
