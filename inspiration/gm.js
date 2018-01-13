@@ -203,10 +203,8 @@ function initMap() {
   });
 
   var contentString = '<div id="content">' +
-
-    '<h3 id="firstHeading" class="firstHeading">Anran</h3>' +
     '<div id="bodyContent">' +
-    '<p>Ashburton,<br />Devon,<br />TQ137LY</p>' +
+    '<p><b>Anran Manor</b><br />Ashburton,<br />Devon,<br />TQ137LY</p>' +
     '</div>' +
     '</div>';
 
