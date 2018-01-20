@@ -1,0 +1,43 @@
+<style>
+body {
+    margin: 0;
+    background: #e6e6e6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+    margin: 0; padding: 0;
+}
+.wrapper-parallax {
+    margin-top: 500px;
+
+}
+.content {
+    position: relative;
+    z-index: 1;
+    background: white;
+    min-height: 1800px;
+}
+</style>
+<div class="wrapper-parallax">
+    <header>
+        <h1 class="logo">Header</h1>
+    </header>
+
+    <div class="content">
+        <h1>Content</h1>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function(){
+    var fromTop = $(window).scrollTop();
+    $(".logo").css('margin', '-' + (100 - fromTop) + 'px 0px 0px 0px');
+});
+</script>
