@@ -2,7 +2,7 @@
    "name":"TOPICS",
    "children":[  
       {  
-         "name":"Topic A",
+         "name":"Customer experience",
          "children":[  
             {  
                "name":"Sub A1",
@@ -21,7 +21,7 @@
          ]
       },
       {  
-         "name":"Topic B",
+         "name":"Support growth",
          "children":[  
             {  
                "name":"Sub B1",
@@ -40,7 +40,7 @@
          ]
       },
       {  
-         "name":"Topic B",
+         "name":"Employee engagement",
          "children":[  
             {  
                "name":"Sub B1",
