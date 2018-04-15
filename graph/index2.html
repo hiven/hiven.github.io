@@ -9,7 +9,7 @@
 	
 	<style>
 		body {
-			font-family: arial, sans-serif;
+			font-family: 'Pacifico', sans-serif;
 			fill: #333333;
 			font-size: 16px;
 			text-align: center;
@@ -50,7 +50,7 @@
 			{name: "Dolphin", 	value: 12},
 			{name: "Elephant",	value: 14},
 			{name: "Flamingo", 	value: 21},
-			{name: "Giraffe", 	value: 18},
+			{name: "Giraffe", value: 18},
 			{name: "Other", 	value: 8}
 		];
 
@@ -126,7 +126,7 @@
 		   .enter().append("text")
 			.attr("class", "donutText")
 			//Move the labels below the arcs for those slices with an end angle greater than 90 degrees
-			//.attr("dy", function(d,i) { return (d.endAngle > 90 * Math.PI/180 ? 18 : +20); })
+			.attr("dy", function(d,i) { return (d.endAngle > 90 * Math.PI/180 ? 18 : -11); })
 		   .append("textPath")
 			.attr("startOffset","50%")
 			.style("text-anchor","middle")
