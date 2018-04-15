@@ -126,7 +126,7 @@
 		   .enter().append("text")
 			.attr("class", "donutText")
 			//Move the labels below the arcs for those slices with an end angle greater than 90 degrees
-			.attr("dy", function(d,i) { return (d.endAngle > 90 * Math.PI/180 ? 18 : -11); })
+			//.attr("dy", function(d,i) { return (d.endAngle > 90 * Math.PI/180 ? 18 : -11); })
 		   .append("textPath")
 			.attr("startOffset","50%")
 			.style("text-anchor","middle")
