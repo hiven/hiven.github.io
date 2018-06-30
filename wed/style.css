@@ -304,13 +304,9 @@ font-size: 14px;
     width: 90%;
     margin-top: 120px
   }
-  .work_line,
-  .work_line_first {
-    height: 80px
-  }
+
   .project_info,
   .project_title {
-
     font-size: 16px
   }
 }
@@ -470,17 +466,9 @@ font-size: 14px;
   #images img {
     max-width: 100%
   }
-  .footer_work_back {
-    text-align: center;
-    padding: 80px 0
-  }
+
 }
 
-@media screen and (min-width:769px) {
-  .footer_mobile {
-    display: none
-  }
-}
 
 @media only screen and (min-width :1824px) {
   #header_work {
@@ -512,11 +500,6 @@ font-size: 14px;
   #images {
     max-width: 100%
   }
-  .footer_work_back {
-    padding: 140px 0
-  }
-  .work_btn {
-    font-size: 20px
-  }
+
 
 }
