@@ -8,7 +8,8 @@ body {
     padding: 0;
 }
 .work_line_first.animate {
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 li {
     padding: 5px 0px;
