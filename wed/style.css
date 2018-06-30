@@ -4,9 +4,15 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
+    padding: 0;
 }
-
+.work_line_first.animate {
+    margin-top: 25px;
+}
+li {
+    padding: 20px 0px;
+}
 svg {
   height: 150px;
 }
