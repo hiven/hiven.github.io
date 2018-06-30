@@ -19,6 +19,9 @@ li {
 svg {
   height: 150px;
 }
+#map div {
+  cursor: default !important;
+}
 
 ::selection {
   background: #000;
