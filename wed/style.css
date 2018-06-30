@@ -4,6 +4,7 @@ html {
 }
 
 body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
     padding: 0;
 }
@@ -51,7 +52,6 @@ ul {margin: 0;
 }
 
 #navigation li a {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-align: left;
   color: #1da072;
@@ -92,7 +92,6 @@ ul {margin: 0;
 }
 
 .title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 42px;
   text-align: left;
   color: #111;
@@ -107,7 +106,6 @@ ul {margin: 0;
 .subtitle {
   color: #666;
   text-align: left;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
@@ -240,7 +238,6 @@ ul li {
 font-size: 14px;
     color: #1da072;
     font-weight: 200;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
   
 
@@ -268,7 +265,6 @@ font-size: 14px;
 }
 
 .project_title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 18px;
   text-align: left;
@@ -279,7 +275,6 @@ font-size: 14px;
 .project_info {
   line-height: 90px;
   padding-left: 40%;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-align: left;
@@ -288,7 +283,6 @@ font-size: 14px;
 }
 
 .link {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
@@ -356,7 +350,7 @@ font-size: 14px;
 }
 
 .work_title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   font-weight: 600;
   font-size: 72px;
   text-align: left;
@@ -367,7 +361,7 @@ font-size: 14px;
 .work_type {
   color: #666;
   text-align: left;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -376,7 +370,6 @@ font-size: 14px;
 }
 
 .process_title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 24px;
   text-align: left;
@@ -387,8 +380,6 @@ font-size: 14px;
 
 .process_text {
   color: #666;
-  text-align: left;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -418,7 +409,6 @@ font-size: 14px;
 .work_btn {
   color: #111;
   display: inline-block;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
