@@ -223,6 +223,18 @@ body,
   opacity: 1
 }
 
+ul li {
+  list-style: none;
+}
+
+.times {
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.question { margin-bottom: 20px;}
+.question span {display: block;font-weight: 600;}
+
 .work_line,
 .work_line_first {
   width: 100%;
