@@ -245,8 +245,6 @@ body,
 }
 
 .project_title {
-  line-height: 90px;
-  float: left;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 18px;
