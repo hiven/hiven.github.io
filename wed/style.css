@@ -73,7 +73,6 @@ ul {margin: 0;
   animation-fill-mode: both;
   -webkit-animation-delay: .3s;
   animation-delay: .3s;
-  height: 150px;
 }
 
 .navigation {
