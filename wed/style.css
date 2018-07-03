@@ -47,7 +47,10 @@ ul {margin: 0;
   width: 70%;
   margin: 0 auto
 }
-
+.question {
+  display: block;
+  font-weight: 600;
+}
 #navigation ul li {
   width: auto;
   float: left;
