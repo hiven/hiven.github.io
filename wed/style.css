@@ -14,7 +14,7 @@ body {
     margin-bottom: 15px;
 }
 li {
-    padding: 5px 0px;
+    padding: 20px 0px;
 }
 svg {
   height: 150px;
@@ -249,7 +249,7 @@ font-size: 14px;
   
 
 
-.question { margin-bottom: 20px;}
+.question { margin-bottom: 10px;}
 .question span {display: block;font-weight: 600;}
 
 .work_line,
@@ -267,38 +267,7 @@ font-size: 14px;
   text-decoration: none
 }
 
-.no_border {
-  border-bottom: none
-}
 
-.project_title {
-  font-weight: 600;
-  font-size: 18px;
-  text-align: left;
-  text-decoration: none;
-  color: #111
-}
-
-.project_info {
-  line-height: 90px;
-  padding-left: 40%;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: left;
-  text-decoration: none;
-  color: #666
-}
-
-.link {
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-  color: #111
-}
-
-.link:hover {
-  text-decoration: line-through
-}
 
 @media screen and (max-width:768px) {
   #selected_work {
