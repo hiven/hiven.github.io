@@ -21,7 +21,7 @@ body {
 }
 #location {
   background-image: url(http://hiven.com/wed/img/icon.svg);
-    background-position-x: -100px;
+    background-position-x: 95%;
     background-position-y: 100px;
     background-repeat: no-repeat;
 }
