@@ -13,6 +13,12 @@ body {
     margin-top: 30px;
     margin-bottom: 15px;
 }
+#details {
+  background-image: url(http://hiven.com/wedding/ja2.svg);
+    background-position-x: -100px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+}
 
 li {
     padding: 5px 0px;
