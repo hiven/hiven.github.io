@@ -19,7 +19,18 @@ body {
     background-position-y: 100px;
     background-repeat: no-repeat;
 }
-
+#location {
+  background-image: url(http://hiven.com/wed/img/icon.svg);
+    background-position-x: -100px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+}
+#points {
+  background-image: url(http://hiven.com/wedding/ja2.svg);
+    background-position-x: -100px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+}
 li {
     padding: 5px 0px;
 }
