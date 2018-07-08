@@ -76,8 +76,8 @@ ul {margin: 0;
   width: auto;
   float: left;
   display: inline;
-  margin-left: 25px
 }
+#navigation ul li:not(:first-child){  margin-left: 25px}
 
 #navigation li a {
   font-size: 14px;
