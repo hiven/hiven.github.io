@@ -17,6 +17,7 @@ body {
 li {
     padding: 5px 0px;
 }
+.FAQ {font-size: 14px;}
 .FAQ li { padding: 25px 0px; }
 svg {
   height: 150px;
