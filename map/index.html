@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Simple Hexagon Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+    <script src="hexagons.js"></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div id='map'></div>
+
+    <script>
+        var coordinates = document.getElementById('coordinates');
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'server/style.json',
+            center: [0, 42],
+            maxZoom: 6.0,
+            minZoom: 3.0,
+            zoom: 4.5
+        });
+
+
+        var markers = [];
+
+        map.on('load', function () {
+
+            addHelicopter(166, 33);
+            addHelicopter(170, 30);
+            addHelicopter(175, 20);
+            addHelicopter(180, 20);
+
+
+            updateHelicoptersVisibility(map.getZoom());
+
+        });
+
+        map.on('zoom', function () {
+
+            updateHelicoptersVisibility(map.getZoom());
+
+        });
+
+        function addHelicopter(u, v) {
+
+            var hexagon = new HexDefinition(500);
+            var centerPoint = hexagon.getCenterPointXY(u, v);
+            var centerCoordinate = hexagon.pixelXYToLatLong(centerPoint.x, centerPoint.y, 10);
+
+            var el = document.createElement('div');
+            el.className = 'marker';
+
+            var marker = new mapboxgl.Marker(el)
+                .setLngLat([centerCoordinate.longitude, centerCoordinate.latitude])
+                .setDraggable(true)
+                .addTo(map);
+
+             marker.on('dragend', function (e) {
+
+                var coordinate = e.target.getLngLat();
+
+                var point = map.project(coordinate);
+
+                var features = map.queryRenderedFeatures(point, { layers: ['hexagons'] });
+
+                if (features.length > 0) {
+
+                    var u = features[0].properties["U"];
+                    var v = features[0].properties["V"];
+
+                    var centerPoint = hexagon.getCenterPointXY(u, v);
+
+                    var centerCoordinate = hexagon.pixelXYToLatLong(centerPoint.x, centerPoint.y, 10);
+
+                    e.target.setLngLat([centerCoordinate.longitude, centerCoordinate.latitude]);
+                }
+            });
+
+            markers.push(marker);
+
+
+        }
+
+        function updateHelicoptersVisibility(zoomLevel) {
+
+            for (var i = 0; i < markers.length; i++) {
+
+                var element = markers[i].getElement();
+
+                if (zoomLevel > 4.7) {
+
+                    element.style.backgroundImage = 'url(heli_1.png)';
+                    element.style.width = '64px';
+                    element.style.height = '64px';
+                }
+                else {
+
+                    element.style.backgroundImage = 'url(heli_2.png)';
+                    element.style.width = '32px';
+                    element.style.height = '32px';
+
+                }
+
+            }
+
+
+            
+        }
+
+    </script>
+
+</body>
+</html>
