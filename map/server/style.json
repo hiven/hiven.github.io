@@ -5,7 +5,7 @@
     "myworldmap": {
       "type": "vector",
       "tiles": [
-        "http://localhost:8080/data/v3/{z}/{x}/{y}.pbf"
+        "{z}/{x}/{y}.pbf"
       ]
     }
   },
