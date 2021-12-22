@@ -5,7 +5,7 @@
     "myworldmap": {
       "type": "vector",
       "tiles": [
-        "{z}/{x}/{y}.pbf"
+        "http://hiven.io/map/server/world/{z}/{x}/{y}.pbf"
       ]
     }
   },
