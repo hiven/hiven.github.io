@@ -99,7 +99,7 @@ body { margin: 0; padding: 0; }
         // When a click event occurs on a feature in the states layer,
         // open a popup at the location of the click, with description
         // HTML from the click event's properties.
-        map.on('click', 'states-layer', (e) => {
+        map.on('click', 'states-fills', (e) => {
             new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
                 .setHTML(e.features[0].properties.name)
@@ -108,7 +108,7 @@ body { margin: 0; padding: 0; }
 
         // Change the cursor to a pointer when
         // the mouse is over the states layer.
-        map.on('mouseenter', 'states-layer', () => {
+        map.on('mouseenter', 'states-fills', () => {
             map.getCanvas().style.cursor = 'pointer';
         });
 
