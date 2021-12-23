@@ -43,7 +43,7 @@ body { margin: 0; padding: 0; }
         // The feature-state dependent fill-opacity expression will render the hover effect
         // when a feature's hover state is set to true.
         map.addLayer({
-            'id': 'state-fills',
+            'id': 'grid',
             'type': 'fill',
             'source': 'states',
             'layout': {},
@@ -69,7 +69,7 @@ body { margin: 0; padding: 0; }
             }
         });
 
-        map.on('mousemove', 'state-fills', (e) => {
+        map.on('mousemove', 'grid', (e) => {
             if (e.features.length > 0) {
                 if (hoveredStateId !== null) {
                     map.setFeatureState(
@@ -85,7 +85,7 @@ body { margin: 0; padding: 0; }
             }
         });
 
-        map.on('mouseleave', 'state-fills', () => {
+        map.on('mouseleave', 'grid', () => {
             if (hoveredStateId !== null) {
                 map.setFeatureState(
                     { source: 'states', id: hoveredStateId },
@@ -96,19 +96,14 @@ body { margin: 0; padding: 0; }
             map.getCanvas().style.cursor = '';
         });
 	
-        // When a click event occurs on a feature in the states layer,
-        // open a popup at the location of the click, with description
-        // HTML from the click event's properties.
-        map.on('click', 'states-fills', (e) => {
+        map.on('click', 'grid', (e) => {
             new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
                 .setHTML(e.features[0].properties.name)
                 .addTo(map);
         });
 
-        // Change the cursor to a pointer when
-        // the mouse is over the states layer.
-        map.on('mouseenter', 'states-fills', () => {
+        map.on('mouseenter', 'grid', () => {
             map.getCanvas().style.cursor = 'pointer';
         });
 
