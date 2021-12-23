@@ -69,8 +69,6 @@ body { margin: 0; padding: 0; }
             }
         });
 
-        // When the user moves their mouse over the state-fill layer, we'll update the
-        // feature state for the feature under the mouse.
         map.on('mousemove', 'state-fills', (e) => {
             if (e.features.length > 0) {
                 if (hoveredStateId !== null) {
@@ -87,8 +85,6 @@ body { margin: 0; padding: 0; }
             }
         });
 
-        // When the mouse leaves the state-fill layer, update the feature state of the
-        // previously hovered feature.
         map.on('mouseleave', 'state-fills', () => {
             if (hoveredStateId !== null) {
                 map.setFeatureState(
@@ -97,6 +93,29 @@ body { margin: 0; padding: 0; }
                 );
             }
             hoveredStateId = null;
+        });
+    });
+	
+        // When a click event occurs on a feature in the states layer,
+        // open a popup at the location of the click, with description
+        // HTML from the click event's properties.
+        map.on('click', 'states-layer', (e) => {
+            new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(e.features[0].properties.name)
+                .addTo(map);
+        });
+
+        // Change the cursor to a pointer when
+        // the mouse is over the states layer.
+        map.on('mouseenter', 'states-layer', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change the cursor back to a pointer
+        // when it leaves the states layer.
+        map.on('mouseleave', 'states-layer', () => {
+            map.getCanvas().style.cursor = '';
         });
     });
 
