@@ -93,6 +93,7 @@ body { margin: 0; padding: 0; }
                 );
             }
             hoveredStateId = null;
+            map.getCanvas().style.cursor = '';
         });
 	
         // When a click event occurs on a feature in the states layer,
@@ -111,11 +112,6 @@ body { margin: 0; padding: 0; }
             map.getCanvas().style.cursor = 'pointer';
         });
 
-        // Change the cursor back to a pointer
-        // when it leaves the states layer.
-        map.on('mouseleave', 'states-layer', () => {
-            map.getCanvas().style.cursor = '';
-        });
     });
 
     </script>
