@@ -101,7 +101,7 @@ map.on('load', () => {
     map.on('click', 'grid', (e) => {
         new mapboxgl.Popup()
             .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.name)
+            .setHTML(e.features[0].properties.STATE_NAME)
             .addTo(map);
     });
 
