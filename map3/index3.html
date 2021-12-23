@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Simple Hexagon Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+    .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+    </style>
+
+
+</head>
+<body>
+
+    <div id='map'></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiaGl2ZW5zIiwiYSI6ImNreGRzNDgwajFybGkybm8xeXlmdmIzc3IifQ.7ByuyIqRuX5d_iLcOY82Hg';
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-100.486052, 37.830348],
+    zoom: 2
+});
+let hoveredStateId = null;
+
+map.on('load', () => {
+    map.addSource('states', {
+        'type': 'geojson',
+        'data': 'https://docs.mapbox.com/mapbox-gl-js/assets/us_states.geojson'
+    });
+
+    map.addLayer({
+        'id': 'grid',
+        'type': 'fill',
+        'source': 'states',
+        'layout': {},
+        'paint': {
+            'fill-color': '#627BC1',
+            'fill-opacity': [
+                'case',
+                ['boolean', ['feature-state', 'hover'], false],
+                1,
+                0.5
+            ]
+        }
+    });
+
+    map.addLayer({
+        'id': 'state-borders',
+        'type': 'line',
+        'source': 'states',
+        'layout': {},
+        'paint': {
+            'line-color': '#627BC1',
+            'line-width': 2
+        }
+    });
+
+    map.on('mousemove', 'grid', (e) => {
+        if (e.features.length > 0) {
+            if (hoveredStateId !== null) {
+                map.setFeatureState({
+                    source: 'states',
+                    id: hoveredStateId
+                }, {
+                    hover: false
+                });
+            }
+            hoveredStateId = e.features[0].id;
+            map.setFeatureState({
+                source: 'states',
+                id: hoveredStateId
+            }, {
+                hover: true
+            });
+        }
+    });
+
+    map.on('mouseleave', 'grid', () => {
+        if (hoveredStateId !== null) {
+            map.setFeatureState({
+                source: 'states',
+                id: hoveredStateId
+            }, {
+                hover: false
+            });
+        }
+        hoveredStateId = null;
+        map.getCanvas().style.cursor = '';
+    });
+
+    map.on('click', 'grid', (e) => {
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.STATE_NAME)
+            .addTo(map);
+    });
+
+    map.on('mouseenter', 'grid', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+});
+    </script>
+</body>
+</html>
