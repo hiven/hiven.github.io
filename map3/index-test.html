@@ -36,17 +36,36 @@ const map = new mapboxgl.Map({
     zoom: 2
 });
 let hoveredStateId = null;
+    
+const graticule = {
+    type: 'FeatureCollection',
+    features: []
+};
+for (let lng = -170; lng <= 180; lng += 10) {
+    graticule.features.push({
+        type: 'Feature',
+        geometry: {type: 'LineString', coordinates: [[lng, -90], [lng, 90]]},
+        properties: {value: lng}
+    });
+}
+for (let lat = -80; lat <= 80; lat += 10) {
+    graticule.features.push({
+        type: 'Feature',
+        geometry: {type: 'LineString', coordinates: [[-180, lat], [180, lat]]},
+        properties: {value: lat}
+    });
+}
 
 map.on('load', () => {
     map.addSource('states', {
         'type': 'geojson',
-        'data': 'ne_10m_graticules_5.geojson'
+        'data': 'graticule'
     });
 
     map.addLayer({
         'id': 'grid',
         'type': 'fill',
-        'source': 'states',
+        'source': 'graticule',
         'layout': {},
         'paint': {
             'fill-color': '#627BC1',
@@ -59,16 +78,16 @@ map.on('load', () => {
         }
     });
 
-    map.addLayer({
-        'id': 'state-borders',
-        'type': 'line',
-        'source': 'states',
-        'layout': {},
-        'paint': {
-            'line-color': '#627BC1',
-            'line-width': 2
-        }
-    });
+//    map.addLayer({
+//        'id': 'state-borders',
+//        'type': 'line',
+//        'source': 'states',
+//        'layout': {},
+//        'paint': {
+//            'line-color': '#627BC1',
+//            'line-width': 2
+//        }
+//    });
 
     map.on('mousemove', 'grid', (e) => {
         if (e.features.length > 0) {
