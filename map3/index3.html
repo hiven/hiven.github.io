@@ -28,6 +28,11 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-100.486052, 37.830348],
+    projection: {
+        name: 'lambertConformalConic',
+        center: [0, 30],
+        parallels: [30, 30]
+    }
     zoom: 2
 });
 let hoveredStateId = null;
