@@ -1,5 +1,6 @@
 CREATE TABLE `Grid` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `status` VARCHAR(255),
   `point` POINT DEFAULT NULL,
   `polygon` POLYGON DEFAULT NULL,
   PRIMARY KEY (`id`)
