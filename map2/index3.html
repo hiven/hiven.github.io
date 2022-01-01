@@ -31,6 +31,7 @@ body { margin: 0; padding: 0; }
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [-100.04, 38.907],
+	projection: { name: 'equirectangular', center: [0, 30], parallels: [30, 30] }
         zoom: 3
     });
 
