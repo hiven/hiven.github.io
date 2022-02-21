@@ -95,6 +95,10 @@
                      });
                  }
              });
+            
+            map.on('mouseenter', 'state-fills', () => {
+              map.getCanvas().style.cursor = 'pointer'
+            })
          
              // When the mouse leaves the state-fill layer, update the feature state of the
              // previously hovered feature.
@@ -108,6 +112,7 @@
                      });
                  }
                  hoveredStateId = null;
+                 map.getCanvas().style.cursor = ''
              });
          });
       </script>
