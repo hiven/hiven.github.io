@@ -27,7 +27,8 @@
              maxZoom: 13
          });
          let hoveredStateId = null;
-         
+         let clickedStateId = null;
+        
          map.on('load', () => {
              map.addSource('states', {
                  'type': 'geojson',
@@ -73,6 +74,27 @@
                 .setHTML(e.features[0].properties.name)
                 .addTo(map);
              });
+
+
+
+map.on('click', 'state-fills', function(e) {
+        if (e.features.length > 0) {
+            if (clickedStateId) {
+                map.setFeatureState(
+                    { source: 'states', id: clickedStateId },
+                    { click: false }
+                );
+            }
+            clickedStateId = e.features[0].id;
+            map.setFeatureState(
+                { source: 'states', id: clickedStateId },
+                { click: true }
+            );
+        }
+    });
+
+
+
          
              // When the user moves their mouse over the state-fill layer, we'll update the
              // feature state for the feature under the mouse.
