@@ -38,7 +38,8 @@
         // Add a source for the state polygons.
         map.addSource('states', {
             'type': 'geojson',
-            'data': 'hexagons.geojson'
+            'data': 'hexagons.geojson',
+            'generateId': true
         });
 
         // Add a layer showing the state polygons.
