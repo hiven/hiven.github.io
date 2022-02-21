@@ -55,46 +55,34 @@
                  }
              });
          
-             map.addLayer({
-                 'id': 'state-borders',
-                 'type': 'line',
-                 'source': 'states',
-                 'layout': {},
-                 'paint': {
-                     'line-color': '#627BC1',
-                     'line-width': 2
-                 }
-             });
             
              // When a click event occurs on a feature in the states layer,
              // open a popup at the location of the click, with description
              // HTML from the click event's properties.
-             map.on('click', 'state-fills', (e) => {
-                 new mapboxgl.Popup()
-                .setLngLat(e.lngLat)
-                .setHTML(e.features[0].properties.name)
-                .addTo(map);
-             });
+//             map.on('click', 'state-fills', (e) => {
+//                 new mapboxgl.Popup()
+//                .setLngLat(e.lngLat)
+//                .setHTML(e.features[0].properties.name)
+//                .addTo(map);
+//             });
 
 
 
-map.on('click', 'state-fills', function(e) {
-        if (e.features.length > 0) {
-            if (clickedStateId) {
-                map.setFeatureState(
+             map.on('click', 'state-fills', function(e) {
+                 if (e.features.length > 0) {
+                 if (clickedStateId) {
+                 map.setFeatureState(
                     { source: 'states', id: clickedStateId },
                     { click: false }
                 );
             }
-            clickedStateId = e.features[0].id;
-            map.setFeatureState(
+                 clickedStateId = e.features[0].id;
+                 map.setFeatureState(
                 { source: 'states', id: clickedStateId },
                 { click: true }
             );
-        }
-    });
-
-
+             }
+             });
 
          
              // When the user moves their mouse over the state-fill layer, we'll update the
