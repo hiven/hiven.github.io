@@ -28,7 +28,7 @@
              maxZoom: 13
          });
          let hoveredStateId = null;
-         let clickedStateId = null;
+//         let clickedStateId = null;
         
          map.on('load', () => {
              map.addSource('states', {
@@ -59,12 +59,12 @@
              // When a click event occurs on a feature in the states layer,
              // open a popup at the location of the click, with description
              // HTML from the click event's properties.
-//             map.on('click', 'state-fills', (e) => {
-//                 new mapboxgl.Popup()
-//                .setLngLat(e.lngLat)
-//                .setHTML(e.features[0].properties.name)
-//                .addTo(map);
-//             });
+             map.on('click', 'state-fills', (e) => {
+                 new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(e.features[0].properties.name)
+                .addTo(map);
+             });
 
 
 
@@ -84,28 +84,7 @@
              }
              });
 
-         
-             // When the user moves their mouse over the state-fill layer, we'll update the
-             // feature state for the feature under the mouse.
-             map.on('mousemove', 'state-fills', (e) => {
-                 if (e.features.length > 0) {
-                     if (hoveredStateId !== null) {
-                         map.setFeatureState({
-                             source: 'states',
-                             id: hoveredStateId
-                         }, {
-                             hover: false
-                         });
-                     }
-                     hoveredStateId = e.features[0].id;
-                     map.setFeatureState({
-                         source: 'states',
-                         id: hoveredStateId
-                     }, {
-                         hover: true
-                     });
-                 }
-             });
+        
          
              // When the mouse leaves the state-fill layer, update the feature state of the
              // previously hovered feature.
