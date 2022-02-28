@@ -24,7 +24,8 @@ body {
   flex: 0 1 40px;
 }
 
-.header .footer {
+.header,
+.footer {
 padding: 0 15px;
 }
 
