@@ -31,9 +31,11 @@
              zoom: 5,
              minZoom: 2,
              maxZoom: 9,
-             renderWorldCopies: false          
+             //renderWorldCopies: false          
          });
          let hoveredStateId = null;
+         
+         map.setRenderWorldCopies(false);
          
          map.on('load', () => {
              map.addSource('states', {
