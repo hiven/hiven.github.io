@@ -83,11 +83,7 @@
                  }
              });
             
-            map.on('click', 'state-fills', (e) => {
-               map.flyTo({
-               center: e.features[0].geometry.coordinates
-               });
-            });
+ 
             
              // When a click event occurs on a feature in the states layer,
              // open a popup at the location of the click, with description
@@ -99,10 +95,10 @@
 //                .addTo(map);
 //             });
             
-                map.on('click', 'state-fills', function (e) {
-                  var description = e.features[0].properties.description;	
-		            document.getElementById("popup").innerHTML = description;
-               });
+            map.on('click', 'state-fills', (e) => {
+               var description = e.features[0].properties.description;	
+               document.getElementById("popup").innerHTML = description;
+            });
             
          
              // When the user moves their mouse over the state-fill layer, we'll update the
