@@ -109,22 +109,28 @@ background: white;
                );
             });
             
-         
+       
+            
+            
+            
+            
              // When the user moves their mouse over the state-fill layer, we'll update the
              // feature state for the feature under the mouse.
              map.on('mousemove', 'state-fills', (e) => {
                  if (e.features.length > 0) {
-                     if (hoveredStateId !== null) {
-                        map.setFeatureState(
-                           { source: "states", id: hoveredStateId },
-                           { mystate: null }
-                        );
-                     }
-                     hoveredStateId = e.features[0].id;
-                     map.setFeatureState(
-                        { source: "states", id: hoveredStateId },
-                        { mystate: 1 }
-                     );
+                              if (hoveredStateId !== null) {
+            map.setFeatureState(
+               { source: "states", id: hoveredStateId },
+               { mystate: null }
+            );
+         }
+         if (hoveredStateId !== 2) {
+         hoveredStateId = e.features[0].id;
+         map.setFeatureState(
+            { source: "states", id: hoveredStateId },
+            { mystate: 1 }
+         );
+         }
                  }
              });
             
