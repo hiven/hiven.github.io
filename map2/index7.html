@@ -69,7 +69,7 @@ background: white;
                       0.6,
                       ["==", ["feature-state", "mystate"], 2],
                       0.8,
-                      0.4
+                      0.2
                     ]
                   }
              });
@@ -115,12 +115,10 @@ background: white;
              map.on('mousemove', 'state-fills', (e) => {
                  if (e.features.length > 0) {
                      if (hoveredStateId !== null) {
-                         map.setFeatureState({
-                             source: 'states',
-                             id: hoveredStateId
-                         }, {
-                             hover: false
-                         });
+                        map.setFeatureState(
+                           { source: "states", id: hoveredStateId },
+                           { mystate: null }
+                        );
                      }
                      hoveredStateId = e.features[0].id;
                      map.setFeatureState(
@@ -138,12 +136,10 @@ background: white;
              // previously hovered feature.
              map.on('mouseleave', 'state-fills', () => {
                  if (hoveredStateId !== null) {
-                     map.setFeatureState({
-                         source: 'states',
-                         id: hoveredStateId
-                     }, {
-                         hover: false
-                     });
+                        map.setFeatureState(
+                           { source: "states", id: hoveredStateId },
+                           { mystate: null }
+                        );
                  }
                  hoveredStateId = null;
                  map.getCanvas().style.cursor = ''
