@@ -103,7 +103,7 @@ background: white;
             map.on('click', 'state-fills', (e) => {
                var description = e.features[0].properties.country;	
                document.getElementById("popup").innerHTML = description;
-                map.setFeatureState(
+               map.setFeatureState(
                   { source: "states", id: hoveredStateId },
                   { mystate: 2 }
                );
@@ -123,12 +123,10 @@ background: white;
                          });
                      }
                      hoveredStateId = e.features[0].id;
-                     map.setFeatureState({
-                         source: 'states',
-                         id: hoveredStateId
-                     }, {
-                         hover: true
-                     });
+                     map.setFeatureState(
+                        { source: "states", id: clickedStateId },
+                        { mystate: 1 }
+                     );
                  }
              });
             
