@@ -13,10 +13,20 @@
          <div class="row header"><p><b>Hiven</b></p></div>
          <div class="row content" id="map"></div>
          <div class="row footer"><p><b>footer</b> (fixed height)</p></div>
+         <div id="popup"></div>
       </div>
       
       
-      
+      <style>
+         #popup {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  opacity: 0.8;
+  background-color: white;
+}
+         </style>
       
       
       
@@ -31,11 +41,11 @@
              zoom: 5,
              minZoom: 2,
              maxZoom: 9,
-             //renderWorldCopies: false          
+             renderWorldCopies: false          
          });
          let hoveredStateId = null;
          
-         map.setRenderWorldCopies(false);
+         //map.setRenderWorldCopies(false);
          
          map.on('load', () => {
              map.addSource('states', {
@@ -88,6 +98,12 @@
 //                .setHTML(e.features[0].properties.name)
 //                .addTo(map);
 //             });
+            
+                map.on('click', 'state-fills', function (e) {
+                  var description = e.features[0].properties.description;	
+		            document.getElementById("popup").innerHTML = description;
+               });
+            
          
              // When the user moves their mouse over the state-fill layer, we'll update the
              // feature state for the feature under the mouse.
