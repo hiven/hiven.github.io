@@ -65,18 +65,21 @@
               }
           });
 
+          // CLICK ON CELL
           map.on('click', 'state-fills', (e) => {
-              var description = e.features[0].properties.country;
-              document.getElementById("popup").innerHTML = description;
+              // Set colour of clicked cell
               map.setFeatureState({
                   source: "states",
                   id: hoveredStateId
               }, {
                   mystate: 2
               });
+              // Set content of popup
+              var description = e.features[0].properties.country;
+              document.getElementById("popup").innerHTML = description;
           });
 
-         // When the user moves their mouse over the state-fill layer, we'll update the
+          // MOVES CELL
           map.on('mousemove', 'state-fills', (e) => {
               if (e.features.length > 0) {
                   if (hoveredStateId !== null) {
@@ -99,11 +102,12 @@
               }
           });
 
+          // ENTERS CELL
           map.on('mouseenter', 'state-fills', () => {
               map.getCanvas().style.cursor = 'pointer'
           })
 
-          // When the mouse leaves the state-fill layer, update the feature state of the
+          // LEAVES CELL
           map.on('mouseleave', 'state-fills', () => {
               if (hoveredStateId !== null) {
                   map.setFeatureState({
