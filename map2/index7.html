@@ -62,15 +62,20 @@ background: white;
                  'source': 'states',
                  'layout': {},
                  'paint': {
-                     'fill-color': '#627BC1',
-                     'fill-opacity': [
-                         'case',
-                         ['boolean', ['feature-state', 'hover'], false],
-                         0.5,
-                         0.2
-                     ]
-                 }
+                    "fill-color": "#627BC1",
+                    "fill-opacity": [
+                      "case",
+                      ["==", ["feature-state", "mystate"], 1],
+                      0.6,
+                      ["==", ["feature-state", "mystate"], 2],
+                      0.8,
+                      0.4
+                    ]
+                  }
              });
+            
+            
+
          
              map.addLayer({
                  'id': 'state-borders',
@@ -98,6 +103,10 @@ background: white;
             map.on('click', 'state-fills', (e) => {
                var description = e.features[0].properties.country;	
                document.getElementById("popup").innerHTML = description;
+                map.setFeatureState(
+                  { source: "states", id: hoveredStateId },
+                  { mystate: 2 }
+               );
             });
             
          
