@@ -124,7 +124,7 @@ background: white;
                      }
                      hoveredStateId = e.features[0].id;
                      map.setFeatureState(
-                        { source: "states", id: clickedStateId },
+                        { source: "states", id: hoveredStateId },
                         { mystate: 1 }
                      );
                  }
