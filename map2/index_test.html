@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset='utf-8' />
+      <title>Simple Hexagon Map</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+      <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+      <link href='style.css' rel='stylesheet' />
+   </head>
+   <body>
+      <div class="box">
+         <div class="row header"><p><b>Hiven</b></p></div>
+         <div class="row content" id="map"></div>
+         <div class="row footer"><p><b>footer</b> (fixed height)</p></div>
+         <div id="popup"></div>
+      </div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiaGl2ZW5zIiwiYSI6ImNreGRzNDgwajFybGkybm8xeXlmdmIzc3IifQ.7ByuyIqRuX5d_iLcOY82Hg';
+      const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [-100.486052, 37.830348],
+          zoom: 5,
+          minZoom: 2,
+          maxZoom: 9,
+          renderWorldCopies: false
+      });
+      let hoveredStateId = null;
+
+      map.on('load', () => {
+          map.addSource('states', {
+              'type': 'geojson',
+              'data': 'https://hiven.github.io/hexagons.geojson',
+              'generateId': true
+          });
+
+          // The feature-state dependent fill-opacity expression will render the hover effect
+          map.addLayer({
+              'id': 'state-fills',
+              'type': 'fill',
+              'source': 'states',
+              'layout': {},
+              'paint': {
+                  "fill-color": "#627BC1",
+                  "fill-opacity": [
+                      "case",
+                      ["==", ["feature-state", "mystate"], 1],
+                      0.6,
+                      ["==", ["feature-state", "mystate"], 2],
+                      0.8,
+                      0.2
+                  ]
+              }
+          });
+
+          map.addLayer({
+              'id': 'state-borders',
+              'type': 'line',
+              'source': 'states',
+              'layout': {},
+              'paint': {
+                  'line-color': '#627BC1',
+                  'line-width': 1
+              }
+          });
+
+          // CLICK ON CELL
+          map.on('click', 'state-fills', (e) => {
+              // Set colour of clicked cell
+              map.setFeatureState({
+                  source: "states",
+                  id: hoveredStateId
+              }, {
+                  mystate: 2
+              });
+              // Set content of popup
+              var description = e.features[0].properties.country;
+              document.getElementById("popup").innerHTML = description;
+          });
+
+          // MOVES CELL
+          map.on('mousemove', 'state-fills', (e) => {
+              if (e.features.length > 0) {
+                  if (hoveredStateId !== null) {
+                      map.setFeatureState({
+                          source: "states",
+                          id: hoveredStateId
+                      }, {
+                          mystate: null
+                      });
+                  }
+                  if (hoveredStateId !== 2) {
+                      hoveredStateId = e.features[0].id;
+                      map.setFeatureState({
+                          source: "states",
+                          id: hoveredStateId
+                      }, {
+                          mystate: 1
+                      });
+                  }
+              }
+          });
+
+          // ENTERS CELL
+          map.on('mouseenter', 'state-fills', () => {
+              map.getCanvas().style.cursor = 'pointer'
+          })
+
+          // LEAVES CELL
+          map.on('mouseleave', 'state-fills', () => {
+              if (hoveredStateId !== null) {
+                  map.setFeatureState({
+                      source: "states",
+                      id: hoveredStateId
+                  }, {
+                      mystate: null
+                  });
+              }
+              map.getCanvas().style.cursor = ''
+          });
+      });
+      </script>
+   </body>
+</html>
