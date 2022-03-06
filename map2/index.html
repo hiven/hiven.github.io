@@ -42,7 +42,11 @@
               'source': 'states',
               'layout': {},
               'paint': {
-                  "fill-color": "#627BC1",
+                  'fill-color': ['match', ['get', ‘country’],
+                     'GB’, 'yellow',
+                     ‘US’, 'black',
+                     '#627BC1']
+                   },
                   "fill-opacity": [
                       "case",
                       ["==", ["feature-state", "mystate"], 1],
