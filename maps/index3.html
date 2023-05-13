@@ -5,7 +5,6 @@
     <title>Simple Hexagon Map</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
-    <script src="hexagons.js"></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
     <style>
 	body { margin: 0; padding: 0; }
@@ -28,7 +27,7 @@
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/light-v10', // style URL
         center: [-68.137343, 45.137451], // starting position
-        zoom: 5,
+        zoom: 8,
 	projection: 'equirectangular'
     });
 
@@ -38,9 +37,6 @@
             'data': 'https://hiven.github.io/maps/test4.geojson',
             'generateId': true
         });
-        
-     
- 
 
         // Add a new layer to visualize the polygon.
         map.addLayer({
@@ -58,22 +54,7 @@
                 ]
             }
         });
-        // Add a black outline around the polygon.
-//        map.addLayer({
- //           'id': 'outline',
-  //          'type': 'line',
-  //          'source': 'maine',
-  //          'layout': {},
-  //          'paint': {
-  //              'line-color': '#000',
-   //             'line-width': 3
-      //      }
-  //      });
     });
-
-
-
     </script>
-
 </body>
 </html>
